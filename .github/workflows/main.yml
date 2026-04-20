@@ -14,7 +14,7 @@ jobs:
         # 这里假设你要上传的文件在本地的 /path/to/files 目录
         # 你需要替换为实际路径
         mkdir -p eve-pi-search2
-        cp "E:\\Claude_Code_Objects\\EVE行星产物查询\\data"* eve-pi-search2
+        cp -r "E:\\Claude_Code_Objects\\EVE行星产物查询\\data*" eve-pi-search2
         git add eve-pi-search2
         git commit -m "Upload files"
         git push
