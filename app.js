@@ -13,25 +13,29 @@ let selectedRecordMaterial = null;
 let selectedRecordSystem = null;
 let currentSystemData = null; // 当前定位星系的数据
 
-// 初始化星空背景（立即执行）
+// 初始化星空背景
 function initStars() {
     const container = document.getElementById('starsContainer');
     if (!container) return;
 
-    const starCount = 150;
+    const starCount = 120;
+    const colorClasses = ['cyan', 'cyan', 'cyan', 'green', 'green', 'amber', 'red', 'purple'];
+
     for (let i = 0; i < starCount; i++) {
         const star = document.createElement('div');
         star.className = 'star';
 
-        const sizeClass = Math.random() < 0.6 ? 'small' : (Math.random() < 0.8 ? 'medium' : 'large');
+        const sizeClass = Math.random() < 0.55 ? 'small' : (Math.random() < 0.75 ? 'medium' : 'large');
         star.classList.add(sizeClass);
 
-        if (Math.random() < 0.1) star.classList.add('cyan');
+        if (Math.random() < 0.12) {
+            star.classList.add(colorClasses[Math.floor(Math.random() * colorClasses.length)]);
+        }
 
         star.style.left = Math.random() * 100 + '%';
         star.style.top = Math.random() * 100 + '%';
 
-        const duration = 2 + Math.random() * 4;
+        const duration = 3 + Math.random() * 5;
         const opacity = 0.3 + Math.random() * 0.7;
         const delay = Math.random() * 5;
 
@@ -41,11 +45,30 @@ function initStars() {
 
         container.appendChild(star);
     }
+
+    // 探针扫描声纳
+    initScanPing();
+}
+
+// 探针扫描声纳效果
+function initScanPing() {
+    const container = document.getElementById('scanPingContainer');
+    if (!container) return;
+
+    const pingCount = 3;
+    for (let i = 0; i < pingCount; i++) {
+        const ping = document.createElement('div');
+        ping.className = 'scan-ping';
+        ping.style.left = (20 + Math.random() * 60) + '%';
+        ping.style.top = (20 + Math.random() * 60) + '%';
+        ping.style.setProperty('--ping-dur', (5 + Math.random() * 3) + 's');
+        ping.style.setProperty('--ping-delay', (i * 2) + 's');
+        container.appendChild(ping);
+    }
 }
 
 // 主初始化
 document.addEventListener('DOMContentLoaded', async () => {
-    initStars();
     loadCenters();
     loadRecords();
     await loadIndex();
@@ -55,6 +78,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCenters();
         renderRecords();
     }
+    // 数据加载完成后再初始化背景动画，避免阻塞
+    // (星星和波纹效果已移除)
+    // 延迟启动背景视频，避免与数据加载争抢带宽
+    setTimeout(() => {
+        const v = document.getElementById('bgVideo');
+        if (v) {
+            v.playbackRate = 0.5;
+            v.play().catch(() => {});
+        }
+    }, 1500);
 });
 
 // 材料分类
