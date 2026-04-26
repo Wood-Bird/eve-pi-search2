@@ -557,8 +557,8 @@ async function loadConstellationData(constellation) {
 function showPlanetsInConstellation(data, category = null, product = null) {
     const resultsList = document.getElementById('resultsList');
 
-    // 按行星分组整理数据
-    const planetsMap = new Map();
+    // 收集所有记录
+    const allRecords = [];
 
     for (const [material, info] of Object.entries(data.materials)) {
         // 如果选择了具体产物，只显示该产物
@@ -567,67 +567,57 @@ function showPlanetsInConstellation(data, category = null, product = null) {
         if (category && getMaterialCategory(material) !== category) continue;
 
         for (const record of info.records) {
-            if (!planetsMap.has(record.planet)) {
-                planetsMap.set(record.planet, []);
-            }
-            planetsMap.get(record.planet).push({
-                material,
-                richness: record.richness,
-                output: record.output
+            allRecords.push({
+                ...record,
+                material
             });
         }
     }
 
-    // 转换为数组并按最高产量排序
-    const planetsArray = Array.from(planetsMap.entries()).map(([planet, materials]) => ({
-        planet,
-        materials,
-        maxOutput: Math.max(...materials.map(m => m.output))
-    }));
-    planetsArray.sort((a, b) => b.maxOutput - a.maxOutput);
-
-    if (planetsArray.length === 0) {
+    if (allRecords.length === 0) {
         resultsList.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>无数据</p></div>';
         return;
     }
 
+    // 按产量排序
+    allRecords.sort((a, b) => b.output - a.output);
+
     const center = centers[activeCenterIndex];
     const isSameConstellation = center && data.region === center.region && data.constellation === center.constellation;
+    
+    // 如果指定了产物，使用产物的颜色；否则使用默认颜色
+    const material = product || allRecords[0].material;
+    const color = getMaterialColor(material);
 
-    resultsList.innerHTML = planetsArray.map(p => {
-        const topMaterial = p.materials.reduce((a, b) => b.output > a.output ? b : a);
-        const color = getMaterialColor(topMaterial.material);
-        const tag = isSameConstellation ? '<span class="tag tag-same-c">同星座</span>' : '';
+    // 直接显示该产物的星球详情列表（与按星系搜索格式一致）
+    resultsList.innerHTML = `
+        <div class="detail-header" style="border-bottom: 2px solid ${color};">
+            <span class="back-btn" onclick="queryConstellation()">← 返回</span>
+            <span class="material-title" style="color: ${color}">${product || '所有产物'}</span>
+            <span class="constellation-name">${data.constellation} (${data.region})</span>
+        </div>
+        <div class="detail-list">
+            ${allRecords.map((r, i) => {
+                const samePlanet = center && center.planet &&
+                    data.region === center.region && data.constellation === center.constellation &&
+                    r.planet === center.planet;
+                const rowClass = samePlanet ? 'same-planet' : '';
+                const tag = samePlanet ? '<span class="tag tag-same-p">同行星</span>' : '';
+                const materialColor = getMaterialColor(r.material);
 
-        return `
-            <div class="detail-header" style="border-bottom: 2px solid #00c8ff">
-                <span class="back-btn" onclick="queryConstellation()">← 返回</span>
-                <span class="material-title" style="color: #00c8ff">${p.planet}</span>
-                <span class="constellation-name">${data.constellation}</span>
-            </div>
-            <div class="detail-list">
-                ${p.materials.sort((a, b) => b.output - a.output).map((m, i) => {
-                    const c = getMaterialColor(m.material);
-                    const samePlanet = center && center.planet &&
-                        data.region === center.region && data.constellation === center.constellation &&
-                        p.planet === center.planet;
-                    const rowClass = samePlanet ? 'same-planet' : '';
-                    const tag = samePlanet ? '<span class="tag tag-same-p">同行星</span>' : '';
-
-                    return `
-                        <div class="detail-row ${rowClass}">
-                            <span class="rank">${i + 1}</span>
-                            <span class="planet" style="color: ${c}">${m.material}</span>
-                            <span class="richness">${m.richness}</span>
-                            <span class="output">${m.output.toFixed(2)}</span>
-                            <button class="btn-record" onclick="quickRecordPlanet('${m.material}', '${data.constellation}', '${p.planet}', '${m.richness}', ${m.output})" style="padding:3px 8px;font-size:11px;">记录</button>
-                            ${tag}
-                        </div>
-                    `;
-                }).join('')}
-            </div>
-        `;
-    }).join('');
+                return `
+                    <div class="detail-row ${rowClass}">
+                        <span class="rank">${i + 1}</span>
+                        <span class="planet">${r.planet}</span>
+                        <span class="richness">${r.richness}</span>
+                        <span class="output">${r.output.toFixed(2)}</span>
+                        <button class="btn-record" onclick="quickRecordPlanet('${r.material}', '${data.constellation}', '${r.planet}', '${r.richness}', ${r.output})" style="padding:3px 8px;font-size:11px;">记录</button>
+                        ${tag}
+                    </div>
+                `;
+            }).join('')}
+        </div>
+    `;
 }
 
 // 显示星球详情

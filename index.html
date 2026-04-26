@@ -400,6 +400,42 @@
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-thumb { background: #00c8ff; border-radius: 3px; }
 
+        /* ========== 科幻滚动字符串 ========== */
+        .scrolling-string {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            overflow: hidden;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.4;
+        }
+        .scrolling-string-inner {
+            display: flex;
+            white-space: nowrap;
+            animation: scrollString 30s linear infinite;
+        }
+        .scrolling-string-text {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            padding-right: 200px;
+            background: linear-gradient(90deg,
+                rgba(0, 200, 255, 0.6) 0%,
+                rgba(0, 255, 255, 0.4) 50%,
+                rgba(0, 200, 255, 0.6) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @keyframes scrollString {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
         /* 响应式：移动端侧边栏隐藏，可通过按钮展开 */
         @media (max-width: 768px) {
             .sidebar {
@@ -444,6 +480,16 @@
     <div class="nebula-layer2"></div>
     <!-- 扫描线覆盖 -->
     <div class="scanlines"></div>
+
+    <!-- 科幻滚动字符串 -->
+    <div class="scrolling-string">
+        <div class="scrolling-string-inner">
+            <span class="scrolling-string-text">WGZO&MMST-木鸟</span>
+            <span class="scrolling-string-text">WGZO&MMST-木鸟</span>
+            <span class="scrolling-string-text">WGZO&MMST-木鸟</span>
+            <span class="scrolling-string-text">WGZO&MMST-木鸟</span>
+        </div>
+    </div>
 
     <!-- 移动端侧边栏切换按钮 -->
     <button class="sidebar-toggle" onclick="toggleSidebar()">侧栏</button>
@@ -508,7 +554,7 @@
             </div>
 
             <div class="footer">
-                <span style="color: #666; font-size: 12px;">EVE行星材料查询</span>
+                <span style="color: #666; font-size: 12px;">广告位招租</span>
             </div>
         </div>
 
