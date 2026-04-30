@@ -13,6 +13,277 @@ let selectedRecordMaterial = null;
 let selectedRecordSystem = null;
 let currentSystemData = null; // 当前定位星系的数据
 
+<<<<<<< HEAD
+// 星系连接分析器
+let galaxyAnalyzer = null;
+let currentSearchMode = 'standard'; // 'standard' 或 'connection'
+let extraSystemConstellation = {}; // 额外的星系-星座映射
+
+// 星系连接分析工具类
+class GalaxyConnectionAnalyzer {
+    constructor() {
+        this.systemIdToName = new Map();  // 星系ID -> 英文星系名称
+        this.systemNameToId = new Map();  // 英文星系名称 -> 星系ID
+        this.connections = new Map();     // 邻接表: systemId -> Set(connectedSystemIds)
+        this.isLoaded = false;
+        this.chineseToEnglish = new Map(); // 中文名称 -> 英文名称
+        this.englishToChinese = new Map(); // 英文名称 -> 中文名称
+    }
+
+    // 加载星系数据
+    async loadSolarSystems() {
+        try {
+            console.log('开始加载星系数据...');
+            const response = await fetch('资源文件/EVESovMap/mapSolarSystems.csv');
+            if (!response.ok) {
+                console.error(`加载星系数据失败: HTTP ${response.status}`);
+                return;
+            }
+            let csvContent = await response.text();
+            
+            // 移除可能的BOM头
+            if (csvContent.charCodeAt(0) === 0xFEFF) {
+                csvContent = csvContent.slice(1);
+            }
+            
+            const lines = csvContent.split('\n').filter(line => line.trim());
+            if (lines.length === 0) {
+                console.error('星系数据文件为空');
+                return;
+            }
+            
+            const headers = lines[0].split(',');
+            console.log(`星系数据列头: ${headers.slice(0, 5)}...`);
+            
+            let loadedCount = 0;
+            for (let i = 1; i < lines.length; i++) {
+                const values = this.parseCSVLine(lines[i]);
+                const systemIdIndex = headers.indexOf('solarSystemID');
+                const systemNameIndex = headers.indexOf('solarSystemName');
+                if (systemIdIndex >= 0 && systemNameIndex >= 0) {
+                    const systemId = parseInt(values[systemIdIndex]);
+                    const systemName = values[systemNameIndex];
+                    if (!isNaN(systemId) && systemName) {
+                        this.systemIdToName.set(systemId, systemName);
+                        this.systemNameToId.set(systemName, systemId);
+                        loadedCount++;
+                    }
+                }
+            }
+            console.log(`✅ 已加载 ${loadedCount} 个星系`);
+        } catch (error) {
+            console.error('加载星系数据失败:', error.message);
+        }
+    }
+
+    // 加载星系连接数据
+    async loadConnections() {
+        try {
+            console.log('开始加载星系连接数据...');
+            const response = await fetch('资源文件/EVESovMap/mapSolarSystemJumps.csv');
+            if (!response.ok) {
+                console.error(`加载星系连接数据失败: HTTP ${response.status}`);
+                return;
+            }
+            let csvContent = await response.text();
+            
+            // 移除可能的BOM头
+            if (csvContent.charCodeAt(0) === 0xFEFF) {
+                csvContent = csvContent.slice(1);
+            }
+            
+            const lines = csvContent.split('\n').filter(line => line.trim());
+            if (lines.length === 0) {
+                console.error('星系连接数据文件为空');
+                return;
+            }
+            
+            const headers = lines[0].split(',');
+            console.log(`连接数据列头: ${headers.slice(0, 5)}...`);
+            
+            let loadedCount = 0;
+            for (let i = 1; i < lines.length; i++) {
+                const values = this.parseCSVLine(lines[i]);
+                const fromIndex = headers.indexOf('fromSolarSystemID');
+                const toIndex = headers.indexOf('toSolarSystemID');
+                if (fromIndex >= 0 && toIndex >= 0) {
+                    const fromId = parseInt(values[fromIndex]);
+                    const toId = parseInt(values[toIndex]);
+                    
+                    if (!isNaN(fromId) && !isNaN(toId)) {
+                        if (!this.connections.has(fromId)) {
+                            this.connections.set(fromId, new Set());
+                        }
+                        this.connections.get(fromId).add(toId);
+                        
+                        if (!this.connections.has(toId)) {
+                            this.connections.set(toId, new Set());
+                        }
+                        this.connections.get(toId).add(fromId);
+                        loadedCount++;
+                    }
+                }
+            }
+            console.log(`✅ 已加载 ${loadedCount} 条连接关系`);
+            this.isLoaded = true;
+        } catch (error) {
+            console.error('加载星系连接数据失败:', error.message);
+        }
+    }
+
+    // 加载中英文名称映射
+    async loadNameMapping() {
+        try {
+            console.log('开始加载星系名称映射...');
+            const response = await fetch('data/system_names.json');
+            if (!response.ok) {
+                console.warn('加载星系名称映射失败: HTTP', response.status);
+                return;
+            }
+            const data = await response.json();
+            if (data.mapping) {
+                for (const [english, info] of Object.entries(data.mapping)) {
+                    // 使用第一个中文名称作为主要显示名称
+                    if (info.cn && info.cn.length > 0) {
+                        this.englishToChinese.set(english, info.cn[0]);
+                    } else {
+                        this.englishToChinese.set(english, english);
+                    }
+                    
+                    // 建立中文名称到英文的映射
+                    if (info.cn) {
+                        for (const cnName of info.cn) {
+                            this.chineseToEnglish.set(cnName, english);
+                        }
+                    }
+                    
+                    // 建立拼音到英文的映射（支持拼音搜索）
+                    if (info.py) {
+                        for (const pyName of info.py) {
+                            this.chineseToEnglish.set(pyName.toLowerCase(), english);
+                        }
+                    }
+                }
+            }
+            console.log(`✅ 已加载 ${this.chineseToEnglish.size} 个星系名称映射（含拼音）`);
+        } catch (error) {
+            console.warn('加载星系名称映射失败:', error.message);
+        }
+    }
+
+    // 初始化加载所有数据
+    async init() {
+        await this.loadSolarSystems();
+        await this.loadConnections();
+        await this.loadNameMapping();
+    }
+
+    // 将名称转换为英文（用于查询）
+    toEnglish(name) {
+        if (!name) return name;
+        
+        const trimmed = name.trim();
+        
+        // 先尝试精确匹配
+        const exactMatch = this.chineseToEnglish.get(trimmed);
+        if (exactMatch) return exactMatch;
+        
+        // 尝试大小写不敏感匹配
+        const lowerName = trimmed.toLowerCase();
+        const lowerMatch = this.chineseToEnglish.get(lowerName);
+        if (lowerMatch) return lowerMatch;
+        
+        // 尝试模糊匹配（支持拼音部分匹配）
+        for (const [key, value] of this.chineseToEnglish) {
+            if (key.toLowerCase().includes(lowerName) || lowerName.includes(key.toLowerCase())) {
+                return value;
+            }
+        }
+        
+        // 返回原名称（可能已经是英文）
+        return trimmed;
+    }
+
+    // 将名称转换为中文（用于显示）
+    toChinese(name) {
+        return this.englishToChinese.get(name) || name;
+    }
+
+    // 解析CSV行（处理带引号的字段）
+    parseCSVLine(line) {
+        const result = [];
+        let current = '';
+        let inQuotes = false;
+        
+        for (let char of line) {
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                result.push(current);
+                current = '';
+            } else {
+                current += char;
+            }
+        }
+        result.push(current);
+        return result;
+    }
+
+    // 获取指定跳数范围内的所有星系（BFS）
+    getSystemsWithinJumps(startName, maxJumps) {
+        // 首先将输入名称转换为英文（支持中文、拼音）
+        const englishName = this.toEnglish(startName);
+        
+        // 尝试查找星系ID
+        const startId = this.systemNameToId.get(englishName);
+        
+        if (!startId) return { success: false, error: `未找到星系: ${startName}` };
+        
+        const visited = new Map();
+        const queue = [{ id: startId, distance: 0 }];
+        // 使用中文名称显示（如果有映射）
+        const displayStartName = this.toChinese(englishName) || englishName;
+        const results = [{ name: displayStartName, englishName: englishName, distance: 0 }];
+        visited.set(startId, 0);
+        
+        while (queue.length > 0) {
+            const { id, distance } = queue.shift();
+            
+            if (distance >= maxJumps) continue;
+            
+            const neighbors = this.connections.get(id) || new Set();
+            for (const neighbor of neighbors) {
+                if (!visited.has(neighbor) || visited.get(neighbor) > distance + 1) {
+                    visited.set(neighbor, distance + 1);
+                    queue.push({ id: neighbor, distance: distance + 1 });
+                    const enName = this.systemIdToName.get(neighbor);
+                    if (enName) {
+                        // 使用中文名称显示（如果有映射）
+                        const chineseName = this.toChinese(enName) || enName;
+                        // 避免重复添加
+                        if (!results.some(r => r.englishName === enName)) {
+                            results.push({ name: chineseName, englishName: enName, distance: distance + 1 });
+                        }
+                    }
+                }
+            }
+        }
+        
+        return { success: true, systems: results.sort((a, b) => a.distance - b.distance) };
+    }
+
+    // 获取星系的所有邻居
+    getNeighbors(systemName) {
+        const systemId = this.systemNameToId.get(systemName);
+        if (!systemId) return null;
+        
+        const neighbors = this.connections.get(systemId) || new Set();
+        return Array.from(neighbors).map(id => this.systemIdToName.get(id)).filter(Boolean);
+    }
+}
+
+=======
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 初始化星空背景
 function initStars() {
     const container = document.getElementById('starsContainer');
@@ -78,6 +349,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCenters();
         renderRecords();
     }
+<<<<<<< HEAD
+    
+    // 初始化星系连接分析器（异步加载，不阻塞主流程）
+    galaxyAnalyzer = new GalaxyConnectionAnalyzer();
+    galaxyAnalyzer.init().then(() => {
+        console.log('星系连接分析器初始化完成');
+    }).catch(err => {
+        console.error('星系连接分析器初始化失败:', err);
+    });
+    
+    // 初始化搜索模式切换事件
+    initSearchModeSwitch();
+    
+=======
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     // 数据加载完成后再初始化背景动画，避免阻塞
     // (星星和波纹效果已移除)
     // 延迟启动背景视频，避免与数据加载争抢带宽
@@ -90,6 +376,39 @@ document.addEventListener('DOMContentLoaded', async () => {
     }, 1500);
 });
 
+<<<<<<< HEAD
+// 初始化搜索模式切换
+function initSearchModeSwitch() {
+    const modeStandard = document.getElementById('modeStandard');
+    const modeConnection = document.getElementById('modeConnection');
+    const sliderContainer = document.getElementById('connectionRangeSlider');
+    const jumpRange = document.getElementById('jumpRange');
+    const sliderValue = document.querySelector('.slider-value');
+    
+    // 标准模式点击
+    modeStandard?.addEventListener('click', () => {
+        currentSearchMode = 'standard';
+        modeStandard.classList.add('active');
+        modeConnection.classList.remove('active');
+        sliderContainer.style.display = 'none';
+    });
+    
+    // 连接模式点击
+    modeConnection?.addEventListener('click', () => {
+        currentSearchMode = 'connection';
+        modeConnection.classList.add('active');
+        modeStandard.classList.remove('active');
+        sliderContainer.style.display = 'block';
+    });
+    
+    // 滑块值变化
+    jumpRange?.addEventListener('input', (e) => {
+        sliderValue.textContent = e.target.value;
+    });
+}
+
+=======
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 材料分类
 const materialCategories = {
     '金属': ['基础金属', '重金属', '贵金属', '有毒金属', '反应金属'],
@@ -133,6 +452,20 @@ async function loadIndex() {
         indexData = await response.json();
         resultsList.innerHTML = '<div class="empty-state"><div class="icon">🪐</div><p>选择星座或搜索星系查看材料产出</p></div>';
         console.log('索引加载完成，星系数量:', indexData.systems?.length || 0);
+<<<<<<< HEAD
+        
+        // 加载额外的星系-星座映射
+        try {
+            const extraResponse = await fetch('data/extra_system_constellation.json');
+            if (extraResponse.ok) {
+                extraSystemConstellation = await extraResponse.json();
+                console.log('额外星系-星座映射加载完成，数量:', Object.keys(extraSystemConstellation).length);
+            }
+        } catch (e) {
+            console.warn('加载额外星系-星座映射失败:', e);
+        }
+=======
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     } catch (e) {
         console.error('索引加载失败:', e);
         resultsList.innerHTML = '<div class="empty-state"><div class="icon">❌</div><p>初始化失败</p></div>';
@@ -323,13 +656,324 @@ async function searchByPlanet() {
         return;
     }
 
+<<<<<<< HEAD
+    console.log(`[搜索] 用户输入: "${input}"`);
+    console.log(`[搜索] 当前模式: ${currentSearchMode}`);
+    
+    // 获取所有可用的星系名称（合并多个数据源确保完整性）
+    let allSystemNames = new Set();
+    
+    // 从 indexData.systems 获取
+    if (indexData && indexData.systems) {
+        indexData.systems.forEach(s => allSystemNames.add(s));
+        console.log(`[搜索] 从索引数据获取到 ${indexData.systems.length} 个星系`);
+    }
+    
+    // 从 galaxyAnalyzer 获取
+    if (galaxyAnalyzer && galaxyAnalyzer.isLoaded) {
+        galaxyAnalyzer.systemNameToId.forEach((id, name) => allSystemNames.add(name));
+        console.log(`[搜索] 从星系分析器添加后共 ${allSystemNames.size} 个星系`);
+    }
+    
+    // 先尝试直接匹配
+    let matched = Array.from(allSystemNames).filter(s => s.toLowerCase().includes(input.toLowerCase()));
+    console.log(`[搜索] 直接匹配结果: ${matched.length} 个`);
+    
+    // 如果没有找到，尝试使用名称映射转换（支持中文和拼音）
+    if (matched.length === 0 && galaxyAnalyzer && galaxyAnalyzer.isLoaded) {
+        console.log(`[搜索] 尝试中文转英文...`);
+        const englishName = galaxyAnalyzer.toEnglish(input);
+        console.log(`[搜索] 中文转英文结果: "${englishName}"`);
+        if (englishName && englishName !== input) {
+            matched = Array.from(allSystemNames).filter(s => s.toLowerCase().includes(englishName.toLowerCase()));
+            console.log(`[搜索] 转换后匹配结果: ${matched.length} 个`);
+        }
+    }
+    
+    // 如果还是没有找到，尝试模糊匹配
+=======
     const matched = indexData.systems.filter(s => s.includes(input));
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     if (matched.length === 0) {
         showToast('未找到匹配的星系');
         return;
     }
 
     const system = matched[0];
+<<<<<<< HEAD
+    console.log(`[搜索] 选中星系: "${system}"`);
+    
+    // 先从主映射中查找星座信息
+    let info = indexData.system_constellation_map[system];
+    
+    // 如果没找到，从额外映射中查找
+    if (!info) {
+        info = extraSystemConstellation[system];
+    }
+    
+    console.log(`[搜索] 星系信息:`, info);
+
+    // 隐藏产物选择区域
+    document.getElementById('planetProductSelect').style.display = 'none';
+
+    // 根据搜索模式执行不同的搜索
+    if (currentSearchMode === 'connection') {
+        // 星系连接搜索模式 - 不需要星座信息，直接搜索
+        await searchByConnection(system, info?.region || '', info?.constellation || '');
+    } else {
+        // 标准模式：按星域搜索 - 需要星座信息
+        if (!info) {
+            showToast('星系信息未找到');
+            return;
+        }
+        await loadSystemData(system, info.region, info.constellation);
+    }
+}
+
+// 按星系连接搜索
+async function searchByConnection(system, region, constellation) {
+    const resultsList = document.getElementById('resultsList');
+    
+    // 检查星系分析器是否已加载
+    if (!galaxyAnalyzer || !galaxyAnalyzer.isLoaded) {
+        resultsList.innerHTML = `<div class="empty-state"><div class="icon">⏳</div><p>星系连接数据加载中，请稍候...</p></div>`;
+        return;
+    }
+
+    // 获取滑块值
+    const maxJumps = parseInt(document.getElementById('jumpRange').value);
+    if (isNaN(maxJumps)) maxJumps = 1;
+    
+    // 获取中文显示名称
+    const displaySystemName = galaxyAnalyzer.toChinese(system) || system;
+    
+    resultsList.innerHTML = `<div class="loading">正在搜索 ${displaySystemName} 周边 ${maxJumps} 跳范围内的星系...</div>`;
+
+    try {
+        // 使用星系连接分析器获取范围内的星系
+        console.log(`[连接搜索] 开始搜索星系: "${system}", 最大跳数: ${maxJumps}`);
+        const result = galaxyAnalyzer.getSystemsWithinJumps(system, maxJumps);
+        console.log(`[连接搜索] 搜索结果:`, result);
+        
+        if (!result.success) {
+            console.error('[连接搜索] 星系搜索失败:', result.error);
+            resultsList.innerHTML = `<div class="empty-state"><div class="icon">❌</div><p>${result.error}</p></div>`;
+            return;
+        }
+
+        const systems = result.systems;
+        console.log(`[连接搜索] 找到 ${systems.length} 个星系:`, systems.map(s => s.name));
+
+        // 收集所有星系的数据
+        const allPlanetsData = [];
+        const processedConstellations = new Set();
+        const notFoundSystems = [];
+
+        for (const sysInfo of systems) {
+            // 使用英文名称查找星座信息
+            const sysEnglishName = sysInfo.englishName || sysInfo.name;
+            
+            // 先从主映射中查找
+            let sysConstellationInfo = indexData.system_constellation_map[sysEnglishName];
+            
+            // 如果没找到，从额外映射中查找
+            if (!sysConstellationInfo) {
+                sysConstellationInfo = extraSystemConstellation[sysEnglishName];
+            }
+            
+            console.log(`[连接搜索] 处理星系: "${sysInfo.name}" (英文: "${sysEnglishName}"), 星座信息:`, sysConstellationInfo);
+            
+            if (!sysConstellationInfo) {
+                notFoundSystems.push(sysInfo.name);
+                console.log(`[连接搜索] 星系 "${sysInfo.name}" 未找到星座信息，跳过`);
+                continue;
+            }
+            
+            const sysConstellation = sysConstellationInfo.constellation;
+            
+            // 避免重复加载相同星座的数据
+            if (processedConstellations.has(sysConstellation)) continue;
+            processedConstellations.add(sysConstellation);
+
+            try {
+                const filename = 'data/constellation_' + sysConstellation.replace(/[/ ]/g, '_') + '.json';
+                const response = await fetch(filename);
+                if (response.ok) {
+                    const data = await response.json();
+                    
+                    // 收集该星座中匹配星系的行星数据
+                    // 支持两种数据格式：
+                    // 1. 新格式: data.planets = { "Jita I": { system: "Jita", materials: {...} } }
+                    // 2. 原有格式: data.materials = { "稀有气体": { records: [{planet: "Jita I", richness: "富裕", output: 30.66}] } }
+                    
+                    if (data.planets) {
+                        // 新格式
+                        for (const [planetName, planetData] of Object.entries(data.planets)) {
+                            if (planetData.system === sysEnglishName || planetData.system === sysInfo.name) {
+                                allPlanetsData.push({
+                                    system: sysInfo.name,
+                                    distance: sysInfo.distance,
+                                    constellation: sysConstellation,
+                                    region: sysConstellationInfo.region,
+                                    planet: planetName,
+                                    ...planetData
+                                });
+                            }
+                        }
+                    } else if (data.materials) {
+                        // 原有格式：按 materials 组织
+                        for (const [materialName, materialData] of Object.entries(data.materials)) {
+                            if (materialData.records && Array.isArray(materialData.records)) {
+                                for (const record of materialData.records) {
+                                    // 行星名称格式可能是 "0-3VW8 三" 或 "Jita I"
+                                    // 需要检查行星名称是否以星系名开头
+                                    const planetName = record.planet;
+                                    if (planetName && (planetName.startsWith(sysEnglishName + ' ') || planetName.startsWith(sysInfo.name + ' '))) {
+                                        // 检查是否已添加过（避免重复）
+                                        if (!allPlanetsData.some(p => p.planet === planetName && p.system === sysInfo.name)) {
+                                            allPlanetsData.push({
+                                                system: sysInfo.name,
+                                                distance: sysInfo.distance,
+                                                constellation: sysConstellation,
+                                                region: sysConstellationInfo.region,
+                                                planet: planetName,
+                                                richness: record.richness,
+                                                output: record.output,
+                                                material: materialName,
+                                                materials: { [materialName]: record.output }
+                                            });
+                                        } else {
+                                            // 已存在，更新 materials
+                                            const existing = allPlanetsData.find(p => p.planet === planetName && p.system === sysInfo.name);
+                                            if (existing && existing.materials) {
+                                                existing.materials[materialName] = record.output;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (e) {
+                console.warn(`加载星座 ${sysConstellation} 数据失败:`, e);
+            }
+        }
+
+        // 按距离排序
+        allPlanetsData.sort((a, b) => a.distance - b.distance);
+
+        // 渲染结果
+        if (allPlanetsData.length === 0) {
+            resultsList.innerHTML = `<div class="empty-state"><div class="icon">🪐</div><p>未找到 ${system} 周边 ${maxJumps} 跳范围内的行星数据</p></div>`;
+            return;
+        }
+
+        // 收集所有可用产物
+        const allMaterials = new Set();
+        for (const planet of allPlanetsData) {
+            if (planet.materials) {
+                Object.keys(planet.materials).forEach(mat => allMaterials.add(mat));
+            }
+        }
+        const materialsArray = Array.from(allMaterials).sort();
+
+        // 保存当前搜索数据供查询使用（同时保存英文和中文名称）
+        window.currentConnectionSearchData = {
+            system: system,
+            displaySystemName: displaySystemName,
+            maxJumps: maxJumps,
+            planetsData: allPlanetsData
+        };
+
+        // 显示搜索范围信息和产物选择
+        document.getElementById('planetProductSelect').style.display = 'block';
+
+        // 保存当前产物选择，重新搜索后恢复
+        const previousProduct = document.getElementById('planetProductDropdown')?.value || '';
+
+        document.getElementById('planetProductSelect').innerHTML = `
+            <div style="margin-top: 10px; padding: 12px; background: rgba(0,200,255,0.08); border-radius: 8px; margin-bottom: 10px;">
+                <div style="color: #888; font-size: 12px; margin-bottom: 6px;">搜索范围：</div>
+                <div style="font-size: 13px;">
+                    <span style="color:#00ff88">● 中心星系: ${displaySystemName}</span>
+                    <span style="color:#888; margin: 0 8px">|</span>
+                    <span style="color:#ffaa00">搜索半径: ${maxJumps} 跳</span>
+                    <span style="color:#888; margin: 0 8px">|</span>
+                    <span style="color:#00aaff">找到 ${allPlanetsData.length} 个行星</span>
+                </div>
+            </div>
+            <div style="color: #888; font-size: 12px; margin-bottom: 8px;">选择要查询的产物：</div>
+            <div class="search-row">
+                <select id="planetProductDropdown"><option value="">选择产物</option></select>
+                <button class="btn-search" onclick="queryConnectionProduct()">查询</button>
+            </div>
+        `;
+
+        // 填充产物下拉框选项
+        const productDropdown = document.getElementById('planetProductDropdown');
+        productDropdown.innerHTML = '<option value="">选择产物</option>' +
+            materialsArray.map(m => `<option value="${m}">${m}</option>`).join('');
+
+        // 恢复之前的产物选择（如果新列表中有该产物）
+        if (previousProduct && materialsArray.includes(previousProduct)) {
+            productDropdown.value = previousProduct;
+        }
+
+        // 显示提示信息
+        resultsList.innerHTML = '<div class="empty-state"><div class="icon">🪐</div><p>请选择要查询的产物</p></div>';
+        
+    } catch (error) {
+        console.error('星系连接搜索失败:', error);
+        resultsList.innerHTML = `<div class="empty-state"><div class="icon">❌</div><p>搜索失败: ${error.message}</p></div>`;
+    }
+}
+
+// 渲染行星结果列表
+function renderPlanetResults(planetsData) {
+    const resultsList = document.getElementById('resultsList');
+
+    let html = '';
+    let currentSystem = null;
+
+    for (const planet of planetsData) {
+        // 按星系分组显示（只有当行星名称不包含星系名时才显示分组标题）
+        const planetStartsWithSystem = planet.planet && planet.system &&
+            planet.planet.toLowerCase().startsWith(planet.system.toLowerCase());
+
+        if (!planetStartsWithSystem && planet.system !== currentSystem) {
+            currentSystem = planet.system;
+            const distanceLabel = planet.distance === 0 ? '(中心星系)' : `(${planet.distance} 跳)`;
+            html += `
+                <div style="margin-top: 15px; margin-bottom: 8px;">
+                    <span style="color: #00c8ff; font-weight: bold; font-size: 13px;">${planet.system}</span>
+                    <span style="color: #888; font-size: 11px; margin-left: 8px;">${distanceLabel}</span>
+                </div>
+            `;
+        }
+
+        // 支持两种数据格式：type/richness 和 output/materials
+        const displayType = planet.type || planet.richness || '';
+        const displayOutput = planet.output || '';
+
+        html += `
+            <div class="result-item" style="margin-left: 15px;">
+                <div class="result-header">
+                    <span class="result-name">${planet.planet}</span>
+                    ${displayType ? `<span class="result-type">${displayType}</span>` : ''}
+                    ${displayOutput ? `<span class="result-type" style="color: #ffaa00;">产量: ${displayOutput}</span>` : ''}
+                </div>
+                <div class="result-materials">
+                    ${planet.materials ? Object.entries(planet.materials).map(([mat, qty]) =>
+                        `<span class="material-tag">${mat}: ${qty}</span>`
+                    ).join('') : ''}
+                </div>
+            </div>
+        `;
+    }
+    
+    resultsList.innerHTML = html;
+=======
     const info = indexData.system_constellation_map[system];
 
     if (!info) {
@@ -342,6 +986,7 @@ async function searchByPlanet() {
 
     // 加载星系数据（会自动显示定位信息和产物选择）
     await loadSystemData(system, info.region, info.constellation);
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 }
 
 // 加载星系数据
@@ -469,6 +1114,80 @@ function queryProduct() {
     `;
 }
 
+<<<<<<< HEAD
+// 查询星系连接搜索模式下的产物
+function queryConnectionProduct() {
+    const material = document.getElementById('planetProductDropdown').value;
+    if (!material) {
+        showToast('请选择产物');
+        return;
+    }
+    if (!window.currentConnectionSearchData) {
+        showToast('请先进行星系连接搜索');
+        return;
+    }
+
+    const searchData = window.currentConnectionSearchData;
+    const system = searchData.system;
+    const displaySystemName = searchData.displaySystemName || system;
+    const maxJumps = searchData.maxJumps;
+    const allPlanets = searchData.planetsData;
+
+    // 过滤出包含该产物的行星
+    const matchingPlanets = allPlanets.filter(planet => {
+        return planet.materials && planet.materials[material];
+    });
+
+    if (matchingPlanets.length === 0) {
+        document.getElementById('resultsList').innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p>在 ${displaySystemName} 周边 ${maxJumps} 跳范围内未找到产出 "${material}" 的行星</p></div>`;
+        return;
+    }
+
+    // 按距离和产出排序
+    matchingPlanets.sort((a, b) => {
+        // 先按距离排序
+        if (a.distance !== b.distance) {
+            return a.distance - b.distance;
+        }
+        // 距离相同时按产出降序排序
+        const outputA = a.materials[material] || 0;
+        const outputB = b.materials[material] || 0;
+        return outputB - outputA;
+    });
+
+    const color = getMaterialColor(material);
+
+    // 渲染结果
+    document.getElementById('resultsList').innerHTML = `
+        <div class="detail-header" style="border-bottom: 2px solid ${color};">
+            <span class="back-btn" onclick="hidePlanetProductSelect()">← 返回</span>
+            <span class="material-title" style="color: ${color}">${material}</span>
+            <span class="constellation-name">${displaySystemName} 周边 ${maxJumps} 跳</span>
+        </div>
+        <div class="detail-list">
+            ${matchingPlanets.map((planet, i) => {
+                const output = planet.materials[material] || 0;
+                const richness = planet.type || planet.richness || '';
+                const planetStartsWithSystem = planet.planet && planet.system &&
+                    planet.planet.toLowerCase().startsWith(planet.system.toLowerCase());
+                const displayPlanetName = planetStartsWithSystem ? planet.planet : `${planet.system} ${planet.planet}`;
+                return `
+                    <div class="detail-row">
+                        <span class="rank">${i + 1}</span>
+                        <span class="planet">${displayPlanetName}</span>
+                        <span class="richness">${richness}</span>
+                        <span class="output">${output.toFixed(2)}</span>
+                        <button class="btn-record" onclick="quickRecordPlanet('${material}', '${planet.constellation}', '${planet.planet}', '${richness}', ${output})" style="padding:3px 8px;font-size:11px;">记录</button>
+                        <span class="tag tag-distance">${planet.distance} 跳</span>
+                    </div>
+                `;
+            }).join('')}
+        </div>
+    `;
+}
+
+=======
+>>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 隐藏产物选择界面
 function hidePlanetProductSelect() {
     document.getElementById('planetProductSelect').style.display = 'none';
