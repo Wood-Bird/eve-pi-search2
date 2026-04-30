@@ -1,0 +1,228 @@
+{
+  "region": "The Forge",
+  "constellation": "Kimotoro",
+  "systems": ["Jita", "Perimeter", "Caldari Prime", "Malm"],
+  "planets": {
+    "Jita I": {
+      "system": "Jita",
+      "type": "Lava",
+      "materials": {
+        "Precious Metals": 4.2,
+        "Rare Metals": 2.8,
+        "Plasma": 3.5
+      }
+    },
+    "Jita II": {
+      "system": "Jita",
+      "type": "Gas",
+      "materials": {
+        "Noble Gas": 5.1,
+        "Reactive Gas": 3.8,
+        "Ionic Solution": 4.5
+      }
+    },
+    "Jita III": {
+      "system": "Jita",
+      "type": "Ice",
+      "materials": {
+        "Enriched Uranium": 3.2,
+        "Heavy Water": 4.0,
+        "Platinum": 2.5
+      }
+    },
+    "Jita IV": {
+      "system": "Jita",
+      "type": "Oceanic",
+      "materials": {
+        "Aqueous Liquids": 5.5,
+        "Complex Organisms": 4.2,
+        "Biomass": 3.8
+      }
+    },
+    "Jita V": {
+      "system": "Jita",
+      "type": "Rock",
+      "materials": {
+        "Base Metals": 4.8,
+        "Isotopes": 3.5,
+        "Silicates": 4.0
+      }
+    },
+    "Perimeter I": {
+      "system": "Perimeter",
+      "type": "Lava",
+      "materials": {
+        "Precious Metals": 3.8,
+        "Rare Metals": 2.5,
+        "Plasma": 3.2
+      }
+    },
+    "Perimeter II": {
+      "system": "Perimeter",
+      "type": "Gas",
+      "materials": {
+        "Noble Gas": 4.8,
+        "Reactive Gas": 3.5,
+        "Ionic Solution": 4.2
+      }
+    },
+    "Perimeter III": {
+      "system": "Perimeter",
+      "type": "Rock",
+      "materials": {
+        "Base Metals": 4.5,
+        "Isotopes": 3.2,
+        "Silicates": 3.8
+      }
+    },
+    "Caldari Prime I": {
+      "system": "Caldari Prime",
+      "type": "Oceanic",
+      "materials": {
+        "Aqueous Liquids": 5.2,
+        "Complex Organisms": 4.0,
+        "Biomass": 3.6
+      }
+    },
+    "Caldari Prime II": {
+      "system": "Caldari Prime",
+      "type": "Ice",
+      "materials": {
+        "Enriched Uranium": 3.0,
+        "Heavy Water": 3.8,
+        "Platinum": 2.3
+      }
+    },
+    "Malm I": {
+      "system": "Malm",
+      "type": "Lava",
+      "materials": {
+        "Precious Metals": 4.0,
+        "Rare Metals": 2.6,
+        "Plasma": 3.3
+      }
+    },
+    "Malm II": {
+      "system": "Malm",
+      "type": "Rock",
+      "materials": {
+        "Base Metals": 4.6,
+        "Isotopes": 3.3,
+        "Silicates": 3.9
+      }
+    }
+  },
+  "materials": {
+    "Precious Metals": {
+      "records": [
+        {"planet": "Jita I", "richness": "Lava", "output": 4.2},
+        {"planet": "Perimeter I", "richness": "Lava", "output": 3.8},
+        {"planet": "Malm I", "richness": "Lava", "output": 4.0}
+      ],
+      "totalOutput": 12.0
+    },
+    "Rare Metals": {
+      "records": [
+        {"planet": "Jita I", "richness": "Lava", "output": 2.8},
+        {"planet": "Perimeter I", "richness": "Lava", "output": 2.5},
+        {"planet": "Malm I", "richness": "Lava", "output": 2.6}
+      ],
+      "totalOutput": 7.9
+    },
+    "Plasma": {
+      "records": [
+        {"planet": "Jita I", "richness": "Lava", "output": 3.5},
+        {"planet": "Perimeter I", "richness": "Lava", "output": 3.2},
+        {"planet": "Malm I", "richness": "Lava", "output": 3.3}
+      ],
+      "totalOutput": 10.0
+    },
+    "Noble Gas": {
+      "records": [
+        {"planet": "Jita II", "richness": "Gas", "output": 5.1},
+        {"planet": "Perimeter II", "richness": "Gas", "output": 4.8}
+      ],
+      "totalOutput": 9.9
+    },
+    "Reactive Gas": {
+      "records": [
+        {"planet": "Jita II", "richness": "Gas", "output": 3.8},
+        {"planet": "Perimeter II", "richness": "Gas", "output": 3.5}
+      ],
+      "totalOutput": 7.3
+    },
+    "Ionic Solution": {
+      "records": [
+        {"planet": "Jita II", "richness": "Gas", "output": 4.5},
+        {"planet": "Perimeter II", "richness": "Gas", "output": 4.2}
+      ],
+      "totalOutput": 8.7
+    },
+    "Enriched Uranium": {
+      "records": [
+        {"planet": "Jita III", "richness": "Ice", "output": 3.2},
+        {"planet": "Caldari Prime II", "richness": "Ice", "output": 3.0}
+      ],
+      "totalOutput": 6.2
+    },
+    "Heavy Water": {
+      "records": [
+        {"planet": "Jita III", "richness": "Ice", "output": 4.0},
+        {"planet": "Caldari Prime II", "richness": "Ice", "output": 3.8}
+      ],
+      "totalOutput": 7.8
+    },
+    "Platinum": {
+      "records": [
+        {"planet": "Jita III", "richness": "Ice", "output": 2.5},
+        {"planet": "Caldari Prime II", "richness": "Ice", "output": 2.3}
+      ],
+      "totalOutput": 4.8
+    },
+    "Aqueous Liquids": {
+      "records": [
+        {"planet": "Jita IV", "richness": "Oceanic", "output": 5.5},
+        {"planet": "Caldari Prime I", "richness": "Oceanic", "output": 5.2}
+      ],
+      "totalOutput": 10.7
+    },
+    "Complex Organisms": {
+      "records": [
+        {"planet": "Jita IV", "richness": "Oceanic", "output": 4.2},
+        {"planet": "Caldari Prime I", "richness": "Oceanic", "output": 4.0}
+      ],
+      "totalOutput": 8.2
+    },
+    "Biomass": {
+      "records": [
+        {"planet": "Jita IV", "richness": "Oceanic", "output": 3.8},
+        {"planet": "Caldari Prime I", "richness": "Oceanic", "output": 3.6}
+      ],
+      "totalOutput": 7.4
+    },
+    "Base Metals": {
+      "records": [
+        {"planet": "Jita V", "richness": "Rock", "output": 4.8},
+        {"planet": "Perimeter III", "richness": "Rock", "output": 4.5},
+        {"planet": "Malm II", "richness": "Rock", "output": 4.6}
+      ],
+      "totalOutput": 13.9
+    },
+    "Isotopes": {
+      "records": [
+        {"planet": "Jita V", "richness": "Rock", "output": 3.5},
+        {"planet": "Perimeter III", "richness": "Rock", "output": 3.2},
+        {"planet": "Malm II", "richness": "Rock", "output": 3.3}
+      ],
+      "totalOutput": 10.0
+    },
+    "Silicates": {
+      "records": [
+        {"planet": "Jita V", "richness": "Rock", "output": 4.0},
+        {"planet": "Perimeter III", "richness": "Rock", "output": 3.8},
+        {"planet": "Malm II", "richness": "Rock", "output": 3.9}
+      ],
+      "totalOutput": 11.7
+    }
+  }
+}

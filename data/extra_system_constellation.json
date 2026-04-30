@@ -1,0 +1,34 @@
+{
+  "Jita": {
+    "region": "The Forge",
+    "constellation": "Kimotoro"
+  },
+  "Perimeter": {
+    "region": "The Forge",
+    "constellation": "Kimotoro"
+  },
+  "Caldari Prime": {
+    "region": "The Forge",
+    "constellation": "Kimotoro"
+  },
+  "Malm": {
+    "region": "The Forge",
+    "constellation": "Kimotoro"
+  },
+  "Amarr": {
+    "region": "Amarr",
+    "constellation": "Tanoo"
+  },
+  "Rens": {
+    "region": "Heimatar",
+    "constellation": "Himin"
+  },
+  "Dodixie": {
+    "region": "Sinq Laison",
+    "constellation": "Dodixie"
+  },
+  "Hek": {
+    "region": "Metropolis",
+    "constellation": "Hek"
+  }
+}
