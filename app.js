@@ -13,7 +13,6 @@ let selectedRecordMaterial = null;
 let selectedRecordSystem = null;
 let currentSystemData = null; // 当前定位星系的数据
 
-<<<<<<< HEAD
 // 星系连接分析器
 let galaxyAnalyzer = null;
 let currentSearchMode = 'standard'; // 'standard' 或 'connection'
@@ -282,8 +281,6 @@ class GalaxyConnectionAnalyzer {
     }
 }
 
-=======
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 初始化星空背景
 function initStars() {
     const container = document.getElementById('starsContainer');
@@ -349,7 +346,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCenters();
         renderRecords();
     }
-<<<<<<< HEAD
     
     // 初始化星系连接分析器（异步加载，不阻塞主流程）
     galaxyAnalyzer = new GalaxyConnectionAnalyzer();
@@ -362,8 +358,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 初始化搜索模式切换事件
     initSearchModeSwitch();
     
-=======
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     // 数据加载完成后再初始化背景动画，避免阻塞
     // (星星和波纹效果已移除)
     // 延迟启动背景视频，避免与数据加载争抢带宽
@@ -376,7 +370,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }, 1500);
 });
 
-<<<<<<< HEAD
 // 初始化搜索模式切换
 function initSearchModeSwitch() {
     const modeStandard = document.getElementById('modeStandard');
@@ -407,8 +400,6 @@ function initSearchModeSwitch() {
     });
 }
 
-=======
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 材料分类
 const materialCategories = {
     '金属': ['基础金属', '重金属', '贵金属', '有毒金属', '反应金属'],
@@ -452,7 +443,6 @@ async function loadIndex() {
         indexData = await response.json();
         resultsList.innerHTML = '<div class="empty-state"><div class="icon">🪐</div><p>选择星座或搜索星系查看材料产出</p></div>';
         console.log('索引加载完成，星系数量:', indexData.systems?.length || 0);
-<<<<<<< HEAD
         
         // 加载额外的星系-星座映射
         try {
@@ -464,8 +454,6 @@ async function loadIndex() {
         } catch (e) {
             console.warn('加载额外星系-星座映射失败:', e);
         }
-=======
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     } catch (e) {
         console.error('索引加载失败:', e);
         resultsList.innerHTML = '<div class="empty-state"><div class="icon">❌</div><p>初始化失败</p></div>';
@@ -656,7 +644,6 @@ async function searchByPlanet() {
         return;
     }
 
-<<<<<<< HEAD
     console.log(`[搜索] 用户输入: "${input}"`);
     console.log(`[搜索] 当前模式: ${currentSearchMode}`);
     
@@ -691,16 +678,12 @@ async function searchByPlanet() {
     }
     
     // 如果还是没有找到，尝试模糊匹配
-=======
-    const matched = indexData.systems.filter(s => s.includes(input));
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
     if (matched.length === 0) {
         showToast('未找到匹配的星系');
         return;
     }
 
     const system = matched[0];
-<<<<<<< HEAD
     console.log(`[搜索] 选中星系: "${system}"`);
     
     // 先从主映射中查找星座信息
@@ -973,20 +956,6 @@ function renderPlanetResults(planetsData) {
     }
     
     resultsList.innerHTML = html;
-=======
-    const info = indexData.system_constellation_map[system];
-
-    if (!info) {
-        showToast('星系信息未找到');
-        return;
-    }
-
-    // 隐藏产物选择区域，加载数据时会重新渲染
-    document.getElementById('planetProductSelect').style.display = 'none';
-
-    // 加载星系数据（会自动显示定位信息和产物选择）
-    await loadSystemData(system, info.region, info.constellation);
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 }
 
 // 加载星系数据
@@ -1114,7 +1083,6 @@ function queryProduct() {
     `;
 }
 
-<<<<<<< HEAD
 // 查询星系连接搜索模式下的产物
 function queryConnectionProduct() {
     const material = document.getElementById('planetProductDropdown').value;
@@ -1186,8 +1154,6 @@ function queryConnectionProduct() {
     `;
 }
 
-=======
->>>>>>> 8f9540c0421d97ec574c0158b70e7ada0557bee3
 // 隐藏产物选择界面
 function hidePlanetProductSelect() {
     document.getElementById('planetProductSelect').style.display = 'none';
