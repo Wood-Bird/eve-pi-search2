@@ -17,20 +17,18 @@
             background: #050510;
         }
 
-        /* 视频背景层 - 主背景 */
+        /* 图片背景层 - 主背景 */
         .video-bg {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -5;
             overflow: hidden;
             background: #050510;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
         }
-        .video-bg video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        /* 视频上的暗色叠加层，保证文字可读 */
+        /* 图片上的暗色叠加层，保证文字可读 */
         .video-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -550,12 +548,8 @@
     </style>
 </head>
 <body>
-    <!-- 视频背景 -->
-    <div class="video-bg">
-        <video id="bgVideo" loop muted playsinline preload="metadata">
-            <source src="开采背景.mp4" type="video/mp4">
-        </video>
-    </div>
+    <!-- 图片背景 -->
+    <div class="video-bg"></div>
     <div class="video-overlay"></div>
 
     <!-- 星云效果层 -->
