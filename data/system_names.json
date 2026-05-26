@@ -1,0 +1,468 @@
+{
+  "mapping": {
+    "Jita": {
+      "cn": ["吉塔", "吉他"],
+      "py": ["jita", "jita2"]
+    },
+    "Amarr": {
+      "cn": ["艾玛"],
+      "py": ["amarr", "aima"]
+    },
+    "Dodixie": {
+      "cn": ["迪迪卡"],
+      "py": ["didika", "dodixie"]
+    },
+    "Rens": {
+      "cn": ["伦斯"],
+      "py": ["luns", "rens"]
+    },
+    "Hek": {
+      "cn": ["赫克"],
+      "py": ["heke", "hek"]
+    },
+    "Tanoo": {
+      "cn": ["塔努"],
+      "py": ["tanu", "tanoo"]
+    },
+    "Perimeter": {
+      "cn": ["边缘", "外缘"],
+      "py": ["bianyuan", "waiyuan"]
+    },
+    "Yulai": {
+      "cn": ["尤莱"],
+      "py": ["youlai", "yulai"]
+    },
+    "Malle": {
+      "cn": ["马勒"],
+      "py": ["male", "malle"]
+    },
+    "Arnon": {
+      "cn": ["阿尔农"],
+      "py": ["aernong", "arnon"]
+    },
+    "Aunia": {
+      "cn": ["奥尼亚"],
+      "py": ["aoniya", "aunia"]
+    },
+    "Bake": {
+      "cn": ["贝克"],
+      "py": ["beike", "bake"]
+    },
+    "Beri": {
+      "cn": ["贝里"],
+      "py": ["beili", "beri"]
+    },
+    "Bideme": {
+      "cn": ["比德梅"],
+      "py": ["bidemei", "bideme"]
+    },
+    "Blaken": {
+      "cn": ["布莱肯"],
+      "py": ["bulaiken", "blaken"]
+    },
+    "Boan": {
+      "cn": ["博安"],
+      "py": ["boan"]
+    },
+    "Brax": {
+      "cn": ["布拉克斯"],
+      "py": ["bulakesi", "brax"]
+    },
+    "Bustan": {
+      "cn": ["布斯塔"],
+      "py": ["busita", "bustan"]
+    },
+    "Cad": {
+      "cn": ["卡德"],
+      "py": ["kade", "cad"]
+    },
+    "Camal": {
+      "cn": ["卡马尔"],
+      "py": ["kamaer", "camal"]
+    },
+    "Carthum": {
+      "cn": ["卡尔图姆"],
+      "py": ["kaertumu", "carthum"]
+    },
+    "Catara": {
+      "cn": ["卡塔拉"],
+      "py": ["katala", "catara"]
+    },
+    "Cere": {
+      "cn": ["塞雷"],
+      "py": ["selei", "cere"]
+    },
+    "Chod": {
+      "cn": ["乔德"],
+      "py": ["qiaode", "chod"]
+    },
+    "Cistuvaert": {
+      "cn": ["西斯图瓦尔特"],
+      "py": ["xisituwaerte", "cistuvaert"]
+    },
+    "Dam-Torsad": {
+      "cn": ["达姆-托尔萨德"],
+      "py": ["damtuoersade", "damtorsad"]
+    },
+    "Dantumi": {
+      "cn": ["丹图米"],
+      "py": ["dantumi"]
+    },
+    "Deklein": {
+      "cn": ["德克莱因"],
+      "py": ["dekelaiyin", "deklein"]
+    },
+    "Deveron": {
+      "cn": ["德夫伦"],
+      "py": ["defulun", "deveron"]
+    },
+    "Emin": {
+      "cn": ["埃明"],
+      "py": ["aiming", "emin"]
+    },
+    "Engle": {
+      "cn": ["恩格尔"],
+      "py": ["engeer", "engle"]
+    },
+    "Eru": {
+      "cn": ["埃鲁"],
+      "py": ["ailu", "eru"]
+    },
+    "Essence": {
+      "cn": ["精华"],
+      "py": ["jinghua", "essence"]
+    },
+    "Fashanen": {
+      "cn": ["法沙南"],
+      "py": ["fashanan", "fashanen"]
+    },
+    "Fenrir": {
+      "cn": ["芬里尔"],
+      "py": ["fenlier", "fenrir"]
+    },
+    "Fliet": {
+      "cn": ["弗利特"],
+      "py": ["fulite", "fliet"]
+    },
+    "Fornax": {
+      "cn": ["福尔纳克斯"],
+      "py": ["fuernaikesi", "fornax"]
+    },
+    "Forsaken": {
+      "cn": ["被遗弃者"],
+      "py": ["beiyiqi", "forsaken"]
+    },
+    "Fraternity": {
+      "cn": ["兄弟会"],
+      "py": ["xiongdihui", "fraternity"]
+    },
+    "Gekas": {
+      "cn": ["盖卡斯"],
+      "py": ["gaikasi", "gekas"]
+    },
+    "Geisten": {
+      "cn": ["盖斯顿"],
+      "py": ["gaisitun", "geisten"]
+    },
+    "Geremi": {
+      "cn": ["杰雷米"],
+      "py": ["jieleimi", "geremi"]
+    },
+    "Giudecca": {
+      "cn": ["朱代卡"],
+      "py": ["zhudaiqa", "giudecca"]
+    },
+    "Glacier": {
+      "cn": ["冰川"],
+      "py": ["bingchuan", "glacier"]
+    },
+    "Glorious": {
+      "cn": ["光荣"],
+      "py": ["guangrong", "glorious"]
+    },
+    "Goedvolk": {
+      "cn": ["戈德沃尔克"],
+      "py": ["gedewaoerke", "goedvolk"]
+    },
+    "Gounn": {
+      "cn": ["古恩"],
+      "py": ["guen", "gounn"]
+    },
+    "Hagari": {
+      "cn": ["哈加里"],
+      "py": ["hajiali", "hagari"]
+    },
+    "Hedion": {
+      "cn": ["赫迪恩"],
+      "py": ["hedien", "hedion"]
+    },
+    "Heimatar": {
+      "cn": ["海玛塔尔"],
+      "py": ["haimater", "heimatar"]
+    },
+    "Hemin": {
+      "cn": ["赫明"],
+      "py": ["heming", "hemin"]
+    },
+    "Hokka": {
+      "cn": ["霍卡"],
+      "py": ["huoka", "hokka"]
+    },
+    "Honra": {
+      "cn": ["霍纳"],
+      "py": ["huona", "honra"]
+    },
+    "Huola": {
+      "cn": ["霍拉"],
+      "py": ["huola"]
+    },
+    "Illy": {
+      "cn": ["伊利"],
+      "py": ["yili", "illy"]
+    },
+    "Insmother": {
+      "cn": ["窒息"],
+      "py": ["zhixi", "insmother"]
+    },
+    "Ishomilken": {
+      "cn": ["伊什米尔肯"],
+      "py": ["yishimierken", "ishomilken"]
+    },
+    "J11A-A": {
+      "cn": ["J11A-A"],
+      "py": ["j11aa"]
+    },
+    "Jaspet": {
+      "cn": ["贾斯佩特"],
+      "py": ["jiasipete", "jaspet"]
+    },
+    "Jormungandr": {
+      "cn": ["约尔曼冈德"],
+      "py": ["yueermangangde", "jormungandr"]
+    },
+    "Kador": {
+      "cn": ["卡多尔"],
+      "py": ["kador"]
+    },
+    "Kakakela": {
+      "cn": ["卡卡凯拉"],
+      "py": ["kakakaila", "kakakela"]
+    },
+    "Kamela": {
+      "cn": ["卡梅拉"],
+      "py": ["kameila", "kamela"]
+    },
+    "Karmic": {
+      "cn": ["卡米克"],
+      "py": ["kamike", "karmic"]
+    },
+    "Keberz": {
+      "cn": ["凯伯兹"],
+      "py": ["kaibozi", "keberz"]
+    },
+    "Keshek": {
+      "cn": ["克谢克"],
+      "py": ["kexieke", "keshek"]
+    },
+    "Khanid": {
+      "cn": ["哈尼迪"],
+      "py": ["hanidi", "khanid"]
+    },
+    "Kinia": {
+      "cn": ["金尼亚"],
+      "py": ["jinnia", "kinia"]
+    },
+    "Kor-Azor": {
+      "cn": ["科尔-阿佐尔"],
+      "py": ["keerazuoeer", "korazor"]
+    },
+    "Kourmonen": {
+      "cn": ["库尔莫宁"],
+      "py": ["kuermoning", "kourmonen"]
+    },
+    "Kufei": {
+      "cn": ["库费"],
+      "py": ["kufei"]
+    },
+    "Lahtinen": {
+      "cn": ["拉赫蒂宁"],
+      "py": ["lahetining", "lahtinen"]
+    },
+    "Laki": {
+      "cn": ["拉基"],
+      "py": ["laji", "laki"]
+    },
+    "Lonetrek": {
+      "cn": ["孤独跋涉"],
+      "py": ["gudubashe", "lonetrek"]
+    },
+    "Luminaire": {
+      "cn": ["灯具"],
+      "py": ["dengju", "luminaire"]
+    },
+    "Mannar": {
+      "cn": ["曼纳尔"],
+      "py": ["mannaer", "mannar"]
+    },
+    "Mars": {
+      "cn": ["火星"],
+      "py": ["huoxing", "mars"]
+    },
+    "Mash": {
+      "cn": ["马什"],
+      "py": ["mashi", "mash"]
+    },
+    "Mekhios": {
+      "cn": ["梅希奥斯"],
+      "py": ["meixiaosi", "mekhios"]
+    },
+    "Metropolis": {
+      "cn": ["大都会"],
+      "py": ["daduahui", "metropolis"]
+    },
+    "Minmatar": {
+      "cn": ["米玛塔尔"],
+      "py": ["mimater", "minmatar"]
+    },
+    "Misaba": {
+      "cn": ["米萨巴"],
+      "py": ["misaba"]
+    },
+    "Mizrana": {
+      "cn": ["米兹拉纳"],
+      "py": ["mizilana", "mizrana"]
+    },
+    "Mori": {
+      "cn": ["莫里"],
+      "py": ["moli", "mori"]
+    },
+    "Nashhoda": {
+      "cn": ["纳肖达"],
+      "py": ["naxiaoda", "nashhoda"]
+    },
+    "Nennamaila": {
+      "cn": ["南奈迈拉"],
+      "py": ["nannaimaila", "nennamaila"]
+    },
+    "Niarja": {
+      "cn": ["尼亚尔贾"],
+      "py": ["niyaerjia", "niarja"]
+    },
+    "Noisiel": {
+      "cn": ["诺伊西尔"],
+      "py": ["nuoyixier", "noisiel"]
+    },
+    "Odamia": {
+      "cn": ["奥达米亚"],
+      "py": ["aodamiya", "odamia"]
+    },
+    "Okkelen": {
+      "cn": ["奥克伦"],
+      "py": ["aokelun", "okkelen"]
+    },
+    "Omist": {
+      "cn": ["奥米斯特"],
+      "py": ["aomisite", "omist"]
+    },
+    "Oris": {
+      "cn": ["奥里斯"],
+      "py": ["aolisi", "oris"]
+    },
+    "Osmon": {
+      "cn": ["奥斯蒙"],
+      "py": ["aosimeng", "osmon"]
+    },
+    "Pator": {
+      "cn": ["帕托尔"],
+      "py": ["patuoer", "pator"]
+    },
+    "Perkone": {
+      "cn": ["佩尔科内"],
+      "py": ["peierkenei", "perkone"]
+    },
+    "Placid": {
+      "cn": ["平静"],
+      "py": ["pingjing", "placid"]
+    },
+    "Providence": {
+      "cn": ["普罗维登斯"],
+      "py": ["puluoweidensi", "providence"]
+    },
+    "Querious": {
+      "cn": ["奇怪"],
+      "py": ["qiguai", "querious"]
+    },
+    "Rash": {
+      "cn": ["拉什"],
+      "py": ["lashi", "rash"]
+    },
+    "Sarum": {
+      "cn": ["萨鲁姆"],
+      "py": ["salumu", "sarum"]
+    },
+    "Sinq Laison": {
+      "cn": ["辛克莱森"],
+      "py": ["xinkelaisen", "sinqlaison"]
+    },
+    "Solitude": {
+      "cn": ["孤独"],
+      "py": ["gudu", "solitude"]
+    },
+    "Stain": {
+      "cn": ["污点"],
+      "py": ["wudian", "stain"]
+    },
+    "Syndicate": {
+      "cn": ["辛迪加"],
+      "py": ["xindijia", "syndicate"]
+    },
+    "Tash-Murkon": {
+      "cn": ["塔什-穆尔孔"],
+      "py": ["tashimuerkong", "tashmurkon"]
+    },
+    "Tenal": {
+      "cn": ["特纳尔"],
+      "py": ["tenaer", "tenal"]
+    },
+    "Touched": {
+      "cn": ["触碰"],
+      "py": ["chupeng", "touched"]
+    },
+    "Uedama": {
+      "cn": ["上田"],
+      "py": ["shangtian", "uedama"]
+    },
+    "Umbrella": {
+      "cn": ["伞"],
+      "py": ["san", "umbrella"]
+    },
+    "Uncharted": {
+      "cn": ["未知"],
+      "py": ["weizhi", "uncharted"]
+    },
+    "Verge Vendor": {
+      "cn": ["边缘供应商"],
+      "py": ["bianyuangongyingshang", "vergevendor"]
+    },
+    "Vey": {
+      "cn": ["维"],
+      "py": ["wei", "vey"]
+    },
+    "Wicked Creek": {
+      "cn": ["邪恶小溪"],
+      "py": ["xieexiaoxi", "wickedcreek"]
+    },
+    "W-space": {
+      "cn": ["虫洞空间"],
+      "py": ["chongdongkongjian", "wspace"]
+    },
+    "Yak": {
+      "cn": ["牦牛"],
+      "py": ["maoniu", "yak"]
+    },
+    "Zimse": {
+      "cn": ["齐姆塞"],
+      "py": ["qimuse", "zimse"]
+    }
+  }
+}
