@@ -406,8 +406,8 @@ const materialCategories = {
     '复合物': ['晶体复合物', '透光复合物', '黑暗复合物', '杂色复合物', '多样复合物', '光滑复合物', '纤维复合物'],
     '合金': ['光泽合金', '闪光合金', '光彩合金', '精密合金', '浓缩合金'],
     '气体': ['稀有气体', '活性气体'],
-    '燃料': ['同位素燃料', '液化臭氧', '重水', '凝缩液', '冷却剂', '离子溶液', '悬浮等离子', '等离子体团'],
-    '建筑材料': ['建筑模块', '灵巧单元建筑模块', '硅结构铸材', '工业纤维', '超张力塑料', '聚芳酰胺'],
+    '燃料': ['同位素燃料', '液化臭氧', '重水', '离子溶液', '悬浮等离子', '等离子体团'],
+    '建筑材料': ['建筑模块', '灵巧单元建筑模块', '硅结构铸材', '工业纤维', '超张力塑料', '聚芳酰胺', '凝缩液', '冷却剂'],
 };
 
 // 反向映射：材料名 -> 分类名
@@ -1264,21 +1264,106 @@ function showPlanetsInConstellation(data, category = null, product = null) {
         return;
     }
 
-    // 按产量排序
+    const center = centers[activeCenterIndex];
+    
+    // 如果是大分类查询，按产物分组显示
+    if (category && !product) {
+        // 按产物分组
+        const groupedByMaterial = {};
+        for (const r of allRecords) {
+            if (!groupedByMaterial[r.material]) {
+                groupedByMaterial[r.material] = [];
+            }
+            groupedByMaterial[r.material].push(r);
+        }
+        
+        // 每个产物组内按富裕程度排序
+        for (const mat of Object.keys(groupedByMaterial)) {
+            groupedByMaterial[mat].sort((a, b) => {
+                const richnessOrder = { '极好': 4, '很好': 3, '一般': 2, '较差': 1, '贫瘠': 0 };
+                return (richnessOrder[b.richness] || 0) - (richnessOrder[a.richness] || 0);
+            });
+        }
+        
+        // 按产物名称排序显示
+        const sortedMaterials = Object.keys(groupedByMaterial).sort();
+        
+        const displayTitle = `${category}（全部产物）`;
+        const color = '#00c8ff';
+        
+        // 计算总记录数
+        const totalRecords = sortedMaterials.reduce((sum, mat) => sum + groupedByMaterial[mat].length, 0);
+        document.getElementById('resultCount').textContent = `${data.constellation} 共 ${sortedMaterials.length} 种产物，${totalRecords} 条记录`;
+        
+        resultsList.innerHTML = `
+            <div class="detail-header" style="border-bottom: 2px solid ${color};">
+                <span class="back-btn" onclick="queryConstellation()">← 返回</span>
+                <span class="material-title" style="color: ${color}">${displayTitle}</span>
+                <span class="constellation-name">${data.constellation} (${data.region})</span>
+            </div>
+            <div class="detail-list">
+                ${sortedMaterials.map(mat => {
+                    const materialColor = getMaterialColor(mat);
+                    const records = groupedByMaterial[mat];
+                    
+                    return `
+                        <div class="material-group-header" style="color: ${materialColor}; border-bottom: 1px solid ${materialColor}; padding: 5px 0; margin-top: 10px;">
+                            ${mat} (${records.length}条)
+                        </div>
+                        ${records.map((r, i) => {
+                            const samePlanet = center && center.planet &&
+                                data.region === center.region && data.constellation === center.constellation &&
+                                r.planet === center.planet;
+                            const rowClass = samePlanet ? 'same-planet' : '';
+                            const tag = samePlanet ? '<span class="tag tag-same-p">同行星</span>' : '';
+                            
+                            // 计算距离（如果设置了开采中心）
+                            let distanceText = '-';
+                            if (center && center.planet) {
+                                const isSameConstellation = data.region === center.region && data.constellation === center.constellation;
+                                if (samePlanet) {
+                                    distanceText = '0跳';
+                                } else if (isSameConstellation) {
+                                    distanceText = '同星座';
+                                } else {
+                                    distanceText = '跨星座';
+                                }
+                            }
+
+                            return `
+                                <div class="detail-row ${rowClass}">
+                                    <span class="rank">${i + 1}</span>
+                                    <span class="richness">${r.richness}</span>
+                                    <span class="output">${r.output.toFixed(2)}</span>
+                                    <span class="distance">${distanceText}</span>
+                                    <span class="planet-name">${r.planet}</span>
+                                    <button class="btn-record" onclick="quickRecordPlanet('${r.material}', '${data.constellation}', '${r.planet}', '${r.richness}', ${r.output})" style="padding:3px 8px;font-size:11px;">记录</button>
+                                    ${tag}
+                                </div>
+                            `;
+                        }).join('')}
+                    `;
+                }).join('')}
+            </div>
+        `;
+        return;
+    }
+
+    // 按产量排序（单个产物查询）
     allRecords.sort((a, b) => b.output - a.output);
 
-    const center = centers[activeCenterIndex];
-    const isSameConstellation = center && data.region === center.region && data.constellation === center.constellation;
-    
     // 如果指定了产物，使用产物的颜色；否则使用默认颜色
-    const material = product || allRecords[0].material;
-    const color = getMaterialColor(material);
+    const displayTitle = product || '所有产物';
+    const displayMaterial = product || allRecords[0]?.material;
+    const color = getMaterialColor(displayMaterial || '基础金属');
 
-    // 直接显示该产物的星球详情列表（与按星系搜索格式一致）
+    document.getElementById('resultCount').textContent = `${data.constellation} 共 ${allRecords.length} 条记录`;
+
+    // 直接显示该产物的星球详情列表
     resultsList.innerHTML = `
         <div class="detail-header" style="border-bottom: 2px solid ${color};">
             <span class="back-btn" onclick="queryConstellation()">← 返回</span>
-            <span class="material-title" style="color: ${color}">${product || '所有产物'}</span>
+            <span class="material-title" style="color: ${color}">${displayTitle}</span>
             <span class="constellation-name">${data.constellation} (${data.region})</span>
         </div>
         <div class="detail-list">
@@ -1289,13 +1374,28 @@ function showPlanetsInConstellation(data, category = null, product = null) {
                 const rowClass = samePlanet ? 'same-planet' : '';
                 const tag = samePlanet ? '<span class="tag tag-same-p">同行星</span>' : '';
                 const materialColor = getMaterialColor(r.material);
+                
+                // 计算距离
+                let distanceText = '-';
+                if (center && center.planet) {
+                    const isSameConstellation = data.region === center.region && data.constellation === center.constellation;
+                    if (samePlanet) {
+                        distanceText = '0跳';
+                    } else if (isSameConstellation) {
+                        distanceText = '同星座';
+                    } else {
+                        distanceText = '跨星座';
+                    }
+                }
 
                 return `
                     <div class="detail-row ${rowClass}">
                         <span class="rank">${i + 1}</span>
-                        <span class="planet">${r.planet}</span>
+                        <span class="planet" style="color: ${materialColor}">${r.material}</span>
                         <span class="richness">${r.richness}</span>
                         <span class="output">${r.output.toFixed(2)}</span>
+                        <span class="distance">${distanceText}</span>
+                        <span class="planet-name">${r.planet}</span>
                         <button class="btn-record" onclick="quickRecordPlanet('${r.material}', '${data.constellation}', '${r.planet}', '${r.richness}', ${r.output})" style="padding:3px 8px;font-size:11px;">记录</button>
                         ${tag}
                     </div>
