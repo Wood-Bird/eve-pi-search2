@@ -1,0 +1,1753 @@
+{
+  "region": "域外走廊",
+  "constellation": "7-ZDOK",
+  "materials": {
+    "光彩合金": {
+      "max_output": 44.35,
+      "count": 8,
+      "records": [
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "富裕",
+          "output": 44.35
+        },
+        {
+          "planet": "P-T9VC 六",
+          "richness": "富裕",
+          "output": 43.5
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "富裕",
+          "output": 35.7
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "中等",
+          "output": 31.28
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "中等",
+          "output": 31.13
+        },
+        {
+          "planet": "P-T9VC 九",
+          "richness": "贫瘠",
+          "output": 26.4
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "贫瘠",
+          "output": 25.12
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "贫瘠",
+          "output": 23.41
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 43.09,
+      "count": 16,
+      "records": [
+        {
+          "planet": "KGCF-5 九",
+          "richness": "富裕",
+          "output": 43.09
+        },
+        {
+          "planet": "P-T9VC 六",
+          "richness": "富裕",
+          "output": 40.56
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "富裕",
+          "output": 37.74
+        },
+        {
+          "planet": "JX-SOA 九",
+          "richness": "富裕",
+          "output": 36.18
+        },
+        {
+          "planet": "Y-UO9U 三",
+          "richness": "中等",
+          "output": 32.82
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "中等",
+          "output": 32.07
+        },
+        {
+          "planet": "P-T9VC 三",
+          "richness": "中等",
+          "output": 30.9
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "中等",
+          "output": 30.09
+        },
+        {
+          "planet": "VH-9VO 二",
+          "richness": "中等",
+          "output": 30.07
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "中等",
+          "output": 27.1
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "贫瘠",
+          "output": 25.54
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "中等",
+          "output": 25.52
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "贫瘠",
+          "output": 25.43
+        },
+        {
+          "planet": "KGCF-5 十一",
+          "richness": "贫瘠",
+          "output": 25.4
+        },
+        {
+          "planet": "KGCF-5 四",
+          "richness": "贫瘠",
+          "output": 24.36
+        },
+        {
+          "planet": "JX-SOA 八",
+          "richness": "贫瘠",
+          "output": 17.98
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 45.92,
+      "count": 18,
+      "records": [
+        {
+          "planet": "JX-SOA 九",
+          "richness": "完美",
+          "output": 45.92
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "完美",
+          "output": 45.28
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "完美",
+          "output": 44.88
+        },
+        {
+          "planet": "VH-9VO 四",
+          "richness": "富裕",
+          "output": 44.31
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "富裕",
+          "output": 41.97
+        },
+        {
+          "planet": "KGCF-5 二",
+          "richness": "富裕",
+          "output": 40.12
+        },
+        {
+          "planet": "VH-9VO 三",
+          "richness": "富裕",
+          "output": 39.18
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "富裕",
+          "output": 38.58
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "中等",
+          "output": 37.8
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "富裕",
+          "output": 37.31
+        },
+        {
+          "planet": "KGCF-5 十",
+          "richness": "富裕",
+          "output": 36.71
+        },
+        {
+          "planet": "Y-UO9U 二",
+          "richness": "富裕",
+          "output": 36.51
+        },
+        {
+          "planet": "P-T9VC 四",
+          "richness": "中等",
+          "output": 36.18
+        },
+        {
+          "planet": "JX-SOA 五",
+          "richness": "中等",
+          "output": 35.31
+        },
+        {
+          "planet": "JX-SOA 二",
+          "richness": "中等",
+          "output": 31.25
+        },
+        {
+          "planet": "KGCF-5 九",
+          "richness": "中等",
+          "output": 30.6
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "中等",
+          "output": 30.07
+        },
+        {
+          "planet": "P-T9VC 二",
+          "richness": "贫瘠",
+          "output": 28.26
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 30.82,
+      "count": 11,
+      "records": [
+        {
+          "planet": "KGCF-5 九",
+          "richness": "完美",
+          "output": 30.82
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "富裕",
+          "output": 27.8
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "富裕",
+          "output": 27.18
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "富裕",
+          "output": 26.01
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "中等",
+          "output": 23.3
+        },
+        {
+          "planet": "P-T9VC 六",
+          "richness": "中等",
+          "output": 21.08
+        },
+        {
+          "planet": "P-T9VC 一",
+          "richness": "中等",
+          "output": 20.82
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "中等",
+          "output": 20.77
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "中等",
+          "output": 20.05
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "贫瘠",
+          "output": 16.27
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "贫瘠",
+          "output": 15.68
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 36.54,
+      "count": 8,
+      "records": [
+        {
+          "planet": "VH-9VO 七",
+          "richness": "完美",
+          "output": 36.54
+        },
+        {
+          "planet": "JX-SOA 十",
+          "richness": "完美",
+          "output": 35.69
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "富裕",
+          "output": 27.18
+        },
+        {
+          "planet": "XME-SW 六",
+          "richness": "富裕",
+          "output": 26.02
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "中等",
+          "output": 23.05
+        },
+        {
+          "planet": "JX-SOA 四",
+          "richness": "中等",
+          "output": 21.86
+        },
+        {
+          "planet": "KGCF-5 一",
+          "richness": "中等",
+          "output": 21.31
+        },
+        {
+          "planet": "VH-9VO 五",
+          "richness": "中等",
+          "output": 20.67
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 12.12,
+      "count": 11,
+      "records": [
+        {
+          "planet": "P-T9VC 一",
+          "richness": "富裕",
+          "output": 12.12
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "完美",
+          "output": 11.62
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "完美",
+          "output": 11.45
+        },
+        {
+          "planet": "JX-SOA 九",
+          "richness": "富裕",
+          "output": 10.43
+        },
+        {
+          "planet": "P-T9VC 九",
+          "richness": "中等",
+          "output": 9.23
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "中等",
+          "output": 8.96
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "中等",
+          "output": 8.78
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "中等",
+          "output": 7.87
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "中等",
+          "output": 7.64
+        },
+        {
+          "planet": "P-T9VC 六",
+          "richness": "贫瘠",
+          "output": 7.04
+        },
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "中等",
+          "output": 6.99
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 6.78,
+      "count": 8,
+      "records": [
+        {
+          "planet": "JX-SOA 一",
+          "richness": "完美",
+          "output": 6.78
+        },
+        {
+          "planet": "XME-SW 三",
+          "richness": "中等",
+          "output": 5.28
+        },
+        {
+          "planet": "KGCF-5 四",
+          "richness": "中等",
+          "output": 4.75
+        },
+        {
+          "planet": "VH-9VO 二",
+          "richness": "中等",
+          "output": 4.58
+        },
+        {
+          "planet": "Y-UO9U 一",
+          "richness": "贫瘠",
+          "output": 3.67
+        },
+        {
+          "planet": "KGCF-5 十一",
+          "richness": "贫瘠",
+          "output": 3.21
+        },
+        {
+          "planet": "XME-SW 二",
+          "richness": "贫瘠",
+          "output": 3.1
+        },
+        {
+          "planet": "XME-SW 一",
+          "richness": "贫瘠",
+          "output": 2.89
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 12.74,
+      "count": 24,
+      "records": [
+        {
+          "planet": "JX-SOA 四",
+          "richness": "完美",
+          "output": 12.74
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "完美",
+          "output": 12.73
+        },
+        {
+          "planet": "NHKO-4 五",
+          "richness": "完美",
+          "output": 12.72
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "富裕",
+          "output": 11.23
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "富裕",
+          "output": 10.91
+        },
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "富裕",
+          "output": 10.8
+        },
+        {
+          "planet": "KGCF-5 九",
+          "richness": "富裕",
+          "output": 9.91
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "富裕",
+          "output": 9.55
+        },
+        {
+          "planet": "P-T9VC 一",
+          "richness": "中等",
+          "output": 9.2
+        },
+        {
+          "planet": "P-T9VC 六",
+          "richness": "中等",
+          "output": 8.79
+        },
+        {
+          "planet": "P-T9VC 九",
+          "richness": "中等",
+          "output": 8.68
+        },
+        {
+          "planet": "JX-SOA 三",
+          "richness": "中等",
+          "output": 8.41
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "中等",
+          "output": 8.34
+        },
+        {
+          "planet": "KGCF-5 三",
+          "richness": "中等",
+          "output": 7.78
+        },
+        {
+          "planet": "JX-SOA 九",
+          "richness": "中等",
+          "output": 7.66
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "中等",
+          "output": 7.46
+        },
+        {
+          "planet": "JX-SOA 六",
+          "richness": "中等",
+          "output": 7.39
+        },
+        {
+          "planet": "KGCF-5 五",
+          "richness": "中等",
+          "output": 7.21
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "中等",
+          "output": 7.2
+        },
+        {
+          "planet": "KGCF-5 四",
+          "richness": "中等",
+          "output": 6.99
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "贫瘠",
+          "output": 6.39
+        },
+        {
+          "planet": "XME-SW 六",
+          "richness": "贫瘠",
+          "output": 5.76
+        },
+        {
+          "planet": "VH-9VO 二",
+          "richness": "贫瘠",
+          "output": 5.72
+        },
+        {
+          "planet": "JX-SOA 八",
+          "richness": "贫瘠",
+          "output": 4.63
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 49.01,
+      "count": 5,
+      "records": [
+        {
+          "planet": "VH-9VO 五",
+          "richness": "完美",
+          "output": 49.01
+        },
+        {
+          "planet": "KGCF-5 六",
+          "richness": "富裕",
+          "output": 42.81
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "富裕",
+          "output": 39.12
+        },
+        {
+          "planet": "VH-9VO 七",
+          "richness": "中等",
+          "output": 29.61
+        },
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "中等",
+          "output": 28.62
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 12.64,
+      "count": 15,
+      "records": [
+        {
+          "planet": "P-T9VC 五",
+          "richness": "完美",
+          "output": 12.64
+        },
+        {
+          "planet": "VH-9VO 五",
+          "richness": "富裕",
+          "output": 11.08
+        },
+        {
+          "planet": "NHKO-4 五",
+          "richness": "富裕",
+          "output": 11.03
+        },
+        {
+          "planet": "JX-SOA 十",
+          "richness": "富裕",
+          "output": 10.26
+        },
+        {
+          "planet": "XME-SW 二",
+          "richness": "中等",
+          "output": 8.95
+        },
+        {
+          "planet": "VH-9VO 二",
+          "richness": "中等",
+          "output": 8.82
+        },
+        {
+          "planet": "KGCF-5 十一",
+          "richness": "中等",
+          "output": 8.78
+        },
+        {
+          "planet": "Y-UO9U 三",
+          "richness": "中等",
+          "output": 8.57
+        },
+        {
+          "planet": "KGCF-5 六",
+          "richness": "中等",
+          "output": 8.51
+        },
+        {
+          "planet": "JX-SOA 八",
+          "richness": "中等",
+          "output": 8.22
+        },
+        {
+          "planet": "KGCF-5 七",
+          "richness": "中等",
+          "output": 7.87
+        },
+        {
+          "planet": "P-T9VC 三",
+          "richness": "中等",
+          "output": 7.67
+        },
+        {
+          "planet": "NHKO-4 二",
+          "richness": "中等",
+          "output": 6.86
+        },
+        {
+          "planet": "KGCF-5 五",
+          "richness": "贫瘠",
+          "output": 5.64
+        },
+        {
+          "planet": "KGCF-5 三",
+          "richness": "贫瘠",
+          "output": 5.28
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 45.72,
+      "count": 12,
+      "records": [
+        {
+          "planet": "XME-SW 三",
+          "richness": "完美",
+          "output": 45.72
+        },
+        {
+          "planet": "P-T9VC 四",
+          "richness": "富裕",
+          "output": 44.64
+        },
+        {
+          "planet": "JX-SOA 二",
+          "richness": "富裕",
+          "output": 40.94
+        },
+        {
+          "planet": "KGCF-5 二",
+          "richness": "富裕",
+          "output": 36.06
+        },
+        {
+          "planet": "KGCF-5 七",
+          "richness": "中等",
+          "output": 29.93
+        },
+        {
+          "planet": "KGCF-5 三",
+          "richness": "中等",
+          "output": 26.91
+        },
+        {
+          "planet": "XME-SW 二",
+          "richness": "中等",
+          "output": 26.4
+        },
+        {
+          "planet": "XME-SW 一",
+          "richness": "贫瘠",
+          "output": 25.34
+        },
+        {
+          "planet": "NHKO-4 二",
+          "richness": "贫瘠",
+          "output": 23.6
+        },
+        {
+          "planet": "KGCF-5 五",
+          "richness": "贫瘠",
+          "output": 23.13
+        },
+        {
+          "planet": "KGCF-5 十一",
+          "richness": "贫瘠",
+          "output": 23.04
+        },
+        {
+          "planet": "JX-SOA 一",
+          "richness": "贫瘠",
+          "output": 22.65
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 158.26,
+      "count": 3,
+      "records": [
+        {
+          "planet": "XME-SW 三",
+          "richness": "富裕",
+          "output": 158.26
+        },
+        {
+          "planet": "KGCF-5 一",
+          "richness": "中等",
+          "output": 120.43
+        },
+        {
+          "planet": "JX-SOA 一",
+          "richness": "中等",
+          "output": 106.95
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 40.74,
+      "count": 2,
+      "records": [
+        {
+          "planet": "JX-SOA 一",
+          "richness": "富裕",
+          "output": 40.74
+        },
+        {
+          "planet": "XME-SW 三",
+          "richness": "富裕",
+          "output": 40.49
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 13.01,
+      "count": 4,
+      "records": [
+        {
+          "planet": "NHKO-4 一",
+          "richness": "完美",
+          "output": 13.01
+        },
+        {
+          "planet": "XME-SW 三",
+          "richness": "富裕",
+          "output": 11.46
+        },
+        {
+          "planet": "XME-SW 一",
+          "richness": "中等",
+          "output": 7.32
+        },
+        {
+          "planet": "JX-SOA 一",
+          "richness": "贫瘠",
+          "output": 6.4
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 48.72,
+      "count": 5,
+      "records": [
+        {
+          "planet": "VH-9VO 三",
+          "richness": "完美",
+          "output": 48.72
+        },
+        {
+          "planet": "P-T9VC 二",
+          "richness": "中等",
+          "output": 34.11
+        },
+        {
+          "planet": "KGCF-5 十",
+          "richness": "中等",
+          "output": 31.42
+        },
+        {
+          "planet": "JX-SOA 二",
+          "richness": "中等",
+          "output": 31.05
+        },
+        {
+          "planet": "Y-UO9U 二",
+          "richness": "中等",
+          "output": 26.49
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 51.06,
+      "count": 15,
+      "records": [
+        {
+          "planet": "P-T9VC 五",
+          "richness": "完美",
+          "output": 51.06
+        },
+        {
+          "planet": "VH-9VO 七",
+          "richness": "富裕",
+          "output": 44.52
+        },
+        {
+          "planet": "NHKO-4 五",
+          "richness": "富裕",
+          "output": 41.69
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "富裕",
+          "output": 39.85
+        },
+        {
+          "planet": "KGCF-5 九",
+          "richness": "富裕",
+          "output": 38.05
+        },
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "富裕",
+          "output": 37.27
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "富裕",
+          "output": 36.85
+        },
+        {
+          "planet": "P-T9VC 九",
+          "richness": "中等",
+          "output": 36.6
+        },
+        {
+          "planet": "P-T9VC 一",
+          "richness": "中等",
+          "output": 35.38
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "中等",
+          "output": 33.45
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "中等",
+          "output": 33.26
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "中等",
+          "output": 32.84
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "中等",
+          "output": 31.42
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "贫瘠",
+          "output": 24.68
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "贫瘠",
+          "output": 23.77
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 53.91,
+      "count": 10,
+      "records": [
+        {
+          "planet": "VH-9VO 五",
+          "richness": "完美",
+          "output": 53.91
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "完美",
+          "output": 53.48
+        },
+        {
+          "planet": "JX-SOA 十",
+          "richness": "完美",
+          "output": 48.02
+        },
+        {
+          "planet": "KGCF-5 六",
+          "richness": "富裕",
+          "output": 44.32
+        },
+        {
+          "planet": "P-T9VC 五",
+          "richness": "富裕",
+          "output": 41.58
+        },
+        {
+          "planet": "NHKO-4 一",
+          "richness": "中等",
+          "output": 35.28
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "中等",
+          "output": 34.55
+        },
+        {
+          "planet": "JX-SOA 四",
+          "richness": "中等",
+          "output": 34.33
+        },
+        {
+          "planet": "NHKO-4 五",
+          "richness": "中等",
+          "output": 33.18
+        },
+        {
+          "planet": "VH-9VO 七",
+          "richness": "中等",
+          "output": 28.54
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 59.74,
+      "count": 6,
+      "records": [
+        {
+          "planet": "JX-SOA 十",
+          "richness": "完美",
+          "output": 59.74
+        },
+        {
+          "planet": "KGCF-5 六",
+          "richness": "富裕",
+          "output": 47.25
+        },
+        {
+          "planet": "JX-SOA 四",
+          "richness": "中等",
+          "output": 39.48
+        },
+        {
+          "planet": "NHKO-4 一",
+          "richness": "中等",
+          "output": 36.26
+        },
+        {
+          "planet": "VH-9VO 五",
+          "richness": "贫瘠",
+          "output": 34.04
+        },
+        {
+          "planet": "XME-SW 六",
+          "richness": "贫瘠",
+          "output": 26.74
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 34.53,
+      "count": 8,
+      "records": [
+        {
+          "planet": "JX-SOA 四",
+          "richness": "完美",
+          "output": 34.53
+        },
+        {
+          "planet": "KGCF-5 六",
+          "richness": "完美",
+          "output": 34.4
+        },
+        {
+          "planet": "P-T9VC 二",
+          "richness": "富裕",
+          "output": 31.0
+        },
+        {
+          "planet": "KGCF-5 二",
+          "richness": "富裕",
+          "output": 27.93
+        },
+        {
+          "planet": "VH-9VO 七",
+          "richness": "富裕",
+          "output": 25.79
+        },
+        {
+          "planet": "P-T9VC 五",
+          "richness": "中等",
+          "output": 25.04
+        },
+        {
+          "planet": "JX-SOA 十",
+          "richness": "富裕",
+          "output": 23.82
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "中等",
+          "output": 20.55
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 22.02,
+      "count": 4,
+      "records": [
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "富裕",
+          "output": 22.02
+        },
+        {
+          "planet": "JX-SOA 六",
+          "richness": "中等",
+          "output": 15.76
+        },
+        {
+          "planet": "KGCF-5 四",
+          "richness": "中等",
+          "output": 15.02
+        },
+        {
+          "planet": "JX-SOA 三",
+          "richness": "贫瘠",
+          "output": 13.16
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 18.98,
+      "count": 10,
+      "records": [
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "完美",
+          "output": 18.98
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "富裕",
+          "output": 18.86
+        },
+        {
+          "planet": "P-T9VC 一",
+          "richness": "完美",
+          "output": 18.5
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "富裕",
+          "output": 18.35
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "富裕",
+          "output": 16.7
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "富裕",
+          "output": 16.24
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "中等",
+          "output": 11.66
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "中等",
+          "output": 10.89
+        },
+        {
+          "planet": "NHKO-4 一",
+          "richness": "贫瘠",
+          "output": 10.19
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "贫瘠",
+          "output": 9.15
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 45.87,
+      "count": 18,
+      "records": [
+        {
+          "planet": "P-T9VC 九",
+          "richness": "富裕",
+          "output": 45.87
+        },
+        {
+          "planet": "P-T9VC 四",
+          "richness": "富裕",
+          "output": 42.99
+        },
+        {
+          "planet": "KGCF-5 十",
+          "richness": "富裕",
+          "output": 41.64
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "富裕",
+          "output": 40.74
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "富裕",
+          "output": 40.39
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "富裕",
+          "output": 39.93
+        },
+        {
+          "planet": "P-T9VC 八",
+          "richness": "富裕",
+          "output": 38.73
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "富裕",
+          "output": 38.3
+        },
+        {
+          "planet": "JX-SOA 二",
+          "richness": "富裕",
+          "output": 37.8
+        },
+        {
+          "planet": "NHKO-4 四",
+          "richness": "富裕",
+          "output": 36.77
+        },
+        {
+          "planet": "P-T9VC 一",
+          "richness": "中等",
+          "output": 36.63
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "中等",
+          "output": 33.86
+        },
+        {
+          "planet": "JX-SOA 九",
+          "richness": "中等",
+          "output": 30.44
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "中等",
+          "output": 29.57
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "中等",
+          "output": 27.55
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "贫瘠",
+          "output": 24.73
+        },
+        {
+          "planet": "VH-9VO 三",
+          "richness": "贫瘠",
+          "output": 24.04
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "贫瘠",
+          "output": 24.0
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 3.05,
+      "count": 13,
+      "records": [
+        {
+          "planet": "P-T9VC 二",
+          "richness": "完美",
+          "output": 3.05
+        },
+        {
+          "planet": "VH-9VO 三",
+          "richness": "完美",
+          "output": 2.85
+        },
+        {
+          "planet": "VH-9VO 四",
+          "richness": "富裕",
+          "output": 2.66
+        },
+        {
+          "planet": "JX-SOA 八",
+          "richness": "中等",
+          "output": 1.98
+        },
+        {
+          "planet": "KGCF-5 二",
+          "richness": "中等",
+          "output": 1.97
+        },
+        {
+          "planet": "Y-UO9U 一",
+          "richness": "中等",
+          "output": 1.94
+        },
+        {
+          "planet": "KGCF-5 五",
+          "richness": "中等",
+          "output": 1.86
+        },
+        {
+          "planet": "JX-SOA 六",
+          "richness": "中等",
+          "output": 1.86
+        },
+        {
+          "planet": "KGCF-5 三",
+          "richness": "中等",
+          "output": 1.66
+        },
+        {
+          "planet": "XME-SW 二",
+          "richness": "中等",
+          "output": 1.61
+        },
+        {
+          "planet": "JX-SOA 五",
+          "richness": "贫瘠",
+          "output": 1.58
+        },
+        {
+          "planet": "Y-UO9U 三",
+          "richness": "贫瘠",
+          "output": 1.51
+        },
+        {
+          "planet": "KGCF-5 七",
+          "richness": "贫瘠",
+          "output": 1.44
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 36.57,
+      "count": 8,
+      "records": [
+        {
+          "planet": "P-T9VC 三",
+          "richness": "中等",
+          "output": 36.57
+        },
+        {
+          "planet": "Y-UO9U 一",
+          "richness": "中等",
+          "output": 33.82
+        },
+        {
+          "planet": "JX-SOA 三",
+          "richness": "中等",
+          "output": 29.74
+        },
+        {
+          "planet": "NHKO-4 二",
+          "richness": "中等",
+          "output": 28.24
+        },
+        {
+          "planet": "XME-SW 六",
+          "richness": "贫瘠",
+          "output": 26.12
+        },
+        {
+          "planet": "KGCF-5 七",
+          "richness": "贫瘠",
+          "output": 23.58
+        },
+        {
+          "planet": "JX-SOA 六",
+          "richness": "贫瘠",
+          "output": 21.22
+        },
+        {
+          "planet": "KGCF-5 一",
+          "richness": "贫瘠",
+          "output": 20.76
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 51.1,
+      "count": 11,
+      "records": [
+        {
+          "planet": "KGCF-5 六",
+          "richness": "完美",
+          "output": 51.1
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "完美",
+          "output": 49.22
+        },
+        {
+          "planet": "JX-SOA 七",
+          "richness": "完美",
+          "output": 46.34
+        },
+        {
+          "planet": "KGCF-5 十三",
+          "richness": "完美",
+          "output": 45.02
+        },
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "富裕",
+          "output": 44.02
+        },
+        {
+          "planet": "NHKO-4 三",
+          "richness": "中等",
+          "output": 32.27
+        },
+        {
+          "planet": "Y-UO9U 四",
+          "richness": "中等",
+          "output": 31.53
+        },
+        {
+          "planet": "VH-9VO 五",
+          "richness": "中等",
+          "output": 29.9
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "中等",
+          "output": 27.54
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "贫瘠",
+          "output": 24.72
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "贫瘠",
+          "output": 24.16
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 31.74,
+      "count": 16,
+      "records": [
+        {
+          "planet": "P-T9VC 六",
+          "richness": "富裕",
+          "output": 31.74
+        },
+        {
+          "planet": "Y-UO9U 五",
+          "richness": "完美",
+          "output": 29.87
+        },
+        {
+          "planet": "XME-SW 四",
+          "richness": "富裕",
+          "output": 25.89
+        },
+        {
+          "planet": "P-T9VC 七",
+          "richness": "中等",
+          "output": 24.96
+        },
+        {
+          "planet": "KGCF-5 十二",
+          "richness": "富裕",
+          "output": 24.06
+        },
+        {
+          "planet": "NHKO-4 一",
+          "richness": "中等",
+          "output": 23.43
+        },
+        {
+          "planet": "P-T9VC 九",
+          "richness": "中等",
+          "output": 23.34
+        },
+        {
+          "planet": "KGCF-5 九",
+          "richness": "中等",
+          "output": 23.03
+        },
+        {
+          "planet": "JX-SOA 五",
+          "richness": "中等",
+          "output": 22.44
+        },
+        {
+          "planet": "XME-SW 五",
+          "richness": "中等",
+          "output": 20.68
+        },
+        {
+          "planet": "NHKO-4 七",
+          "richness": "中等",
+          "output": 20.57
+        },
+        {
+          "planet": "JX-SOA 九",
+          "richness": "中等",
+          "output": 20.37
+        },
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "中等",
+          "output": 20.14
+        },
+        {
+          "planet": "NHKO-4 六",
+          "richness": "中等",
+          "output": 18.85
+        },
+        {
+          "planet": "P-T9VC 四",
+          "richness": "贫瘠",
+          "output": 17.0
+        },
+        {
+          "planet": "VH-9VO 六",
+          "richness": "贫瘠",
+          "output": 16.24
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 49.14,
+      "count": 8,
+      "records": [
+        {
+          "planet": "NHKO-4 五",
+          "richness": "完美",
+          "output": 49.14
+        },
+        {
+          "planet": "JX-SOA 十",
+          "richness": "完美",
+          "output": 45.72
+        },
+        {
+          "planet": "KGCF-5 八",
+          "richness": "富裕",
+          "output": 39.0
+        },
+        {
+          "planet": "KGCF-5 十",
+          "richness": "富裕",
+          "output": 37.21
+        },
+        {
+          "planet": "VH-9VO 一",
+          "richness": "中等",
+          "output": 27.8
+        },
+        {
+          "planet": "P-T9VC 五",
+          "richness": "贫瘠",
+          "output": 27.54
+        },
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "中等",
+          "output": 27.02
+        },
+        {
+          "planet": "VH-9VO 四",
+          "richness": "贫瘠",
+          "output": 26.39
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 24.75,
+      "count": 7,
+      "records": [
+        {
+          "planet": "KGCF-5 一",
+          "richness": "富裕",
+          "output": 24.75
+        },
+        {
+          "planet": "JX-SOA 三",
+          "richness": "中等",
+          "output": 21.78
+        },
+        {
+          "planet": "XME-SW 一",
+          "richness": "中等",
+          "output": 20.93
+        },
+        {
+          "planet": "NHKO-4 二",
+          "richness": "中等",
+          "output": 20.65
+        },
+        {
+          "planet": "Y-UO9U 三",
+          "richness": "中等",
+          "output": 17.6
+        },
+        {
+          "planet": "P-T9VC 三",
+          "richness": "贫瘠",
+          "output": 13.64
+        },
+        {
+          "planet": "Y-UO9U 一",
+          "richness": "贫瘠",
+          "output": 12.1
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 505.4,
+      "count": 6,
+      "records": [
+        {
+          "planet": "JX-SOA 四",
+          "richness": "完美",
+          "output": 505.4
+        },
+        {
+          "planet": "VH-9VO 七",
+          "richness": "完美",
+          "output": 493.87
+        },
+        {
+          "planet": "P-T9VC 五",
+          "richness": "富裕",
+          "output": 426.3
+        },
+        {
+          "planet": "Y-UO9U 六",
+          "richness": "富裕",
+          "output": 404.04
+        },
+        {
+          "planet": "NHKO-4 一",
+          "richness": "富裕",
+          "output": 354.76
+        },
+        {
+          "planet": "NHKO-4 五",
+          "richness": "中等",
+          "output": 262.44
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 30.39,
+      "count": 4,
+      "records": [
+        {
+          "planet": "VH-9VO 四",
+          "richness": "中等",
+          "output": 30.39
+        },
+        {
+          "planet": "KGCF-5 一",
+          "richness": "中等",
+          "output": 29.81
+        },
+        {
+          "planet": "Y-UO9U 二",
+          "richness": "贫瘠",
+          "output": 25.96
+        },
+        {
+          "planet": "XME-SW 六",
+          "richness": "贫瘠",
+          "output": 24.19
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 33.24,
+      "count": 2,
+      "records": [
+        {
+          "planet": "Y-UO9U 二",
+          "richness": "中等",
+          "output": 33.24
+        },
+        {
+          "planet": "JX-SOA 五",
+          "richness": "中等",
+          "output": 30.97
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 32.62,
+      "count": 15,
+      "records": [
+        {
+          "planet": "KGCF-5 三",
+          "richness": "中等",
+          "output": 32.62
+        },
+        {
+          "planet": "KGCF-5 五",
+          "richness": "中等",
+          "output": 30.86
+        },
+        {
+          "planet": "JX-SOA 六",
+          "richness": "中等",
+          "output": 29.71
+        },
+        {
+          "planet": "XME-SW 一",
+          "richness": "中等",
+          "output": 29.43
+        },
+        {
+          "planet": "P-T9VC 三",
+          "richness": "贫瘠",
+          "output": 28.14
+        },
+        {
+          "planet": "KGCF-5 十一",
+          "richness": "中等",
+          "output": 27.8
+        },
+        {
+          "planet": "JX-SOA 八",
+          "richness": "贫瘠",
+          "output": 25.98
+        },
+        {
+          "planet": "KGCF-5 四",
+          "richness": "贫瘠",
+          "output": 25.31
+        },
+        {
+          "planet": "VH-9VO 二",
+          "richness": "贫瘠",
+          "output": 25.03
+        },
+        {
+          "planet": "KGCF-5 七",
+          "richness": "贫瘠",
+          "output": 24.28
+        },
+        {
+          "planet": "NHKO-4 二",
+          "richness": "贫瘠",
+          "output": 22.82
+        },
+        {
+          "planet": "Y-UO9U 一",
+          "richness": "贫瘠",
+          "output": 22.09
+        },
+        {
+          "planet": "JX-SOA 三",
+          "richness": "贫瘠",
+          "output": 21.87
+        },
+        {
+          "planet": "Y-UO9U 三",
+          "richness": "贫瘠",
+          "output": 21.76
+        },
+        {
+          "planet": "XME-SW 二",
+          "richness": "贫瘠",
+          "output": 19.43
+        }
+      ]
+    }
+  }
+}

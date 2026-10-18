@@ -1,0 +1,1389 @@
+{
+  "region": "钴蓝边域",
+  "constellation": "SI1-CF",
+  "materials": {
+    "光彩合金": {
+      "max_output": 36.96,
+      "count": 8,
+      "records": [
+        {
+          "planet": "A-0IIQ 八",
+          "richness": "富裕",
+          "output": 36.96
+        },
+        {
+          "planet": "H23-B5 四",
+          "richness": "富裕",
+          "output": 32.66
+        },
+        {
+          "planet": "E-BYOS 十",
+          "richness": "富裕",
+          "output": 31.33
+        },
+        {
+          "planet": "ETXT-F 一",
+          "richness": "富裕",
+          "output": 29.96
+        },
+        {
+          "planet": "E-BYOS 九",
+          "richness": "中等",
+          "output": 26.14
+        },
+        {
+          "planet": "CBY8-J 九",
+          "richness": "中等",
+          "output": 21.16
+        },
+        {
+          "planet": "CBY8-J 六",
+          "richness": "中等",
+          "output": 21.01
+        },
+        {
+          "planet": "E-BYOS 六",
+          "richness": "贫瘠",
+          "output": 20.37
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 41.57,
+      "count": 15,
+      "records": [
+        {
+          "planet": "ETXT-F 九",
+          "richness": "完美",
+          "output": 41.57
+        },
+        {
+          "planet": "CBY8-J 六",
+          "richness": "完美",
+          "output": 36.23
+        },
+        {
+          "planet": "I-CMZA 七",
+          "richness": "富裕",
+          "output": 33.19
+        },
+        {
+          "planet": "I-CMZA 二",
+          "richness": "中等",
+          "output": 27.76
+        },
+        {
+          "planet": "ETXT-F 三",
+          "richness": "中等",
+          "output": 27.27
+        },
+        {
+          "planet": "E-BYOS 三",
+          "richness": "中等",
+          "output": 26.84
+        },
+        {
+          "planet": "CBY8-J 九",
+          "richness": "中等",
+          "output": 26.31
+        },
+        {
+          "planet": "CBY8-J 八",
+          "richness": "中等",
+          "output": 25.92
+        },
+        {
+          "planet": "E-BYOS 八",
+          "richness": "中等",
+          "output": 21.93
+        },
+        {
+          "planet": "H23-B5 一",
+          "richness": "贫瘠",
+          "output": 21.41
+        },
+        {
+          "planet": "ETXT-F 二",
+          "richness": "贫瘠",
+          "output": 20.23
+        },
+        {
+          "planet": "I-CMZA 八",
+          "richness": "贫瘠",
+          "output": 19.73
+        },
+        {
+          "planet": "CBY8-J 十二",
+          "richness": "贫瘠",
+          "output": 19.45
+        },
+        {
+          "planet": "E-BYOS 九",
+          "richness": "贫瘠",
+          "output": 19.29
+        },
+        {
+          "planet": "ETXT-F 一",
+          "richness": "贫瘠",
+          "output": 18.74
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 40.72,
+      "count": 6,
+      "records": [
+        {
+          "planet": "ETXT-F 十",
+          "richness": "富裕",
+          "output": 40.72
+        },
+        {
+          "planet": "CBY8-J 五",
+          "richness": "完美",
+          "output": 36.54
+        },
+        {
+          "planet": "ETXT-F 九",
+          "richness": "中等",
+          "output": 27.79
+        },
+        {
+          "planet": "CBY8-J 七",
+          "richness": "中等",
+          "output": 23.91
+        },
+        {
+          "planet": "E-BYOS 十",
+          "richness": "贫瘠",
+          "output": 20.66
+        },
+        {
+          "planet": "E-BYOS 二",
+          "richness": "贫瘠",
+          "output": 19.4
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 26.12,
+      "count": 8,
+      "records": [
+        {
+          "planet": "ETXT-F 九",
+          "richness": "富裕",
+          "output": 26.12
+        },
+        {
+          "planet": "I-CMZA 七",
+          "richness": "富裕",
+          "output": 23.8
+        },
+        {
+          "planet": "E-BYOS 十",
+          "richness": "完美",
+          "output": 23.35
+        },
+        {
+          "planet": "ETXT-F 一",
+          "richness": "富裕",
+          "output": 21.0
+        },
+        {
+          "planet": "CBY8-J 一",
+          "richness": "中等",
+          "output": 19.79
+        },
+        {
+          "planet": "CBY8-J 六",
+          "richness": "中等",
+          "output": 18.2
+        },
+        {
+          "planet": "CBY8-J 九",
+          "richness": "中等",
+          "output": 16.49
+        },
+        {
+          "planet": "A-0IIQ 八",
+          "richness": "中等",
+          "output": 15.86
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 13.68,
+      "count": 2,
+      "records": [
+        {
+          "planet": "H23-B5 一",
+          "richness": "贫瘠",
+          "output": 13.68
+        },
+        {
+          "planet": "CBY8-J 十二",
+          "richness": "贫瘠",
+          "output": 12.82
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 8.79,
+      "count": 11,
+      "records": [
+        {
+          "planet": "E-BYOS 十",
+          "richness": "富裕",
+          "output": 8.79
+        },
+        {
+          "planet": "H23-B5 四",
+          "richness": "富裕",
+          "output": 8.56
+        },
+        {
+          "planet": "E-BYOS 五",
+          "richness": "富裕",
+          "output": 8.22
+        },
+        {
+          "planet": "I-CMZA 八",
+          "richness": "富裕",
+          "output": 8.03
+        },
+        {
+          "planet": "A-0IIQ 七",
+          "richness": "中等",
+          "output": 7.47
+        },
+        {
+          "planet": "I-CMZA 六",
+          "richness": "中等",
+          "output": 6.74
+        },
+        {
+          "planet": "H23-B5 五",
+          "richness": "中等",
+          "output": 6.02
+        },
+        {
+          "planet": "I-CMZA 七",
+          "richness": "中等",
+          "output": 5.74
+        },
+        {
+          "planet": "E-BYOS 六",
+          "richness": "贫瘠",
+          "output": 5.45
+        },
+        {
+          "planet": "CBY8-J 七",
+          "richness": "贫瘠",
+          "output": 5.22
+        },
+        {
+          "planet": "CBY8-J 六",
+          "richness": "贫瘠",
+          "output": 5.17
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 5.15,
+      "count": 6,
+      "records": [
+        {
+          "planet": "A-0IIQ 七",
+          "richness": "富裕",
+          "output": 5.15
+        },
+        {
+          "planet": "ETXT-F 四",
+          "richness": "中等",
+          "output": 3.95
+        },
+        {
+          "planet": "H23-B5 二",
+          "richness": "中等",
+          "output": 3.94
+        },
+        {
+          "planet": "E-BYOS 二",
+          "richness": "中等",
+          "output": 3.89
+        },
+        {
+          "planet": "I-CMZA 六",
+          "richness": "中等",
+          "output": 3.54
+        },
+        {
+          "planet": "E-BYOS 四",
+          "richness": "贫瘠",
+          "output": 2.39
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 12.62,
+      "count": 13,
+      "records": [
+        {
+          "planet": "ETXT-F 八",
+          "richness": "完美",
+          "output": 12.62
+        },
+        {
+          "planet": "CBY8-J 三",
+          "richness": "完美",
+          "output": 10.31
+        },
+        {
+          "planet": "A-0IIQ 六",
+          "richness": "富裕",
+          "output": 9.65
+        },
+        {
+          "planet": "I-CMZA 二",
+          "richness": "中等",
+          "output": 7.29
+        },
+        {
+          "planet": "A-0IIQ 四",
+          "richness": "中等",
+          "output": 7.29
+        },
+        {
+          "planet": "CBY8-J 九",
+          "richness": "中等",
+          "output": 7.12
+        },
+        {
+          "planet": "ETXT-F 五",
+          "richness": "中等",
+          "output": 6.95
+        },
+        {
+          "planet": "A-0IIQ 五",
+          "richness": "中等",
+          "output": 6.5
+        },
+        {
+          "planet": "ETXT-F 十",
+          "richness": "中等",
+          "output": 6.47
+        },
+        {
+          "planet": "E-BYOS 三",
+          "richness": "中等",
+          "output": 6.29
+        },
+        {
+          "planet": "E-BYOS 一",
+          "richness": "中等",
+          "output": 6.09
+        },
+        {
+          "planet": "E-BYOS 六",
+          "richness": "贫瘠",
+          "output": 5.25
+        },
+        {
+          "planet": "I-CMZA 四",
+          "richness": "贫瘠",
+          "output": 4.18
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 38.13,
+      "count": 4,
+      "records": [
+        {
+          "planet": "A-0IIQ 一",
+          "richness": "完美",
+          "output": 38.13
+        },
+        {
+          "planet": "CBY8-J 一",
+          "richness": "富裕",
+          "output": 34.7
+        },
+        {
+          "planet": "CBY8-J 三",
+          "richness": "中等",
+          "output": 23.21
+        },
+        {
+          "planet": "E-BYOS 七",
+          "richness": "贫瘠",
+          "output": 20.28
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 12.47,
+      "count": 8,
+      "records": [
+        {
+          "planet": "I-CMZA 一",
+          "richness": "完美",
+          "output": 12.47
+        },
+        {
+          "planet": "A-0IIQ 四",
+          "richness": "完美",
+          "output": 11.53
+        },
+        {
+          "planet": "H23-B5 一",
+          "richness": "富裕",
+          "output": 8.74
+        },
+        {
+          "planet": "CBY8-J 十",
+          "richness": "中等",
+          "output": 6.99
+        },
+        {
+          "planet": "I-CMZA 四",
+          "richness": "中等",
+          "output": 6.92
+        },
+        {
+          "planet": "A-0IIQ 六",
+          "richness": "贫瘠",
+          "output": 5.79
+        },
+        {
+          "planet": "ETXT-F 三",
+          "richness": "贫瘠",
+          "output": 5.59
+        },
+        {
+          "planet": "CBY8-J 八",
+          "richness": "贫瘠",
+          "output": 4.16
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 33.41,
+      "count": 10,
+      "records": [
+        {
+          "planet": "A-0IIQ 七",
+          "richness": "富裕",
+          "output": 33.41
+        },
+        {
+          "planet": "ETXT-F 七",
+          "richness": "富裕",
+          "output": 33.2
+        },
+        {
+          "planet": "H23-B5 三",
+          "richness": "富裕",
+          "output": 32.54
+        },
+        {
+          "planet": "ETXT-F 四",
+          "richness": "中等",
+          "output": 29.67
+        },
+        {
+          "planet": "E-BYOS 五",
+          "richness": "中等",
+          "output": 24.99
+        },
+        {
+          "planet": "ETXT-F 六",
+          "richness": "贫瘠",
+          "output": 22.05
+        },
+        {
+          "planet": "H23-B5 二",
+          "richness": "贫瘠",
+          "output": 21.14
+        },
+        {
+          "planet": "CBY8-J 二",
+          "richness": "贫瘠",
+          "output": 20.37
+        },
+        {
+          "planet": "CBY8-J 十",
+          "richness": "贫瘠",
+          "output": 15.66
+        },
+        {
+          "planet": "E-BYOS 一",
+          "richness": "贫瘠",
+          "output": 15.47
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 35.91,
+      "count": 3,
+      "records": [
+        {
+          "planet": "ETXT-F 六",
+          "richness": "富裕",
+          "output": 35.91
+        },
+        {
+          "planet": "I-CMZA 六",
+          "richness": "中等",
+          "output": 28.64
+        },
+        {
+          "planet": "ETXT-F 七",
+          "richness": "贫瘠",
+          "output": 21.45
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 9.08,
+      "count": 5,
+      "records": [
+        {
+          "planet": "I-CMZA 五",
+          "richness": "富裕",
+          "output": 9.08
+        },
+        {
+          "planet": "E-BYOS 七",
+          "richness": "富裕",
+          "output": 8.64
+        },
+        {
+          "planet": "ETXT-F 二",
+          "richness": "中等",
+          "output": 7.86
+        },
+        {
+          "planet": "A-0IIQ 五",
+          "richness": "中等",
+          "output": 6.45
+        },
+        {
+          "planet": "E-BYOS 一",
+          "richness": "贫瘠",
+          "output": 5.19
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 29.44,
+      "count": 2,
+      "records": [
+        {
+          "planet": "CBY8-J 十一",
+          "richness": "富裕",
+          "output": 29.44
+        },
+        {
+          "planet": "H23-B5 三",
+          "richness": "贫瘠",
+          "output": 19.85
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 44.95,
+      "count": 17,
+      "records": [
+        {
+          "planet": "A-0IIQ 四",
+          "richness": "完美",
+          "output": 44.95
+        },
+        {
+          "planet": "ETXT-F 七",
+          "richness": "富裕",
+          "output": 40.09
+        },
+        {
+          "planet": "I-CMZA 八",
+          "richness": "完美",
+          "output": 37.83
+        },
+        {
+          "planet": "I-CMZA 七",
+          "richness": "富裕",
+          "output": 33.53
+        },
+        {
+          "planet": "E-BYOS 十",
+          "richness": "富裕",
+          "output": 32.23
+        },
+        {
+          "planet": "CBY8-J 九",
+          "richness": "富裕",
+          "output": 30.65
+        },
+        {
+          "planet": "H23-B5 五",
+          "richness": "富裕",
+          "output": 30.34
+        },
+        {
+          "planet": "ETXT-F 八",
+          "richness": "中等",
+          "output": 29.82
+        },
+        {
+          "planet": "CBY8-J 三",
+          "richness": "富裕",
+          "output": 28.69
+        },
+        {
+          "planet": "E-BYOS 九",
+          "richness": "富裕",
+          "output": 28.51
+        },
+        {
+          "planet": "H23-B5 四",
+          "richness": "中等",
+          "output": 27.16
+        },
+        {
+          "planet": "ETXT-F 一",
+          "richness": "中等",
+          "output": 26.07
+        },
+        {
+          "planet": "ETXT-F 十",
+          "richness": "中等",
+          "output": 25.9
+        },
+        {
+          "planet": "A-0IIQ 八",
+          "richness": "中等",
+          "output": 25.01
+        },
+        {
+          "planet": "E-BYOS 六",
+          "richness": "中等",
+          "output": 24.22
+        },
+        {
+          "planet": "CBY8-J 七",
+          "richness": "中等",
+          "output": 20.92
+        },
+        {
+          "planet": "CBY8-J 六",
+          "richness": "贫瘠",
+          "output": 18.39
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 37.34,
+      "count": 6,
+      "records": [
+        {
+          "planet": "CBY8-J 一",
+          "richness": "富裕",
+          "output": 37.34
+        },
+        {
+          "planet": "ETXT-F 八",
+          "richness": "中等",
+          "output": 31.3
+        },
+        {
+          "planet": "I-CMZA 一",
+          "richness": "中等",
+          "output": 29.48
+        },
+        {
+          "planet": "A-0IIQ 六",
+          "richness": "中等",
+          "output": 28.78
+        },
+        {
+          "planet": "CBY8-J 三",
+          "richness": "中等",
+          "output": 25.76
+        },
+        {
+          "planet": "I-CMZA 五",
+          "richness": "中等",
+          "output": 23.97
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 61.1,
+      "count": 10,
+      "records": [
+        {
+          "planet": "ETXT-F 八",
+          "richness": "完美",
+          "output": 61.1
+        },
+        {
+          "planet": "CBY8-J 一",
+          "richness": "富裕",
+          "output": 46.29
+        },
+        {
+          "planet": "A-0IIQ 四",
+          "richness": "富裕",
+          "output": 45.93
+        },
+        {
+          "planet": "CBY8-J 三",
+          "richness": "完美",
+          "output": 45.27
+        },
+        {
+          "planet": "A-0IIQ 一",
+          "richness": "富裕",
+          "output": 39.27
+        },
+        {
+          "planet": "I-CMZA 一",
+          "richness": "中等",
+          "output": 37.53
+        },
+        {
+          "planet": "E-BYOS 七",
+          "richness": "富裕",
+          "output": 36.19
+        },
+        {
+          "planet": "A-0IIQ 六",
+          "richness": "中等",
+          "output": 30.72
+        },
+        {
+          "planet": "H23-B5 一",
+          "richness": "中等",
+          "output": 27.86
+        },
+        {
+          "planet": "I-CMZA 五",
+          "richness": "贫瘠",
+          "output": 25.44
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 29.2,
+      "count": 6,
+      "records": [
+        {
+          "planet": "A-0IIQ 四",
+          "richness": "完美",
+          "output": 29.2
+        },
+        {
+          "planet": "ETXT-F 八",
+          "richness": "富裕",
+          "output": 27.51
+        },
+        {
+          "planet": "CBY8-J 四",
+          "richness": "富裕",
+          "output": 21.65
+        },
+        {
+          "planet": "I-CMZA 一",
+          "richness": "中等",
+          "output": 18.63
+        },
+        {
+          "planet": "A-0IIQ 一",
+          "richness": "中等",
+          "output": 17.74
+        },
+        {
+          "planet": "CBY8-J 十一",
+          "richness": "贫瘠",
+          "output": 12.72
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 15.35,
+      "count": 7,
+      "records": [
+        {
+          "planet": "ETXT-F 五",
+          "richness": "中等",
+          "output": 15.35
+        },
+        {
+          "planet": "ETXT-F 三",
+          "richness": "中等",
+          "output": 15.31
+        },
+        {
+          "planet": "E-BYOS 四",
+          "richness": "中等",
+          "output": 11.87
+        },
+        {
+          "planet": "E-BYOS 八",
+          "richness": "中等",
+          "output": 10.79
+        },
+        {
+          "planet": "ETXT-F 四",
+          "richness": "贫瘠",
+          "output": 9.97
+        },
+        {
+          "planet": "I-CMZA 二",
+          "richness": "贫瘠",
+          "output": 8.22
+        },
+        {
+          "planet": "CBY8-J 十",
+          "richness": "贫瘠",
+          "output": 7.58
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 13.86,
+      "count": 5,
+      "records": [
+        {
+          "planet": "I-CMZA 八",
+          "richness": "富裕",
+          "output": 13.86
+        },
+        {
+          "planet": "ETXT-F 十",
+          "richness": "中等",
+          "output": 11.41
+        },
+        {
+          "planet": "E-BYOS 九",
+          "richness": "中等",
+          "output": 8.82
+        },
+        {
+          "planet": "A-0IIQ 八",
+          "richness": "贫瘠",
+          "output": 8.28
+        },
+        {
+          "planet": "H23-B5 四",
+          "richness": "贫瘠",
+          "output": 7.87
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 36.58,
+      "count": 6,
+      "records": [
+        {
+          "planet": "A-0IIQ 八",
+          "richness": "富裕",
+          "output": 36.58
+        },
+        {
+          "planet": "H23-B5 五",
+          "richness": "富裕",
+          "output": 31.65
+        },
+        {
+          "planet": "ETXT-F 十",
+          "richness": "中等",
+          "output": 30.5
+        },
+        {
+          "planet": "I-CMZA 八",
+          "richness": "中等",
+          "output": 26.73
+        },
+        {
+          "planet": "CBY8-J 四",
+          "richness": "中等",
+          "output": 25.28
+        },
+        {
+          "planet": "ETXT-F 九",
+          "richness": "贫瘠",
+          "output": 22.44
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 1.76,
+      "count": 4,
+      "records": [
+        {
+          "planet": "CBY8-J 二",
+          "richness": "富裕",
+          "output": 1.76
+        },
+        {
+          "planet": "E-BYOS 八",
+          "richness": "中等",
+          "output": 1.6
+        },
+        {
+          "planet": "I-CMZA 三",
+          "richness": "贫瘠",
+          "output": 1.17
+        },
+        {
+          "planet": "ETXT-F 五",
+          "richness": "贫瘠",
+          "output": 0.97
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 24.08,
+      "count": 9,
+      "records": [
+        {
+          "planet": "I-CMZA 三",
+          "richness": "中等",
+          "output": 24.08
+        },
+        {
+          "planet": "ETXT-F 二",
+          "richness": "贫瘠",
+          "output": 23.95
+        },
+        {
+          "planet": "ETXT-F 四",
+          "richness": "贫瘠",
+          "output": 23.63
+        },
+        {
+          "planet": "ETXT-F 五",
+          "richness": "贫瘠",
+          "output": 19.34
+        },
+        {
+          "planet": "E-BYOS 三",
+          "richness": "贫瘠",
+          "output": 18.61
+        },
+        {
+          "planet": "H23-B5 二",
+          "richness": "贫瘠",
+          "output": 17.66
+        },
+        {
+          "planet": "CBY8-J 十二",
+          "richness": "贫瘠",
+          "output": 16.59
+        },
+        {
+          "planet": "A-0IIQ 五",
+          "richness": "贫瘠",
+          "output": 15.96
+        },
+        {
+          "planet": "CBY8-J 八",
+          "richness": "贫瘠",
+          "output": 15.29
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 38.88,
+      "count": 9,
+      "records": [
+        {
+          "planet": "A-0IIQ 六",
+          "richness": "完美",
+          "output": 38.88
+        },
+        {
+          "planet": "H23-B5 五",
+          "richness": "完美",
+          "output": 36.98
+        },
+        {
+          "planet": "A-0IIQ 一",
+          "richness": "富裕",
+          "output": 32.8
+        },
+        {
+          "planet": "ETXT-F 十",
+          "richness": "中等",
+          "output": 32.68
+        },
+        {
+          "planet": "E-BYOS 六",
+          "richness": "富裕",
+          "output": 32.45
+        },
+        {
+          "planet": "I-CMZA 七",
+          "richness": "富裕",
+          "output": 29.49
+        },
+        {
+          "planet": "ETXT-F 九",
+          "richness": "中等",
+          "output": 28.76
+        },
+        {
+          "planet": "E-BYOS 九",
+          "richness": "富裕",
+          "output": 28.73
+        },
+        {
+          "planet": "CBY8-J 七",
+          "richness": "中等",
+          "output": 26.77
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 8.54,
+      "count": 2,
+      "records": [
+        {
+          "planet": "ETXT-F 七",
+          "richness": "中等",
+          "output": 8.54
+        },
+        {
+          "planet": "ETXT-F 六",
+          "richness": "贫瘠",
+          "output": 6.0
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 26.02,
+      "count": 8,
+      "records": [
+        {
+          "planet": "ETXT-F 九",
+          "richness": "富裕",
+          "output": 26.02
+        },
+        {
+          "planet": "CBY8-J 七",
+          "richness": "富裕",
+          "output": 22.87
+        },
+        {
+          "planet": "H23-B5 五",
+          "richness": "富裕",
+          "output": 21.47
+        },
+        {
+          "planet": "H23-B5 四",
+          "richness": "富裕",
+          "output": 20.15
+        },
+        {
+          "planet": "A-0IIQ 二",
+          "richness": "中等",
+          "output": 17.89
+        },
+        {
+          "planet": "ETXT-F 一",
+          "richness": "中等",
+          "output": 14.64
+        },
+        {
+          "planet": "A-0IIQ 三",
+          "richness": "贫瘠",
+          "output": 13.42
+        },
+        {
+          "planet": "CBY8-J 五",
+          "richness": "贫瘠",
+          "output": 11.97
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 37.2,
+      "count": 6,
+      "records": [
+        {
+          "planet": "CBY8-J 一",
+          "richness": "富裕",
+          "output": 37.2
+        },
+        {
+          "planet": "A-0IIQ 一",
+          "richness": "富裕",
+          "output": 36.41
+        },
+        {
+          "planet": "I-CMZA 五",
+          "richness": "富裕",
+          "output": 31.35
+        },
+        {
+          "planet": "I-CMZA 一",
+          "richness": "中等",
+          "output": 30.48
+        },
+        {
+          "planet": "A-0IIQ 三",
+          "richness": "中等",
+          "output": 28.75
+        },
+        {
+          "planet": "E-BYOS 七",
+          "richness": "富裕",
+          "output": 28.29
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 26.0,
+      "count": 17,
+      "records": [
+        {
+          "planet": "A-0IIQ 七",
+          "richness": "完美",
+          "output": 26.0
+        },
+        {
+          "planet": "ETXT-F 六",
+          "richness": "中等",
+          "output": 19.22
+        },
+        {
+          "planet": "H23-B5 二",
+          "richness": "中等",
+          "output": 18.83
+        },
+        {
+          "planet": "I-CMZA 二",
+          "richness": "中等",
+          "output": 18.57
+        },
+        {
+          "planet": "E-BYOS 八",
+          "richness": "中等",
+          "output": 17.35
+        },
+        {
+          "planet": "E-BYOS 四",
+          "richness": "中等",
+          "output": 17.12
+        },
+        {
+          "planet": "E-BYOS 五",
+          "richness": "中等",
+          "output": 17.12
+        },
+        {
+          "planet": "ETXT-F 二",
+          "richness": "中等",
+          "output": 16.88
+        },
+        {
+          "planet": "I-CMZA 三",
+          "richness": "中等",
+          "output": 16.7
+        },
+        {
+          "planet": "CBY8-J 十",
+          "richness": "中等",
+          "output": 16.51
+        },
+        {
+          "planet": "CBY8-J 十二",
+          "richness": "中等",
+          "output": 16.49
+        },
+        {
+          "planet": "CBY8-J 八",
+          "richness": "中等",
+          "output": 16.18
+        },
+        {
+          "planet": "ETXT-F 三",
+          "richness": "贫瘠",
+          "output": 11.28
+        },
+        {
+          "planet": "E-BYOS 三",
+          "richness": "贫瘠",
+          "output": 10.94
+        },
+        {
+          "planet": "I-CMZA 四",
+          "richness": "贫瘠",
+          "output": 10.4
+        },
+        {
+          "planet": "A-0IIQ 五",
+          "richness": "贫瘠",
+          "output": 9.98
+        },
+        {
+          "planet": "E-BYOS 一",
+          "richness": "贫瘠",
+          "output": 9.18
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 41.26,
+      "count": 4,
+      "records": [
+        {
+          "planet": "ETXT-F 六",
+          "richness": "富裕",
+          "output": 41.26
+        },
+        {
+          "planet": "I-CMZA 六",
+          "richness": "中等",
+          "output": 27.99
+        },
+        {
+          "planet": "ETXT-F 七",
+          "richness": "贫瘠",
+          "output": 21.81
+        },
+        {
+          "planet": "E-BYOS 五",
+          "richness": "贫瘠",
+          "output": 17.82
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 460.75,
+      "count": 4,
+      "records": [
+        {
+          "planet": "I-CMZA 一",
+          "richness": "完美",
+          "output": 460.75
+        },
+        {
+          "planet": "ETXT-F 八",
+          "richness": "富裕",
+          "output": 391.82
+        },
+        {
+          "planet": "I-CMZA 五",
+          "richness": "富裕",
+          "output": 293.48
+        },
+        {
+          "planet": "E-BYOS 七",
+          "richness": "中等",
+          "output": 226.82
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 35.88,
+      "count": 1,
+      "records": [
+        {
+          "planet": "A-0IIQ 二",
+          "richness": "富裕",
+          "output": 35.88
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 36.76,
+      "count": 8,
+      "records": [
+        {
+          "planet": "CBY8-J 五",
+          "richness": "完美",
+          "output": 36.76
+        },
+        {
+          "planet": "A-0IIQ 三",
+          "richness": "中等",
+          "output": 29.59
+        },
+        {
+          "planet": "A-0IIQ 二",
+          "richness": "中等",
+          "output": 26.98
+        },
+        {
+          "planet": "CBY8-J 二",
+          "richness": "中等",
+          "output": 26.14
+        },
+        {
+          "planet": "E-BYOS 二",
+          "richness": "中等",
+          "output": 25.81
+        },
+        {
+          "planet": "CBY8-J 四",
+          "richness": "贫瘠",
+          "output": 20.46
+        },
+        {
+          "planet": "H23-B5 三",
+          "richness": "贫瘠",
+          "output": 20.45
+        },
+        {
+          "planet": "CBY8-J 十一",
+          "richness": "贫瘠",
+          "output": 20.17
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 28.76,
+      "count": 7,
+      "records": [
+        {
+          "planet": "ETXT-F 五",
+          "richness": "中等",
+          "output": 28.76
+        },
+        {
+          "planet": "ETXT-F 四",
+          "richness": "中等",
+          "output": 25.79
+        },
+        {
+          "planet": "ETXT-F 二",
+          "richness": "中等",
+          "output": 25.69
+        },
+        {
+          "planet": "I-CMZA 三",
+          "richness": "中等",
+          "output": 23.23
+        },
+        {
+          "planet": "I-CMZA 四",
+          "richness": "贫瘠",
+          "output": 20.4
+        },
+        {
+          "planet": "ETXT-F 三",
+          "richness": "贫瘠",
+          "output": 18.72
+        },
+        {
+          "planet": "E-BYOS 四",
+          "richness": "贫瘠",
+          "output": 15.0
+        }
+      ]
+    }
+  }
+}

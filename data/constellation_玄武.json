@@ -1,0 +1,2270 @@
+{
+  "region": "潮汐回廊",
+  "constellation": "玄武",
+  "materials": {
+    "光彩合金": {
+      "max_output": 71.82,
+      "count": 15,
+      "records": [
+        {
+          "planet": "牛宿三 七",
+          "richness": "完美",
+          "output": 71.82
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "完美",
+          "output": 71.16
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "完美",
+          "output": 70.95
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "富裕",
+          "output": 68.43
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "富裕",
+          "output": 66.73
+        },
+        {
+          "planet": "斗宿三 四",
+          "richness": "富裕",
+          "output": 66.41
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "富裕",
+          "output": 65.85
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "富裕",
+          "output": 63.69
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "富裕",
+          "output": 62.86
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "中等",
+          "output": 49.06
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "中等",
+          "output": 48.11
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "中等",
+          "output": 47.55
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "中等",
+          "output": 46.95
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "贫瘠",
+          "output": 37.94
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "贫瘠",
+          "output": 37.63
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 67.52,
+      "count": 23,
+      "records": [
+        {
+          "planet": "牛宿二 九",
+          "richness": "富裕",
+          "output": 67.52
+        },
+        {
+          "planet": "牛宿三 七",
+          "richness": "富裕",
+          "output": 66.55
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "富裕",
+          "output": 65.56
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "富裕",
+          "output": 65.11
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "富裕",
+          "output": 63.77
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "富裕",
+          "output": 62.98
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "富裕",
+          "output": 62.11
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "富裕",
+          "output": 59.07
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "富裕",
+          "output": 58.91
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "富裕",
+          "output": 57.96
+        },
+        {
+          "planet": "牛宿一 五",
+          "richness": "中等",
+          "output": 52.89
+        },
+        {
+          "planet": "斗宿一 六",
+          "richness": "中等",
+          "output": 52.55
+        },
+        {
+          "planet": "牛宿三 三",
+          "richness": "中等",
+          "output": 51.81
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "中等",
+          "output": 50.32
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "中等",
+          "output": 47.76
+        },
+        {
+          "planet": "牛宿四 五",
+          "richness": "中等",
+          "output": 46.34
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "中等",
+          "output": 46.11
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "中等",
+          "output": 43.94
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "中等",
+          "output": 42.93
+        },
+        {
+          "planet": "牛宿二 一",
+          "richness": "中等",
+          "output": 41.97
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "贫瘠",
+          "output": 40.63
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "贫瘠",
+          "output": 35.87
+        },
+        {
+          "planet": "斗宿三 二",
+          "richness": "贫瘠",
+          "output": 32.38
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 70.47,
+      "count": 19,
+      "records": [
+        {
+          "planet": "牛宿二 二",
+          "richness": "完美",
+          "output": 70.47
+        },
+        {
+          "planet": "斗宿二 七",
+          "richness": "富裕",
+          "output": 66.73
+        },
+        {
+          "planet": "牛宿二 六",
+          "richness": "富裕",
+          "output": 66.3
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "富裕",
+          "output": 62.55
+        },
+        {
+          "planet": "斗宿二 二",
+          "richness": "富裕",
+          "output": 61.47
+        },
+        {
+          "planet": "斗宿三 四",
+          "richness": "富裕",
+          "output": 60.06
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "富裕",
+          "output": 58.24
+        },
+        {
+          "planet": "牛宿一 四",
+          "richness": "富裕",
+          "output": 56.41
+        },
+        {
+          "planet": "斗宿一 二",
+          "richness": "富裕",
+          "output": 56.2
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "中等",
+          "output": 53.76
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "中等",
+          "output": 53.59
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "中等",
+          "output": 52.38
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "中等",
+          "output": 47.55
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "中等",
+          "output": 46.88
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "中等",
+          "output": 45.15
+        },
+        {
+          "planet": "牛宿四 三",
+          "richness": "中等",
+          "output": 44.41
+        },
+        {
+          "planet": "斗宿二 三",
+          "richness": "中等",
+          "output": 42.54
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "中等",
+          "output": 42.45
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "贫瘠",
+          "output": 35.19
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 48.14,
+      "count": 18,
+      "records": [
+        {
+          "planet": "牛宿一 九",
+          "richness": "完美",
+          "output": 48.14
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "完美",
+          "output": 47.91
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "完美",
+          "output": 47.79
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "富裕",
+          "output": 43.68
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "富裕",
+          "output": 40.55
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "富裕",
+          "output": 39.18
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "富裕",
+          "output": 39.0
+        },
+        {
+          "planet": "斗宿三 四",
+          "richness": "富裕",
+          "output": 38.97
+        },
+        {
+          "planet": "斗宿二 一",
+          "richness": "富裕",
+          "output": 37.91
+        },
+        {
+          "planet": "牛宿二 九",
+          "richness": "富裕",
+          "output": 37.72
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "中等",
+          "output": 35.52
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "中等",
+          "output": 33.77
+        },
+        {
+          "planet": "斗宿二 七",
+          "richness": "中等",
+          "output": 31.7
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "中等",
+          "output": 28.56
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "贫瘠",
+          "output": 26.45
+        },
+        {
+          "planet": "斗宿二 三",
+          "richness": "贫瘠",
+          "output": 25.48
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "贫瘠",
+          "output": 24.54
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "贫瘠",
+          "output": 23.96
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 50.4,
+      "count": 4,
+      "records": [
+        {
+          "planet": "牛宿二 八",
+          "richness": "完美",
+          "output": 50.4
+        },
+        {
+          "planet": "斗宿二 八",
+          "richness": "富裕",
+          "output": 41.82
+        },
+        {
+          "planet": "牛宿二 七",
+          "richness": "富裕",
+          "output": 37.81
+        },
+        {
+          "planet": "牛宿三 十一",
+          "richness": "贫瘠",
+          "output": 25.82
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 18.55,
+      "count": 18,
+      "records": [
+        {
+          "planet": "牛宿一 九",
+          "richness": "完美",
+          "output": 18.55
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "完美",
+          "output": 18.52
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "富裕",
+          "output": 17.67
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "富裕",
+          "output": 17.28
+        },
+        {
+          "planet": "斗宿二 七",
+          "richness": "富裕",
+          "output": 17.14
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "富裕",
+          "output": 16.89
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "富裕",
+          "output": 16.18
+        },
+        {
+          "planet": "斗宿四 一",
+          "richness": "富裕",
+          "output": 16.02
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "富裕",
+          "output": 15.81
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "富裕",
+          "output": 15.64
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "富裕",
+          "output": 15.25
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "中等",
+          "output": 13.73
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "中等",
+          "output": 13.26
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "中等",
+          "output": 12.35
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "中等",
+          "output": 12.27
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "中等",
+          "output": 11.12
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "中等",
+          "output": 10.8
+        },
+        {
+          "planet": "牛宿二 九",
+          "richness": "贫瘠",
+          "output": 10.08
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 11.02,
+      "count": 13,
+      "records": [
+        {
+          "planet": "斗宿二 二",
+          "richness": "完美",
+          "output": 11.02
+        },
+        {
+          "planet": "斗宿一 六",
+          "richness": "中等",
+          "output": 6.87
+        },
+        {
+          "planet": "牛宿一 四",
+          "richness": "中等",
+          "output": 6.68
+        },
+        {
+          "planet": "牛宿二 一",
+          "richness": "中等",
+          "output": 6.62
+        },
+        {
+          "planet": "牛宿二 三",
+          "richness": "中等",
+          "output": 6.6
+        },
+        {
+          "planet": "牛宿四 五",
+          "richness": "中等",
+          "output": 6.57
+        },
+        {
+          "planet": "牛宿三 二",
+          "richness": "中等",
+          "output": 6.5
+        },
+        {
+          "planet": "牛宿二 二",
+          "richness": "中等",
+          "output": 6.2
+        },
+        {
+          "planet": "斗宿三 三",
+          "richness": "中等",
+          "output": 5.97
+        },
+        {
+          "planet": "牛宿四 二",
+          "richness": "贫瘠",
+          "output": 5.78
+        },
+        {
+          "planet": "牛宿二 五",
+          "richness": "贫瘠",
+          "output": 5.5
+        },
+        {
+          "planet": "斗宿三 二",
+          "richness": "贫瘠",
+          "output": 4.56
+        },
+        {
+          "planet": "斗宿一 四",
+          "richness": "贫瘠",
+          "output": 4.47
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 17.54,
+      "count": 35,
+      "records": [
+        {
+          "planet": "斗宿三 四",
+          "richness": "富裕",
+          "output": 17.54
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "富裕",
+          "output": 17.45
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "富裕",
+          "output": 17.41
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "富裕",
+          "output": 16.65
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "富裕",
+          "output": 16.53
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "富裕",
+          "output": 15.75
+        },
+        {
+          "planet": "牛宿一 十四",
+          "richness": "富裕",
+          "output": 14.82
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "中等",
+          "output": 14.46
+        },
+        {
+          "planet": "牛宿二 九",
+          "richness": "中等",
+          "output": 14.41
+        },
+        {
+          "planet": "斗宿二 五",
+          "richness": "中等",
+          "output": 14.28
+        },
+        {
+          "planet": "牛宿三 十一",
+          "richness": "中等",
+          "output": 14.16
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "中等",
+          "output": 14.12
+        },
+        {
+          "planet": "牛宿二 八",
+          "richness": "中等",
+          "output": 14.0
+        },
+        {
+          "planet": "牛宿一 三",
+          "richness": "中等",
+          "output": 13.86
+        },
+        {
+          "planet": "牛宿一 九",
+          "richness": "中等",
+          "output": 13.7
+        },
+        {
+          "planet": "牛宿四 五",
+          "richness": "中等",
+          "output": 13.46
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "中等",
+          "output": 13.34
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "中等",
+          "output": 13.25
+        },
+        {
+          "planet": "斗宿一 八",
+          "richness": "中等",
+          "output": 12.69
+        },
+        {
+          "planet": "斗宿二 三",
+          "richness": "中等",
+          "output": 12.29
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "中等",
+          "output": 12.24
+        },
+        {
+          "planet": "牛宿三 四",
+          "richness": "中等",
+          "output": 11.87
+        },
+        {
+          "planet": "牛宿三 三",
+          "richness": "中等",
+          "output": 11.77
+        },
+        {
+          "planet": "斗宿一 四",
+          "richness": "中等",
+          "output": 11.65
+        },
+        {
+          "planet": "牛宿二 四",
+          "richness": "中等",
+          "output": 11.62
+        },
+        {
+          "planet": "牛宿三 七",
+          "richness": "中等",
+          "output": 11.61
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "中等",
+          "output": 11.38
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "中等",
+          "output": 11.27
+        },
+        {
+          "planet": "牛宿二 五",
+          "richness": "中等",
+          "output": 11.1
+        },
+        {
+          "planet": "牛宿一 一",
+          "richness": "贫瘠",
+          "output": 9.98
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "贫瘠",
+          "output": 9.64
+        },
+        {
+          "planet": "斗宿一 三",
+          "richness": "贫瘠",
+          "output": 9.24
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "贫瘠",
+          "output": 9.09
+        },
+        {
+          "planet": "斗宿三 一",
+          "richness": "贫瘠",
+          "output": 7.98
+        },
+        {
+          "planet": "牛宿二 三",
+          "richness": "贫瘠",
+          "output": 7.27
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 56.19,
+      "count": 4,
+      "records": [
+        {
+          "planet": "斗宿三 五",
+          "richness": "富裕",
+          "output": 56.19
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "中等",
+          "output": 49.5
+        },
+        {
+          "planet": "斗宿二 五",
+          "richness": "中等",
+          "output": 46.84
+        },
+        {
+          "planet": "牛宿一 十三",
+          "richness": "中等",
+          "output": 42.02
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 20.36,
+      "count": 10,
+      "records": [
+        {
+          "planet": "斗宿二 四",
+          "richness": "完美",
+          "output": 20.36
+        },
+        {
+          "planet": "牛宿二 七",
+          "richness": "完美",
+          "output": 19.74
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "富裕",
+          "output": 15.04
+        },
+        {
+          "planet": "牛宿四 二",
+          "richness": "中等",
+          "output": 13.08
+        },
+        {
+          "planet": "斗宿二 八",
+          "richness": "中等",
+          "output": 11.0
+        },
+        {
+          "planet": "牛宿一 三",
+          "richness": "贫瘠",
+          "output": 10.43
+        },
+        {
+          "planet": "牛宿三 二",
+          "richness": "贫瘠",
+          "output": 8.43
+        },
+        {
+          "planet": "牛宿二 三",
+          "richness": "贫瘠",
+          "output": 8.42
+        },
+        {
+          "planet": "牛宿一 一",
+          "richness": "贫瘠",
+          "output": 7.49
+        },
+        {
+          "planet": "牛宿一 五",
+          "richness": "贫瘠",
+          "output": 7.49
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 68.95,
+      "count": 14,
+      "records": [
+        {
+          "planet": "牛宿一 六",
+          "richness": "富裕",
+          "output": 68.95
+        },
+        {
+          "planet": "斗宿一 五",
+          "richness": "富裕",
+          "output": 66.34
+        },
+        {
+          "planet": "牛宿二 一",
+          "richness": "中等",
+          "output": 52.64
+        },
+        {
+          "planet": "牛宿三 二",
+          "richness": "中等",
+          "output": 50.64
+        },
+        {
+          "planet": "斗宿一 六",
+          "richness": "中等",
+          "output": 48.51
+        },
+        {
+          "planet": "牛宿二 六",
+          "richness": "中等",
+          "output": 47.16
+        },
+        {
+          "planet": "斗宿四 一",
+          "richness": "中等",
+          "output": 45.33
+        },
+        {
+          "planet": "牛宿二 四",
+          "richness": "中等",
+          "output": 45.33
+        },
+        {
+          "planet": "牛宿二 二",
+          "richness": "中等",
+          "output": 44.37
+        },
+        {
+          "planet": "牛宿四 二",
+          "richness": "中等",
+          "output": 43.68
+        },
+        {
+          "planet": "斗宿一 一",
+          "richness": "贫瘠",
+          "output": 39.11
+        },
+        {
+          "planet": "牛宿一 八",
+          "richness": "贫瘠",
+          "output": 38.58
+        },
+        {
+          "planet": "牛宿三 四",
+          "richness": "贫瘠",
+          "output": 35.85
+        },
+        {
+          "planet": "牛宿四 四",
+          "richness": "贫瘠",
+          "output": 31.8
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 239.28,
+      "count": 7,
+      "records": [
+        {
+          "planet": "牛宿一 八",
+          "richness": "富裕",
+          "output": 239.28
+        },
+        {
+          "planet": "斗宿二 八",
+          "richness": "富裕",
+          "output": 228.94
+        },
+        {
+          "planet": "牛宿一 十四",
+          "richness": "富裕",
+          "output": 215.95
+        },
+        {
+          "planet": "牛宿一 七",
+          "richness": "富裕",
+          "output": 206.4
+        },
+        {
+          "planet": "斗宿二 一",
+          "richness": "中等",
+          "output": 185.07
+        },
+        {
+          "planet": "斗宿四 五",
+          "richness": "贫瘠",
+          "output": 135.18
+        },
+        {
+          "planet": "牛宿三 十一",
+          "richness": "贫瘠",
+          "output": 130.14
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 70.86,
+      "count": 7,
+      "records": [
+        {
+          "planet": "牛宿一 八",
+          "richness": "完美",
+          "output": 70.86
+        },
+        {
+          "planet": "斗宿三 三",
+          "richness": "富裕",
+          "output": 62.74
+        },
+        {
+          "planet": "斗宿一 五",
+          "richness": "富裕",
+          "output": 60.16
+        },
+        {
+          "planet": "牛宿一 六",
+          "richness": "富裕",
+          "output": 55.43
+        },
+        {
+          "planet": "斗宿三 五",
+          "richness": "富裕",
+          "output": 54.72
+        },
+        {
+          "planet": "牛宿一 七",
+          "richness": "中等",
+          "output": 50.76
+        },
+        {
+          "planet": "斗宿四 一",
+          "richness": "贫瘠",
+          "output": 36.88
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 19.2,
+      "count": 8,
+      "records": [
+        {
+          "planet": "斗宿三 五",
+          "richness": "完美",
+          "output": 19.2
+        },
+        {
+          "planet": "斗宿一 三",
+          "richness": "中等",
+          "output": 13.89
+        },
+        {
+          "planet": "斗宿一 八",
+          "richness": "中等",
+          "output": 13.65
+        },
+        {
+          "planet": "牛宿一 五",
+          "richness": "中等",
+          "output": 12.71
+        },
+        {
+          "planet": "牛宿一 六",
+          "richness": "中等",
+          "output": 11.97
+        },
+        {
+          "planet": "牛宿一 十三",
+          "richness": "中等",
+          "output": 11.28
+        },
+        {
+          "planet": "牛宿二 四",
+          "richness": "贫瘠",
+          "output": 10.79
+        },
+        {
+          "planet": "牛宿一 一",
+          "richness": "贫瘠",
+          "output": 8.48
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 57.54,
+      "count": 2,
+      "records": [
+        {
+          "planet": "斗宿四 五",
+          "richness": "富裕",
+          "output": 57.54
+        },
+        {
+          "planet": "牛宿一 四",
+          "richness": "中等",
+          "output": 53.46
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 81.73,
+      "count": 26,
+      "records": [
+        {
+          "planet": "牛宿二 七",
+          "richness": "完美",
+          "output": 81.73
+        },
+        {
+          "planet": "牛宿四 九",
+          "richness": "完美",
+          "output": 70.52
+        },
+        {
+          "planet": "牛宿一 八",
+          "richness": "富裕",
+          "output": 69.07
+        },
+        {
+          "planet": "斗宿二 三",
+          "richness": "富裕",
+          "output": 68.59
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "完美",
+          "output": 67.29
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "富裕",
+          "output": 65.69
+        },
+        {
+          "planet": "斗宿四 一",
+          "richness": "富裕",
+          "output": 63.72
+        },
+        {
+          "planet": "牛宿二 九",
+          "richness": "富裕",
+          "output": 63.69
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "富裕",
+          "output": 62.39
+        },
+        {
+          "planet": "牛宿四 六",
+          "richness": "富裕",
+          "output": 62.11
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "富裕",
+          "output": 60.77
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "富裕",
+          "output": 60.55
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "富裕",
+          "output": 59.76
+        },
+        {
+          "planet": "斗宿二 四",
+          "richness": "富裕",
+          "output": 59.64
+        },
+        {
+          "planet": "牛宿一 七",
+          "richness": "富裕",
+          "output": 58.91
+        },
+        {
+          "planet": "斗宿一 五",
+          "richness": "富裕",
+          "output": 57.95
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "富裕",
+          "output": 56.28
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "中等",
+          "output": 54.28
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "富裕",
+          "output": 53.67
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "中等",
+          "output": 53.03
+        },
+        {
+          "planet": "斗宿三 三",
+          "richness": "中等",
+          "output": 48.72
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "中等",
+          "output": 43.63
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "中等",
+          "output": 42.93
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "贫瘠",
+          "output": 36.41
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "贫瘠",
+          "output": 36.15
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "贫瘠",
+          "output": 35.89
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 81.0,
+      "count": 7,
+      "records": [
+        {
+          "planet": "斗宿二 四",
+          "richness": "完美",
+          "output": 81.0
+        },
+        {
+          "planet": "牛宿二 八",
+          "richness": "完美",
+          "output": 79.12
+        },
+        {
+          "planet": "牛宿四 六",
+          "richness": "完美",
+          "output": 70.17
+        },
+        {
+          "planet": "牛宿一 十三",
+          "richness": "富裕",
+          "output": 68.3
+        },
+        {
+          "planet": "牛宿二 七",
+          "richness": "富裕",
+          "output": 61.72
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "中等",
+          "output": 51.51
+        },
+        {
+          "planet": "斗宿二 五",
+          "richness": "中等",
+          "output": 44.19
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 86.4,
+      "count": 9,
+      "records": [
+        {
+          "planet": "牛宿四 六",
+          "richness": "完美",
+          "output": 86.4
+        },
+        {
+          "planet": "斗宿二 四",
+          "richness": "富裕",
+          "output": 79.55
+        },
+        {
+          "planet": "斗宿二 五",
+          "richness": "富裕",
+          "output": 73.3
+        },
+        {
+          "planet": "牛宿二 七",
+          "richness": "富裕",
+          "output": 71.84
+        },
+        {
+          "planet": "牛宿二 八",
+          "richness": "中等",
+          "output": 65.36
+        },
+        {
+          "planet": "斗宿三 五",
+          "richness": "中等",
+          "output": 64.53
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "中等",
+          "output": 64.11
+        },
+        {
+          "planet": "斗宿四 五",
+          "richness": "中等",
+          "output": 63.05
+        },
+        {
+          "planet": "牛宿三 十一",
+          "richness": "中等",
+          "output": 57.09
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 42.22,
+      "count": 4,
+      "records": [
+        {
+          "planet": "斗宿二 四",
+          "richness": "富裕",
+          "output": 42.22
+        },
+        {
+          "planet": "斗宿一 二",
+          "richness": "富裕",
+          "output": 37.84
+        },
+        {
+          "planet": "牛宿二 六",
+          "richness": "富裕",
+          "output": 37.5
+        },
+        {
+          "planet": "牛宿四 六",
+          "richness": "贫瘠",
+          "output": 26.71
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 27.22,
+      "count": 12,
+      "records": [
+        {
+          "planet": "牛宿一 十三",
+          "richness": "中等",
+          "output": 27.22
+        },
+        {
+          "planet": "牛宿三 二",
+          "richness": "中等",
+          "output": 24.97
+        },
+        {
+          "planet": "斗宿一 四",
+          "richness": "中等",
+          "output": 24.27
+        },
+        {
+          "planet": "斗宿三 二",
+          "richness": "中等",
+          "output": 22.88
+        },
+        {
+          "planet": "斗宿一 一",
+          "richness": "中等",
+          "output": 22.68
+        },
+        {
+          "planet": "斗宿三 五",
+          "richness": "中等",
+          "output": 22.56
+        },
+        {
+          "planet": "牛宿一 二",
+          "richness": "中等",
+          "output": 21.84
+        },
+        {
+          "planet": "牛宿二 四",
+          "richness": "中等",
+          "output": 21.41
+        },
+        {
+          "planet": "牛宿一 一",
+          "richness": "贫瘠",
+          "output": 18.79
+        },
+        {
+          "planet": "斗宿三 一",
+          "richness": "贫瘠",
+          "output": 16.47
+        },
+        {
+          "planet": "牛宿四 四",
+          "richness": "贫瘠",
+          "output": 15.4
+        },
+        {
+          "planet": "牛宿三 三",
+          "richness": "贫瘠",
+          "output": 15.16
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 27.27,
+      "count": 15,
+      "records": [
+        {
+          "planet": "斗宿二 七",
+          "richness": "富裕",
+          "output": 27.27
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "富裕",
+          "output": 27.11
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "富裕",
+          "output": 24.36
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "富裕",
+          "output": 24.21
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "富裕",
+          "output": 24.18
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "富裕",
+          "output": 22.7
+        },
+        {
+          "planet": "牛宿三 七",
+          "richness": "中等",
+          "output": 21.32
+        },
+        {
+          "planet": "斗宿四 四",
+          "richness": "中等",
+          "output": 20.97
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "中等",
+          "output": 20.01
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "中等",
+          "output": 19.91
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "中等",
+          "output": 18.9
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "中等",
+          "output": 17.62
+        },
+        {
+          "planet": "牛宿一 九",
+          "richness": "中等",
+          "output": 17.49
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "中等",
+          "output": 17.16
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "中等",
+          "output": 16.98
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 71.25,
+      "count": 21,
+      "records": [
+        {
+          "planet": "牛宿四 三",
+          "richness": "完美",
+          "output": 71.25
+        },
+        {
+          "planet": "牛宿一 九",
+          "richness": "富裕",
+          "output": 68.39
+        },
+        {
+          "planet": "斗宿二 七",
+          "richness": "富裕",
+          "output": 62.16
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "富裕",
+          "output": 60.38
+        },
+        {
+          "planet": "牛宿四 一",
+          "richness": "富裕",
+          "output": 59.69
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "富裕",
+          "output": 59.59
+        },
+        {
+          "planet": "牛宿三 七",
+          "richness": "富裕",
+          "output": 58.81
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "富裕",
+          "output": 57.99
+        },
+        {
+          "planet": "牛宿一 十",
+          "richness": "富裕",
+          "output": 57.95
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "富裕",
+          "output": 57.81
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "中等",
+          "output": 52.02
+        },
+        {
+          "planet": "斗宿三 七",
+          "richness": "中等",
+          "output": 50.45
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "中等",
+          "output": 50.23
+        },
+        {
+          "planet": "牛宿二 二",
+          "richness": "中等",
+          "output": 45.88
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "中等",
+          "output": 45.38
+        },
+        {
+          "planet": "斗宿二 三",
+          "richness": "中等",
+          "output": 44.89
+        },
+        {
+          "planet": "斗宿二 六",
+          "richness": "中等",
+          "output": 44.28
+        },
+        {
+          "planet": "斗宿三 六",
+          "richness": "中等",
+          "output": 42.54
+        },
+        {
+          "planet": "斗宿三 四",
+          "richness": "中等",
+          "output": 42.0
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "中等",
+          "output": 41.46
+        },
+        {
+          "planet": "牛宿四 八",
+          "richness": "贫瘠",
+          "output": 36.93
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 3.71,
+      "count": 10,
+      "records": [
+        {
+          "planet": "牛宿四 三",
+          "richness": "富裕",
+          "output": 3.71
+        },
+        {
+          "planet": "牛宿三 三",
+          "richness": "中等",
+          "output": 3.18
+        },
+        {
+          "planet": "斗宿一 六",
+          "richness": "中等",
+          "output": 3.17
+        },
+        {
+          "planet": "牛宿四 四",
+          "richness": "中等",
+          "output": 3.04
+        },
+        {
+          "planet": "斗宿一 三",
+          "richness": "中等",
+          "output": 2.5
+        },
+        {
+          "planet": "斗宿三 二",
+          "richness": "中等",
+          "output": 2.44
+        },
+        {
+          "planet": "斗宿一 一",
+          "richness": "贫瘠",
+          "output": 2.37
+        },
+        {
+          "planet": "牛宿四 五",
+          "richness": "贫瘠",
+          "output": 2.35
+        },
+        {
+          "planet": "牛宿一 二",
+          "richness": "贫瘠",
+          "output": 2.31
+        },
+        {
+          "planet": "斗宿三 一",
+          "richness": "贫瘠",
+          "output": 2.06
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 54.86,
+      "count": 13,
+      "records": [
+        {
+          "planet": "牛宿一 十四",
+          "richness": "中等",
+          "output": 54.86
+        },
+        {
+          "planet": "斗宿二 一",
+          "richness": "富裕",
+          "output": 53.88
+        },
+        {
+          "planet": "牛宿三 十一",
+          "richness": "中等",
+          "output": 52.89
+        },
+        {
+          "planet": "牛宿三 四",
+          "richness": "中等",
+          "output": 49.8
+        },
+        {
+          "planet": "斗宿二 八",
+          "richness": "中等",
+          "output": 48.28
+        },
+        {
+          "planet": "牛宿一 二",
+          "richness": "中等",
+          "output": 47.85
+        },
+        {
+          "planet": "牛宿一 五",
+          "richness": "中等",
+          "output": 47.51
+        },
+        {
+          "planet": "斗宿一 八",
+          "richness": "中等",
+          "output": 46.41
+        },
+        {
+          "planet": "牛宿四 四",
+          "richness": "中等",
+          "output": 43.68
+        },
+        {
+          "planet": "斗宿四 五",
+          "richness": "中等",
+          "output": 43.21
+        },
+        {
+          "planet": "牛宿一 三",
+          "richness": "中等",
+          "output": 42.15
+        },
+        {
+          "planet": "牛宿四 二",
+          "richness": "贫瘠",
+          "output": 37.84
+        },
+        {
+          "planet": "牛宿二 五",
+          "richness": "贫瘠",
+          "output": 33.24
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 71.91,
+      "count": 17,
+      "records": [
+        {
+          "planet": "斗宿二 三",
+          "richness": "完美",
+          "output": 71.91
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "富裕",
+          "output": 68.34
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "富裕",
+          "output": 67.77
+        },
+        {
+          "planet": "牛宿二 十二",
+          "richness": "富裕",
+          "output": 67.03
+        },
+        {
+          "planet": "牛宿一 十二",
+          "richness": "中等",
+          "output": 52.89
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "中等",
+          "output": 51.15
+        },
+        {
+          "planet": "牛宿一 九",
+          "richness": "中等",
+          "output": 49.24
+        },
+        {
+          "planet": "牛宿二 九",
+          "richness": "中等",
+          "output": 49.02
+        },
+        {
+          "planet": "牛宿二 八",
+          "richness": "中等",
+          "output": 48.72
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "中等",
+          "output": 42.93
+        },
+        {
+          "planet": "牛宿二 十",
+          "richness": "中等",
+          "output": 42.49
+        },
+        {
+          "planet": "牛宿三 七",
+          "richness": "中等",
+          "output": 42.24
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "中等",
+          "output": 41.37
+        },
+        {
+          "planet": "牛宿二 十一",
+          "richness": "贫瘠",
+          "output": 40.59
+        },
+        {
+          "planet": "牛宿三 十",
+          "richness": "贫瘠",
+          "output": 39.97
+        },
+        {
+          "planet": "斗宿一 十",
+          "richness": "贫瘠",
+          "output": 37.06
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "贫瘠",
+          "output": 37.06
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 17.31,
+      "count": 4,
+      "records": [
+        {
+          "planet": "斗宿三 三",
+          "richness": "富裕",
+          "output": 17.31
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "富裕",
+          "output": 15.38
+        },
+        {
+          "planet": "斗宿一 五",
+          "richness": "中等",
+          "output": 11.13
+        },
+        {
+          "planet": "牛宿一 七",
+          "richness": "贫瘠",
+          "output": 10.37
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 48.11,
+      "count": 14,
+      "records": [
+        {
+          "planet": "斗宿二 七",
+          "richness": "完美",
+          "output": 48.11
+        },
+        {
+          "planet": "牛宿三 九",
+          "richness": "完美",
+          "output": 47.79
+        },
+        {
+          "planet": "斗宿四 二",
+          "richness": "富裕",
+          "output": 43.17
+        },
+        {
+          "planet": "牛宿四 七",
+          "richness": "富裕",
+          "output": 40.71
+        },
+        {
+          "planet": "斗宿三 五",
+          "richness": "富裕",
+          "output": 40.32
+        },
+        {
+          "planet": "牛宿三 一",
+          "richness": "富裕",
+          "output": 39.33
+        },
+        {
+          "planet": "牛宿三 六",
+          "richness": "富裕",
+          "output": 38.62
+        },
+        {
+          "planet": "斗宿三 四",
+          "richness": "富裕",
+          "output": 37.32
+        },
+        {
+          "planet": "牛宿一 十一",
+          "richness": "中等",
+          "output": 36.66
+        },
+        {
+          "planet": "牛宿三 八",
+          "richness": "中等",
+          "output": 34.98
+        },
+        {
+          "planet": "斗宿四 三",
+          "richness": "中等",
+          "output": 32.28
+        },
+        {
+          "planet": "牛宿一 十三",
+          "richness": "中等",
+          "output": 28.89
+        },
+        {
+          "planet": "斗宿一 九",
+          "richness": "贫瘠",
+          "output": 25.76
+        },
+        {
+          "planet": "斗宿二 二",
+          "richness": "贫瘠",
+          "output": 23.75
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 69.69,
+      "count": 6,
+      "records": [
+        {
+          "planet": "牛宿二 七",
+          "richness": "完美",
+          "output": 69.69
+        },
+        {
+          "planet": "牛宿四 六",
+          "richness": "富裕",
+          "output": 62.07
+        },
+        {
+          "planet": "斗宿二 五",
+          "richness": "富裕",
+          "output": 59.89
+        },
+        {
+          "planet": "牛宿三 五",
+          "richness": "中等",
+          "output": 52.59
+        },
+        {
+          "planet": "牛宿二 六",
+          "richness": "中等",
+          "output": 48.63
+        },
+        {
+          "planet": "斗宿二 四",
+          "richness": "中等",
+          "output": 47.51
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 42.42,
+      "count": 18,
+      "records": [
+        {
+          "planet": "牛宿一 十四",
+          "richness": "富裕",
+          "output": 42.42
+        },
+        {
+          "planet": "斗宿一 一",
+          "richness": "中等",
+          "output": 34.68
+        },
+        {
+          "planet": "斗宿一 五",
+          "richness": "中等",
+          "output": 31.98
+        },
+        {
+          "planet": "牛宿二 五",
+          "richness": "中等",
+          "output": 31.32
+        },
+        {
+          "planet": "斗宿一 四",
+          "richness": "中等",
+          "output": 28.37
+        },
+        {
+          "planet": "斗宿二 一",
+          "richness": "中等",
+          "output": 27.59
+        },
+        {
+          "planet": "斗宿三 三",
+          "richness": "中等",
+          "output": 26.98
+        },
+        {
+          "planet": "牛宿一 三",
+          "richness": "贫瘠",
+          "output": 26.79
+        },
+        {
+          "planet": "斗宿一 八",
+          "richness": "贫瘠",
+          "output": 25.79
+        },
+        {
+          "planet": "牛宿二 三",
+          "richness": "贫瘠",
+          "output": 25.52
+        },
+        {
+          "planet": "牛宿三 四",
+          "richness": "贫瘠",
+          "output": 25.02
+        },
+        {
+          "planet": "牛宿一 八",
+          "richness": "贫瘠",
+          "output": 24.91
+        },
+        {
+          "planet": "牛宿一 六",
+          "richness": "贫瘠",
+          "output": 24.08
+        },
+        {
+          "planet": "斗宿三 一",
+          "richness": "贫瘠",
+          "output": 23.37
+        },
+        {
+          "planet": "斗宿二 八",
+          "richness": "贫瘠",
+          "output": 22.53
+        },
+        {
+          "planet": "牛宿二 一",
+          "richness": "贫瘠",
+          "output": 20.73
+        },
+        {
+          "planet": "斗宿一 三",
+          "richness": "贫瘠",
+          "output": 19.63
+        },
+        {
+          "planet": "牛宿一 二",
+          "richness": "贫瘠",
+          "output": 18.71
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 69.64,
+      "count": 3,
+      "records": [
+        {
+          "planet": "牛宿一 六",
+          "richness": "完美",
+          "output": 69.64
+        },
+        {
+          "planet": "斗宿四 一",
+          "richness": "富裕",
+          "output": 63.9
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "中等",
+          "output": 44.07
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 658.15,
+      "count": 4,
+      "records": [
+        {
+          "planet": "斗宿二 五",
+          "richness": "富裕",
+          "output": 658.15
+        },
+        {
+          "planet": "牛宿一 十三",
+          "richness": "富裕",
+          "output": 635.1
+        },
+        {
+          "planet": "牛宿二 八",
+          "richness": "富裕",
+          "output": 629.88
+        },
+        {
+          "planet": "牛宿四 六",
+          "richness": "富裕",
+          "output": 561.59
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 69.34,
+      "count": 7,
+      "records": [
+        {
+          "planet": "斗宿一 二",
+          "richness": "完美",
+          "output": 69.34
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "富裕",
+          "output": 55.24
+        },
+        {
+          "planet": "牛宿四 三",
+          "richness": "中等",
+          "output": 53.72
+        },
+        {
+          "planet": "斗宿二 一",
+          "richness": "中等",
+          "output": 51.03
+        },
+        {
+          "planet": "斗宿二 二",
+          "richness": "中等",
+          "output": 46.89
+        },
+        {
+          "planet": "牛宿一 十四",
+          "richness": "中等",
+          "output": 44.41
+        },
+        {
+          "planet": "斗宿四 五",
+          "richness": "中等",
+          "output": 40.23
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 68.91,
+      "count": 3,
+      "records": [
+        {
+          "planet": "牛宿一 四",
+          "richness": "富裕",
+          "output": 68.91
+        },
+        {
+          "planet": "斗宿一 二",
+          "richness": "富裕",
+          "output": 58.11
+        },
+        {
+          "planet": "牛宿一 七",
+          "richness": "贫瘠",
+          "output": 36.2
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 52.72,
+      "count": 22,
+      "records": [
+        {
+          "planet": "牛宿四 四",
+          "richness": "中等",
+          "output": 52.72
+        },
+        {
+          "planet": "斗宿一 八",
+          "richness": "中等",
+          "output": 48.15
+        },
+        {
+          "planet": "斗宿三 一",
+          "richness": "中等",
+          "output": 44.46
+        },
+        {
+          "planet": "斗宿一 七",
+          "richness": "中等",
+          "output": 44.37
+        },
+        {
+          "planet": "牛宿二 一",
+          "richness": "贫瘠",
+          "output": 40.98
+        },
+        {
+          "planet": "斗宿一 三",
+          "richness": "贫瘠",
+          "output": 39.67
+        },
+        {
+          "planet": "斗宿一 六",
+          "richness": "贫瘠",
+          "output": 38.58
+        },
+        {
+          "planet": "牛宿一 二",
+          "richness": "贫瘠",
+          "output": 38.41
+        },
+        {
+          "planet": "牛宿一 一",
+          "richness": "贫瘠",
+          "output": 38.1
+        },
+        {
+          "planet": "牛宿二 五",
+          "richness": "贫瘠",
+          "output": 37.5
+        },
+        {
+          "planet": "牛宿四 五",
+          "richness": "贫瘠",
+          "output": 36.24
+        },
+        {
+          "planet": "斗宿一 四",
+          "richness": "贫瘠",
+          "output": 35.37
+        },
+        {
+          "planet": "牛宿二 三",
+          "richness": "贫瘠",
+          "output": 34.58
+        },
+        {
+          "planet": "牛宿一 五",
+          "richness": "贫瘠",
+          "output": 33.31
+        },
+        {
+          "planet": "牛宿四 二",
+          "richness": "贫瘠",
+          "output": 30.88
+        },
+        {
+          "planet": "牛宿三 三",
+          "richness": "贫瘠",
+          "output": 30.2
+        },
+        {
+          "planet": "牛宿三 二",
+          "richness": "贫瘠",
+          "output": 29.45
+        },
+        {
+          "planet": "斗宿一 一",
+          "richness": "贫瘠",
+          "output": 29.4
+        },
+        {
+          "planet": "牛宿二 四",
+          "richness": "贫瘠",
+          "output": 29.33
+        },
+        {
+          "planet": "牛宿一 三",
+          "richness": "贫瘠",
+          "output": 28.41
+        },
+        {
+          "planet": "斗宿三 二",
+          "richness": "贫瘠",
+          "output": 28.05
+        },
+        {
+          "planet": "牛宿三 四",
+          "richness": "贫瘠",
+          "output": 27.11
+        }
+      ]
+    }
+  }
+}

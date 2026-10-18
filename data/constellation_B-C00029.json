@@ -1,0 +1,2700 @@
+{
+  "region": "B-R00004",
+  "constellation": "B-C00029",
+  "materials": {
+    "光彩合金": {
+      "max_output": 45.44,
+      "count": 19,
+      "records": [
+        {
+          "planet": "J144838 三",
+          "richness": "富裕",
+          "output": 45.44
+        },
+        {
+          "planet": "J155307 九",
+          "richness": "富裕",
+          "output": 44.49
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "富裕",
+          "output": 42.02
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "富裕",
+          "output": 41.93
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "富裕",
+          "output": 40.11
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "富裕",
+          "output": 37.76
+        },
+        {
+          "planet": "J134951 十",
+          "richness": "中等",
+          "output": 35.5
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "中等",
+          "output": 34.54
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "中等",
+          "output": 32.34
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "中等",
+          "output": 30.59
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "中等",
+          "output": 30.3
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "中等",
+          "output": 29.52
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "中等",
+          "output": 28.71
+        },
+        {
+          "planet": "J110656 一",
+          "richness": "中等",
+          "output": 28.48
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "中等",
+          "output": 27.52
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "贫瘠",
+          "output": 25.43
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "贫瘠",
+          "output": 25.32
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "贫瘠",
+          "output": 24.97
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "贫瘠",
+          "output": 23.9
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 46.92,
+      "count": 34,
+      "records": [
+        {
+          "planet": "J155307 九",
+          "richness": "完美",
+          "output": 46.92
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "富裕",
+          "output": 45.76
+        },
+        {
+          "planet": "J110656 一",
+          "richness": "富裕",
+          "output": 45.56
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "富裕",
+          "output": 43.88
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "富裕",
+          "output": 43.76
+        },
+        {
+          "planet": "J134951 十",
+          "richness": "富裕",
+          "output": 43.47
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "富裕",
+          "output": 42.17
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "富裕",
+          "output": 41.64
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "富裕",
+          "output": 40.51
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "富裕",
+          "output": 38.83
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "富裕",
+          "output": 37.84
+        },
+        {
+          "planet": "J134654 三",
+          "richness": "中等",
+          "output": 35.18
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "中等",
+          "output": 33.81
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "中等",
+          "output": 31.64
+        },
+        {
+          "planet": "J155307 六",
+          "richness": "中等",
+          "output": 31.55
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "中等",
+          "output": 31.03
+        },
+        {
+          "planet": "J134654 四",
+          "richness": "中等",
+          "output": 30.62
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "中等",
+          "output": 30.45
+        },
+        {
+          "planet": "J110656 七",
+          "richness": "中等",
+          "output": 30.1
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "中等",
+          "output": 29.43
+        },
+        {
+          "planet": "J155307 二",
+          "richness": "中等",
+          "output": 27.9
+        },
+        {
+          "planet": "J235117 四",
+          "richness": "中等",
+          "output": 27.43
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "贫瘠",
+          "output": 26.82
+        },
+        {
+          "planet": "J213737 四",
+          "richness": "贫瘠",
+          "output": 25.61
+        },
+        {
+          "planet": "J213737 一",
+          "richness": "贫瘠",
+          "output": 25.0
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "贫瘠",
+          "output": 24.36
+        },
+        {
+          "planet": "J143429 一",
+          "richness": "贫瘠",
+          "output": 24.3
+        },
+        {
+          "planet": "J112801 三",
+          "richness": "贫瘠",
+          "output": 23.9
+        },
+        {
+          "planet": "J155307 三",
+          "richness": "贫瘠",
+          "output": 23.61
+        },
+        {
+          "planet": "J120310 六",
+          "richness": "贫瘠",
+          "output": 20.16
+        },
+        {
+          "planet": "J134654 二",
+          "richness": "贫瘠",
+          "output": 19.52
+        },
+        {
+          "planet": "J120310 二",
+          "richness": "贫瘠",
+          "output": 18.82
+        },
+        {
+          "planet": "J143429 四",
+          "richness": "贫瘠",
+          "output": 18.62
+        },
+        {
+          "planet": "J134951 二",
+          "richness": "贫瘠",
+          "output": 18.21
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 48.46,
+      "count": 20,
+      "records": [
+        {
+          "planet": "J120310 七",
+          "richness": "完美",
+          "output": 48.46
+        },
+        {
+          "planet": "J235117 八",
+          "richness": "完美",
+          "output": 47.01
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "完美",
+          "output": 46.34
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "富裕",
+          "output": 44.23
+        },
+        {
+          "planet": "J112801 四",
+          "richness": "富裕",
+          "output": 42.22
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "富裕",
+          "output": 41.33
+        },
+        {
+          "planet": "J144838 三",
+          "richness": "富裕",
+          "output": 40.37
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "富裕",
+          "output": 39.56
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "富裕",
+          "output": 36.71
+        },
+        {
+          "planet": "J110656 五",
+          "richness": "中等",
+          "output": 35.67
+        },
+        {
+          "planet": "J110656 二",
+          "richness": "中等",
+          "output": 33.03
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "中等",
+          "output": 32.22
+        },
+        {
+          "planet": "J112801 二",
+          "richness": "中等",
+          "output": 31.35
+        },
+        {
+          "planet": "J213737 六",
+          "richness": "中等",
+          "output": 29.93
+        },
+        {
+          "planet": "J120310 五",
+          "richness": "中等",
+          "output": 29.73
+        },
+        {
+          "planet": "J143429 二",
+          "richness": "中等",
+          "output": 29.29
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "中等",
+          "output": 28.71
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "中等",
+          "output": 28.1
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "贫瘠",
+          "output": 25.58
+        },
+        {
+          "planet": "J213737 二",
+          "richness": "贫瘠",
+          "output": 24.21
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 33.12,
+      "count": 20,
+      "records": [
+        {
+          "planet": "J164938 一",
+          "richness": "完美",
+          "output": 33.12
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "完美",
+          "output": 30.8
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "富裕",
+          "output": 30.08
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "富裕",
+          "output": 30.02
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "富裕",
+          "output": 29.54
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "富裕",
+          "output": 28.36
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "富裕",
+          "output": 28.21
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "富裕",
+          "output": 27.34
+        },
+        {
+          "planet": "J144838 三",
+          "richness": "富裕",
+          "output": 27.01
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "富裕",
+          "output": 26.68
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "富裕",
+          "output": 25.81
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "富裕",
+          "output": 25.35
+        },
+        {
+          "planet": "J155307 九",
+          "richness": "富裕",
+          "output": 25.25
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "富裕",
+          "output": 25.09
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "中等",
+          "output": 23.47
+        },
+        {
+          "planet": "J120310 一",
+          "richness": "中等",
+          "output": 19.41
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "中等",
+          "output": 18.97
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "贫瘠",
+          "output": 17.55
+        },
+        {
+          "planet": "J143429 一",
+          "richness": "贫瘠",
+          "output": 17.5
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "贫瘠",
+          "output": 16.36
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 33.7,
+      "count": 4,
+      "records": [
+        {
+          "planet": "J110656 八",
+          "richness": "完美",
+          "output": 33.7
+        },
+        {
+          "planet": "J134654 七",
+          "richness": "完美",
+          "output": 31.47
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "中等",
+          "output": 19.97
+        },
+        {
+          "planet": "J235117 九",
+          "richness": "中等",
+          "output": 19.0
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 12.6,
+      "count": 18,
+      "records": [
+        {
+          "planet": "J235117 八",
+          "richness": "完美",
+          "output": 12.6
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "富裕",
+          "output": 11.91
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "富裕",
+          "output": 11.64
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "富裕",
+          "output": 11.61
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "富裕",
+          "output": 11.2
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "富裕",
+          "output": 10.94
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "富裕",
+          "output": 10.38
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "中等",
+          "output": 9.55
+        },
+        {
+          "planet": "J213737 七",
+          "richness": "中等",
+          "output": 9.49
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "中等",
+          "output": 9.39
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "中等",
+          "output": 9.34
+        },
+        {
+          "planet": "J155307 九",
+          "richness": "中等",
+          "output": 9.2
+        },
+        {
+          "planet": "J134951 六",
+          "richness": "中等",
+          "output": 9.04
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "中等",
+          "output": 8.25
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "中等",
+          "output": 7.39
+        },
+        {
+          "planet": "J134654 八",
+          "richness": "中等",
+          "output": 7.22
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "贫瘠",
+          "output": 6.7
+        },
+        {
+          "planet": "J213737 五",
+          "richness": "贫瘠",
+          "output": 6.28
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 6.89,
+      "count": 19,
+      "records": [
+        {
+          "planet": "J120310 七",
+          "richness": "富裕",
+          "output": 6.89
+        },
+        {
+          "planet": "J213737 五",
+          "richness": "富裕",
+          "output": 6.13
+        },
+        {
+          "planet": "J134654 八",
+          "richness": "富裕",
+          "output": 6.1
+        },
+        {
+          "planet": "J164938 三",
+          "richness": "中等",
+          "output": 5.32
+        },
+        {
+          "planet": "J213737 四",
+          "richness": "中等",
+          "output": 5.3
+        },
+        {
+          "planet": "J120310 二",
+          "richness": "中等",
+          "output": 4.36
+        },
+        {
+          "planet": "J235117 五",
+          "richness": "中等",
+          "output": 4.33
+        },
+        {
+          "planet": "J134951 三",
+          "richness": "中等",
+          "output": 4.3
+        },
+        {
+          "planet": "J155307 二",
+          "richness": "中等",
+          "output": 4.24
+        },
+        {
+          "planet": "J155307 一",
+          "richness": "贫瘠",
+          "output": 4.09
+        },
+        {
+          "planet": "J120310 八",
+          "richness": "贫瘠",
+          "output": 4.08
+        },
+        {
+          "planet": "J134951 二",
+          "richness": "贫瘠",
+          "output": 3.95
+        },
+        {
+          "planet": "J134654 二",
+          "richness": "贫瘠",
+          "output": 3.9
+        },
+        {
+          "planet": "J110656 二",
+          "richness": "贫瘠",
+          "output": 3.68
+        },
+        {
+          "planet": "J235117 三",
+          "richness": "贫瘠",
+          "output": 3.68
+        },
+        {
+          "planet": "J134654 四",
+          "richness": "贫瘠",
+          "output": 3.59
+        },
+        {
+          "planet": "J155307 四",
+          "richness": "贫瘠",
+          "output": 3.4
+        },
+        {
+          "planet": "J164938 二",
+          "richness": "贫瘠",
+          "output": 3.16
+        },
+        {
+          "planet": "J143429 三",
+          "richness": "贫瘠",
+          "output": 2.7
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 11.85,
+      "count": 34,
+      "records": [
+        {
+          "planet": "J134951 十",
+          "richness": "富裕",
+          "output": 11.85
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "富裕",
+          "output": 11.11
+        },
+        {
+          "planet": "J155307 九",
+          "richness": "富裕",
+          "output": 10.78
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "富裕",
+          "output": 10.77
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "富裕",
+          "output": 10.75
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "富裕",
+          "output": 10.61
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "富裕",
+          "output": 10.31
+        },
+        {
+          "planet": "J134654 七",
+          "richness": "富裕",
+          "output": 10.11
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "中等",
+          "output": 9.64
+        },
+        {
+          "planet": "J131204 四",
+          "richness": "中等",
+          "output": 9.32
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "中等",
+          "output": 9.01
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "中等",
+          "output": 8.84
+        },
+        {
+          "planet": "J134654 六",
+          "richness": "中等",
+          "output": 7.75
+        },
+        {
+          "planet": "J155307 三",
+          "richness": "中等",
+          "output": 7.69
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "中等",
+          "output": 7.45
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "中等",
+          "output": 7.38
+        },
+        {
+          "planet": "J143429 三",
+          "richness": "中等",
+          "output": 7.35
+        },
+        {
+          "planet": "J155307 四",
+          "richness": "中等",
+          "output": 7.25
+        },
+        {
+          "planet": "J120310 六",
+          "richness": "中等",
+          "output": 7.23
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "贫瘠",
+          "output": 7.18
+        },
+        {
+          "planet": "J213737 一",
+          "richness": "贫瘠",
+          "output": 7.01
+        },
+        {
+          "planet": "J155307 一",
+          "richness": "贫瘠",
+          "output": 6.95
+        },
+        {
+          "planet": "J155307 十",
+          "richness": "贫瘠",
+          "output": 6.76
+        },
+        {
+          "planet": "J110656 七",
+          "richness": "贫瘠",
+          "output": 6.72
+        },
+        {
+          "planet": "J110656 一",
+          "richness": "贫瘠",
+          "output": 6.46
+        },
+        {
+          "planet": "J134654 三",
+          "richness": "贫瘠",
+          "output": 6.29
+        },
+        {
+          "planet": "J112801 三",
+          "richness": "贫瘠",
+          "output": 6.23
+        },
+        {
+          "planet": "J235117 四",
+          "richness": "贫瘠",
+          "output": 6.22
+        },
+        {
+          "planet": "J164938 三",
+          "richness": "贫瘠",
+          "output": 5.88
+        },
+        {
+          "planet": "J155307 五",
+          "richness": "贫瘠",
+          "output": 5.69
+        },
+        {
+          "planet": "J134951 二",
+          "richness": "贫瘠",
+          "output": 5.53
+        },
+        {
+          "planet": "J235117 五",
+          "richness": "贫瘠",
+          "output": 5.23
+        },
+        {
+          "planet": "J120310 三",
+          "richness": "贫瘠",
+          "output": 5.08
+        },
+        {
+          "planet": "J235117 二",
+          "richness": "贫瘠",
+          "output": 4.95
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 49.18,
+      "count": 7,
+      "records": [
+        {
+          "planet": "J213737 九",
+          "richness": "完美",
+          "output": 49.18
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "完美",
+          "output": 46.75
+        },
+        {
+          "planet": "J134654 七",
+          "richness": "富裕",
+          "output": 44.6
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "富裕",
+          "output": 39.73
+        },
+        {
+          "planet": "J131204 一",
+          "richness": "富裕",
+          "output": 38.63
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "中等",
+          "output": 32.97
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "贫瘠",
+          "output": 27.03
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 11.56,
+      "count": 20,
+      "records": [
+        {
+          "planet": "J134654 七",
+          "richness": "富裕",
+          "output": 11.56
+        },
+        {
+          "planet": "J235117 六",
+          "richness": "富裕",
+          "output": 11.05
+        },
+        {
+          "planet": "J131204 一",
+          "richness": "富裕",
+          "output": 9.76
+        },
+        {
+          "planet": "J235117 二",
+          "richness": "中等",
+          "output": 9.2
+        },
+        {
+          "planet": "J155307 六",
+          "richness": "中等",
+          "output": 8.75
+        },
+        {
+          "planet": "J120310 四",
+          "richness": "中等",
+          "output": 8.62
+        },
+        {
+          "planet": "J134951 三",
+          "richness": "中等",
+          "output": 8.43
+        },
+        {
+          "planet": "J144838 二",
+          "richness": "中等",
+          "output": 8.33
+        },
+        {
+          "planet": "J131204 四",
+          "richness": "中等",
+          "output": 8.28
+        },
+        {
+          "planet": "J120310 三",
+          "richness": "中等",
+          "output": 8.25
+        },
+        {
+          "planet": "J164938 二",
+          "richness": "中等",
+          "output": 8.09
+        },
+        {
+          "planet": "J110656 七",
+          "richness": "贫瘠",
+          "output": 6.56
+        },
+        {
+          "planet": "J120310 六",
+          "richness": "贫瘠",
+          "output": 6.46
+        },
+        {
+          "planet": "J134654 六",
+          "richness": "贫瘠",
+          "output": 6.44
+        },
+        {
+          "planet": "J235117 九",
+          "richness": "贫瘠",
+          "output": 6.39
+        },
+        {
+          "planet": "J134654 三",
+          "richness": "贫瘠",
+          "output": 5.59
+        },
+        {
+          "planet": "J155307 十",
+          "richness": "贫瘠",
+          "output": 5.54
+        },
+        {
+          "planet": "J155307 三",
+          "richness": "贫瘠",
+          "output": 5.39
+        },
+        {
+          "planet": "J143429 四",
+          "richness": "贫瘠",
+          "output": 5.26
+        },
+        {
+          "planet": "J155307 二",
+          "richness": "贫瘠",
+          "output": 4.95
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 46.17,
+      "count": 20,
+      "records": [
+        {
+          "planet": "J235117 三",
+          "richness": "完美",
+          "output": 46.17
+        },
+        {
+          "planet": "J120310 五",
+          "richness": "富裕",
+          "output": 44.28
+        },
+        {
+          "planet": "J155307 七",
+          "richness": "富裕",
+          "output": 42.66
+        },
+        {
+          "planet": "J110656 二",
+          "richness": "富裕",
+          "output": 41.01
+        },
+        {
+          "planet": "J131204 四",
+          "richness": "中等",
+          "output": 35.21
+        },
+        {
+          "planet": "J235117 四",
+          "richness": "中等",
+          "output": 32.77
+        },
+        {
+          "planet": "J134654 二",
+          "richness": "中等",
+          "output": 32.28
+        },
+        {
+          "planet": "J134654 六",
+          "richness": "中等",
+          "output": 28.48
+        },
+        {
+          "planet": "J155307 四",
+          "richness": "贫瘠",
+          "output": 26.91
+        },
+        {
+          "planet": "J155307 六",
+          "richness": "贫瘠",
+          "output": 26.88
+        },
+        {
+          "planet": "J213737 七",
+          "richness": "贫瘠",
+          "output": 26.48
+        },
+        {
+          "planet": "J134654 四",
+          "richness": "贫瘠",
+          "output": 26.33
+        },
+        {
+          "planet": "J112801 二",
+          "richness": "贫瘠",
+          "output": 24.65
+        },
+        {
+          "planet": "J235117 二",
+          "richness": "贫瘠",
+          "output": 24.65
+        },
+        {
+          "planet": "J131204 三",
+          "richness": "贫瘠",
+          "output": 24.1
+        },
+        {
+          "planet": "J213737 二",
+          "richness": "贫瘠",
+          "output": 23.66
+        },
+        {
+          "planet": "J134654 三",
+          "richness": "贫瘠",
+          "output": 22.04
+        },
+        {
+          "planet": "J144838 二",
+          "richness": "贫瘠",
+          "output": 20.53
+        },
+        {
+          "planet": "J213737 三",
+          "richness": "贫瘠",
+          "output": 19.89
+        },
+        {
+          "planet": "J213737 一",
+          "richness": "贫瘠",
+          "output": 18.47
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 155.14,
+      "count": 5,
+      "records": [
+        {
+          "planet": "J143429 一",
+          "richness": "富裕",
+          "output": 155.14
+        },
+        {
+          "planet": "J110656 四",
+          "richness": "中等",
+          "output": 112.33
+        },
+        {
+          "planet": "J134951 六",
+          "richness": "中等",
+          "output": 111.92
+        },
+        {
+          "planet": "J235117 九",
+          "richness": "中等",
+          "output": 108.37
+        },
+        {
+          "planet": "J213737 五",
+          "richness": "贫瘠",
+          "output": 95.0
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 40.77,
+      "count": 12,
+      "records": [
+        {
+          "planet": "J131204 三",
+          "richness": "富裕",
+          "output": 40.77
+        },
+        {
+          "planet": "J213737 五",
+          "richness": "富裕",
+          "output": 37.79
+        },
+        {
+          "planet": "J134951 六",
+          "richness": "富裕",
+          "output": 37.44
+        },
+        {
+          "planet": "J134654 八",
+          "richness": "中等",
+          "output": 34.08
+        },
+        {
+          "planet": "J110656 三",
+          "richness": "中等",
+          "output": 30.71
+        },
+        {
+          "planet": "J213737 九",
+          "richness": "中等",
+          "output": 30.59
+        },
+        {
+          "planet": "J155307 八",
+          "richness": "中等",
+          "output": 28.8
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "贫瘠",
+          "output": 26.85
+        },
+        {
+          "planet": "J120310 八",
+          "richness": "贫瘠",
+          "output": 25.87
+        },
+        {
+          "planet": "J155307 七",
+          "richness": "贫瘠",
+          "output": 25.52
+        },
+        {
+          "planet": "J235117 三",
+          "richness": "贫瘠",
+          "output": 24.39
+        },
+        {
+          "planet": "J213737 七",
+          "richness": "贫瘠",
+          "output": 23.49
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 9.43,
+      "count": 18,
+      "records": [
+        {
+          "planet": "J110656 三",
+          "richness": "中等",
+          "output": 9.43
+        },
+        {
+          "planet": "J120310 八",
+          "richness": "中等",
+          "output": 9.4
+        },
+        {
+          "planet": "J143429 三",
+          "richness": "中等",
+          "output": 9.17
+        },
+        {
+          "planet": "J235117 四",
+          "richness": "中等",
+          "output": 8.77
+        },
+        {
+          "planet": "J235117 三",
+          "richness": "中等",
+          "output": 8.72
+        },
+        {
+          "planet": "J155307 三",
+          "richness": "中等",
+          "output": 8.68
+        },
+        {
+          "planet": "J164938 二",
+          "richness": "中等",
+          "output": 8.68
+        },
+        {
+          "planet": "J143429 四",
+          "richness": "中等",
+          "output": 8.19
+        },
+        {
+          "planet": "J155307 一",
+          "richness": "中等",
+          "output": 7.99
+        },
+        {
+          "planet": "J110656 六",
+          "richness": "中等",
+          "output": 7.56
+        },
+        {
+          "planet": "J134951 三",
+          "richness": "中等",
+          "output": 7.26
+        },
+        {
+          "planet": "J155307 五",
+          "richness": "贫瘠",
+          "output": 6.98
+        },
+        {
+          "planet": "J213737 四",
+          "richness": "贫瘠",
+          "output": 6.8
+        },
+        {
+          "planet": "J213737 七",
+          "richness": "贫瘠",
+          "output": 6.67
+        },
+        {
+          "planet": "J213737 三",
+          "richness": "贫瘠",
+          "output": 6.52
+        },
+        {
+          "planet": "J155307 四",
+          "richness": "贫瘠",
+          "output": 6.49
+        },
+        {
+          "planet": "J155307 八",
+          "richness": "贫瘠",
+          "output": 6.26
+        },
+        {
+          "planet": "J144838 二",
+          "richness": "贫瘠",
+          "output": 4.79
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 42.08,
+      "count": 1,
+      "records": [
+        {
+          "planet": "J112801 二",
+          "richness": "富裕",
+          "output": 42.08
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 46.66,
+      "count": 24,
+      "records": [
+        {
+          "planet": "J110656 三",
+          "richness": "完美",
+          "output": 46.66
+        },
+        {
+          "planet": "J131204 三",
+          "richness": "完美",
+          "output": 46.34
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "完美",
+          "output": 46.2
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "富裕",
+          "output": 45.53
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "富裕",
+          "output": 44.78
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "富裕",
+          "output": 42.83
+        },
+        {
+          "planet": "J144838 四",
+          "richness": "富裕",
+          "output": 40.22
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "富裕",
+          "output": 39.21
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "富裕",
+          "output": 38.89
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "富裕",
+          "output": 37.09
+        },
+        {
+          "planet": "J235117 八",
+          "richness": "中等",
+          "output": 36.42
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "中等",
+          "output": 35.23
+        },
+        {
+          "planet": "J235117 六",
+          "richness": "中等",
+          "output": 34.6
+        },
+        {
+          "planet": "J110656 一",
+          "richness": "中等",
+          "output": 33.96
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "中等",
+          "output": 32.94
+        },
+        {
+          "planet": "J155307 九",
+          "richness": "中等",
+          "output": 32.51
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "中等",
+          "output": 30.65
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "中等",
+          "output": 28.62
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "贫瘠",
+          "output": 26.54
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "贫瘠",
+          "output": 26.01
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "贫瘠",
+          "output": 25.23
+        },
+        {
+          "planet": "J235117 三",
+          "richness": "贫瘠",
+          "output": 25.09
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "贫瘠",
+          "output": 24.1
+        },
+        {
+          "planet": "J213737 五",
+          "richness": "贫瘠",
+          "output": 23.49
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 51.97,
+      "count": 10,
+      "records": [
+        {
+          "planet": "J235117 六",
+          "richness": "完美",
+          "output": 51.97
+        },
+        {
+          "planet": "J134654 七",
+          "richness": "完美",
+          "output": 50.37
+        },
+        {
+          "planet": "J110656 六",
+          "richness": "富裕",
+          "output": 43.33
+        },
+        {
+          "planet": "J213737 九",
+          "richness": "富裕",
+          "output": 41.96
+        },
+        {
+          "planet": "J110656 八",
+          "richness": "富裕",
+          "output": 37.64
+        },
+        {
+          "planet": "J164938 一",
+          "richness": "中等",
+          "output": 35.44
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "中等",
+          "output": 34.48
+        },
+        {
+          "planet": "J120310 四",
+          "richness": "中等",
+          "output": 32.74
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "中等",
+          "output": 29.93
+        },
+        {
+          "planet": "J131204 一",
+          "richness": "贫瘠",
+          "output": 27.14
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 67.61,
+      "count": 12,
+      "records": [
+        {
+          "planet": "J131204 一",
+          "richness": "完美",
+          "output": 67.61
+        },
+        {
+          "planet": "J120310 四",
+          "richness": "完美",
+          "output": 66.77
+        },
+        {
+          "planet": "J120310 一",
+          "richness": "完美",
+          "output": 63.65
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "完美",
+          "output": 62.35
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "完美",
+          "output": 59.74
+        },
+        {
+          "planet": "J134654 七",
+          "richness": "富裕",
+          "output": 56.37
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "富裕",
+          "output": 54.05
+        },
+        {
+          "planet": "J110656 八",
+          "richness": "富裕",
+          "output": 51.95
+        },
+        {
+          "planet": "J235117 九",
+          "richness": "富裕",
+          "output": 47.13
+        },
+        {
+          "planet": "J235117 六",
+          "richness": "中等",
+          "output": 45.86
+        },
+        {
+          "planet": "J164938 一",
+          "richness": "中等",
+          "output": 35.92
+        },
+        {
+          "planet": "J143429 一",
+          "richness": "贫瘠",
+          "output": 32.15
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 34.61,
+      "count": 5,
+      "records": [
+        {
+          "planet": "J120310 四",
+          "richness": "完美",
+          "output": 34.61
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "完美",
+          "output": 32.44
+        },
+        {
+          "planet": "J235117 六",
+          "richness": "完美",
+          "output": 30.95
+        },
+        {
+          "planet": "J131204 一",
+          "richness": "完美",
+          "output": 30.88
+        },
+        {
+          "planet": "J110656 八",
+          "richness": "中等",
+          "output": 23.9
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 23.16,
+      "count": 13,
+      "records": [
+        {
+          "planet": "J120310 一",
+          "richness": "完美",
+          "output": 23.16
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "富裕",
+          "output": 19.04
+        },
+        {
+          "planet": "J213737 四",
+          "richness": "中等",
+          "output": 17.84
+        },
+        {
+          "planet": "J164938 三",
+          "richness": "中等",
+          "output": 17.5
+        },
+        {
+          "planet": "J155307 五",
+          "richness": "中等",
+          "output": 17.27
+        },
+        {
+          "planet": "J155307 六",
+          "richness": "中等",
+          "output": 15.94
+        },
+        {
+          "planet": "J120310 二",
+          "richness": "中等",
+          "output": 15.73
+        },
+        {
+          "planet": "J120310 三",
+          "richness": "中等",
+          "output": 14.09
+        },
+        {
+          "planet": "J112801 三",
+          "richness": "贫瘠",
+          "output": 13.11
+        },
+        {
+          "planet": "J134654 二",
+          "richness": "贫瘠",
+          "output": 11.21
+        },
+        {
+          "planet": "J213737 三",
+          "richness": "贫瘠",
+          "output": 10.31
+        },
+        {
+          "planet": "J131204 四",
+          "richness": "贫瘠",
+          "output": 9.66
+        },
+        {
+          "planet": "J155307 十",
+          "richness": "贫瘠",
+          "output": 9.61
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 20.35,
+      "count": 15,
+      "records": [
+        {
+          "planet": "J213737 九",
+          "richness": "完美",
+          "output": 20.35
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "完美",
+          "output": 19.26
+        },
+        {
+          "planet": "J110656 六",
+          "richness": "完美",
+          "output": 18.65
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "富裕",
+          "output": 17.45
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "富裕",
+          "output": 16.58
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "富裕",
+          "output": 15.68
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "富裕",
+          "output": 14.7
+        },
+        {
+          "planet": "J235117 七",
+          "richness": "富裕",
+          "output": 14.7
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "中等",
+          "output": 14.04
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "中等",
+          "output": 12.88
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "中等",
+          "output": 12.52
+        },
+        {
+          "planet": "J110656 四",
+          "richness": "中等",
+          "output": 12.39
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "贫瘠",
+          "output": 10.8
+        },
+        {
+          "planet": "J164938 五",
+          "richness": "贫瘠",
+          "output": 10.42
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "贫瘠",
+          "output": 10.22
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 47.82,
+      "count": 27,
+      "records": [
+        {
+          "planet": "J143429 二",
+          "richness": "完美",
+          "output": 47.82
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "完美",
+          "output": 47.01
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "完美",
+          "output": 46.63
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "富裕",
+          "output": 45.59
+        },
+        {
+          "planet": "J112801 四",
+          "richness": "富裕",
+          "output": 45.24
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "富裕",
+          "output": 44.86
+        },
+        {
+          "planet": "J131204 五",
+          "richness": "富裕",
+          "output": 43.79
+        },
+        {
+          "planet": "J144838 三",
+          "richness": "富裕",
+          "output": 43.44
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "富裕",
+          "output": 42.17
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "富裕",
+          "output": 41.85
+        },
+        {
+          "planet": "J235117 八",
+          "richness": "富裕",
+          "output": 41.21
+        },
+        {
+          "planet": "J120310 五",
+          "richness": "富裕",
+          "output": 40.22
+        },
+        {
+          "planet": "J164938 四",
+          "richness": "富裕",
+          "output": 39.06
+        },
+        {
+          "planet": "J134951 十",
+          "richness": "富裕",
+          "output": 38.92
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "富裕",
+          "output": 38.54
+        },
+        {
+          "planet": "J213737 八",
+          "richness": "富裕",
+          "output": 38.37
+        },
+        {
+          "planet": "J110656 五",
+          "richness": "富裕",
+          "output": 37.58
+        },
+        {
+          "planet": "J235117 一",
+          "richness": "富裕",
+          "output": 37.5
+        },
+        {
+          "planet": "J112801 二",
+          "richness": "中等",
+          "output": 36.22
+        },
+        {
+          "planet": "J110656 四",
+          "richness": "中等",
+          "output": 36.19
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "中等",
+          "output": 35.9
+        },
+        {
+          "planet": "J120310 七",
+          "richness": "中等",
+          "output": 34.45
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "中等",
+          "output": 32.57
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "中等",
+          "output": 31.2
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "中等",
+          "output": 28.13
+        },
+        {
+          "planet": "J110656 二",
+          "richness": "贫瘠",
+          "output": 26.94
+        },
+        {
+          "planet": "J213737 二",
+          "richness": "贫瘠",
+          "output": 23.66
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 2.94,
+      "count": 11,
+      "records": [
+        {
+          "planet": "J110656 五",
+          "richness": "完美",
+          "output": 2.94
+        },
+        {
+          "planet": "J213737 二",
+          "richness": "富裕",
+          "output": 2.71
+        },
+        {
+          "planet": "J213737 六",
+          "richness": "富裕",
+          "output": 2.57
+        },
+        {
+          "planet": "J235117 五",
+          "richness": "中等",
+          "output": 2.14
+        },
+        {
+          "planet": "J134654 六",
+          "richness": "中等",
+          "output": 2.12
+        },
+        {
+          "planet": "J120310 三",
+          "richness": "中等",
+          "output": 1.71
+        },
+        {
+          "planet": "J164938 三",
+          "richness": "中等",
+          "output": 1.68
+        },
+        {
+          "planet": "J110656 四",
+          "richness": "贫瘠",
+          "output": 1.63
+        },
+        {
+          "planet": "J213737 三",
+          "richness": "贫瘠",
+          "output": 1.51
+        },
+        {
+          "planet": "J143429 四",
+          "richness": "贫瘠",
+          "output": 1.19
+        },
+        {
+          "planet": "J155307 二",
+          "richness": "贫瘠",
+          "output": 1.19
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 36.92,
+      "count": 10,
+      "records": [
+        {
+          "planet": "J143429 一",
+          "richness": "富裕",
+          "output": 36.92
+        },
+        {
+          "planet": "J235117 九",
+          "richness": "中等",
+          "output": 36.48
+        },
+        {
+          "planet": "J134654 四",
+          "richness": "中等",
+          "output": 32.8
+        },
+        {
+          "planet": "J235117 五",
+          "richness": "中等",
+          "output": 31.64
+        },
+        {
+          "planet": "J110656 七",
+          "richness": "中等",
+          "output": 31.41
+        },
+        {
+          "planet": "J213737 一",
+          "richness": "中等",
+          "output": 29.73
+        },
+        {
+          "planet": "J120310 六",
+          "richness": "中等",
+          "output": 29.29
+        },
+        {
+          "planet": "J134951 三",
+          "richness": "贫瘠",
+          "output": 21.43
+        },
+        {
+          "planet": "J164938 二",
+          "richness": "贫瘠",
+          "output": 19.0
+        },
+        {
+          "planet": "J155307 十",
+          "richness": "贫瘠",
+          "output": 18.82
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 46.46,
+      "count": 13,
+      "records": [
+        {
+          "planet": "J110656 一",
+          "richness": "完美",
+          "output": 46.46
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "完美",
+          "output": 46.4
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "富裕",
+          "output": 42.6
+        },
+        {
+          "planet": "J134951 四",
+          "richness": "富裕",
+          "output": 42.17
+        },
+        {
+          "planet": "J235117 八",
+          "richness": "富裕",
+          "output": 36.8
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "中等",
+          "output": 33.55
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "中等",
+          "output": 33.09
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "中等",
+          "output": 32.16
+        },
+        {
+          "planet": "J144838 三",
+          "richness": "中等",
+          "output": 31.15
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "中等",
+          "output": 29.09
+        },
+        {
+          "planet": "J131204 六",
+          "richness": "中等",
+          "output": 28.68
+        },
+        {
+          "planet": "J134951 十",
+          "richness": "贫瘠",
+          "output": 25.52
+        },
+        {
+          "planet": "J144838 五",
+          "richness": "贫瘠",
+          "output": 25.14
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 10.73,
+      "count": 6,
+      "records": [
+        {
+          "planet": "J155307 七",
+          "richness": "富裕",
+          "output": 10.73
+        },
+        {
+          "planet": "J131204 三",
+          "richness": "富裕",
+          "output": 9.79
+        },
+        {
+          "planet": "J213737 七",
+          "richness": "中等",
+          "output": 8.81
+        },
+        {
+          "planet": "J120310 八",
+          "richness": "中等",
+          "output": 8.64
+        },
+        {
+          "planet": "J110656 四",
+          "richness": "中等",
+          "output": 8.48
+        },
+        {
+          "planet": "J110656 三",
+          "richness": "贫瘠",
+          "output": 6.9
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 33.81,
+      "count": 28,
+      "records": [
+        {
+          "planet": "J110656 六",
+          "richness": "完美",
+          "output": 33.81
+        },
+        {
+          "planet": "J112801 五",
+          "richness": "完美",
+          "output": 32.05
+        },
+        {
+          "planet": "J134951 八",
+          "richness": "完美",
+          "output": 32.02
+        },
+        {
+          "planet": "J164938 六",
+          "richness": "富裕",
+          "output": 30.2
+        },
+        {
+          "planet": "J110656 五",
+          "richness": "富裕",
+          "output": 29.99
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "富裕",
+          "output": 27.8
+        },
+        {
+          "planet": "J120310 五",
+          "richness": "富裕",
+          "output": 27.14
+        },
+        {
+          "planet": "J120310 一",
+          "richness": "富裕",
+          "output": 27.07
+        },
+        {
+          "planet": "J213737 九",
+          "richness": "富裕",
+          "output": 25.98
+        },
+        {
+          "planet": "J164938 七",
+          "richness": "富裕",
+          "output": 25.69
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "富裕",
+          "output": 25.58
+        },
+        {
+          "planet": "J144838 一",
+          "richness": "富裕",
+          "output": 25.23
+        },
+        {
+          "planet": "J134951 十",
+          "richness": "富裕",
+          "output": 25.08
+        },
+        {
+          "planet": "J110656 一",
+          "richness": "富裕",
+          "output": 24.96
+        },
+        {
+          "planet": "J143429 五",
+          "richness": "富裕",
+          "output": 24.94
+        },
+        {
+          "planet": "J144838 三",
+          "richness": "富裕",
+          "output": 24.69
+        },
+        {
+          "planet": "J134654 一",
+          "richness": "富裕",
+          "output": 24.57
+        },
+        {
+          "planet": "J112801 六",
+          "richness": "中等",
+          "output": 24.11
+        },
+        {
+          "planet": "J164938 一",
+          "richness": "中等",
+          "output": 23.82
+        },
+        {
+          "planet": "J134951 一",
+          "richness": "中等",
+          "output": 23.26
+        },
+        {
+          "planet": "J112801 四",
+          "richness": "中等",
+          "output": 21.96
+        },
+        {
+          "planet": "J235117 八",
+          "richness": "中等",
+          "output": 21.34
+        },
+        {
+          "planet": "J112801 一",
+          "richness": "中等",
+          "output": 20.8
+        },
+        {
+          "planet": "J143429 六",
+          "richness": "中等",
+          "output": 19.2
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "中等",
+          "output": 18.25
+        },
+        {
+          "planet": "J131204 二",
+          "richness": "贫瘠",
+          "output": 18.19
+        },
+        {
+          "planet": "J134951 九",
+          "richness": "贫瘠",
+          "output": 17.61
+        },
+        {
+          "planet": "J134654 九",
+          "richness": "贫瘠",
+          "output": 17.57
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 53.07,
+      "count": 9,
+      "records": [
+        {
+          "planet": "J120310 四",
+          "richness": "完美",
+          "output": 53.07
+        },
+        {
+          "planet": "J164938 一",
+          "richness": "完美",
+          "output": 51.3
+        },
+        {
+          "planet": "J120310 一",
+          "richness": "完美",
+          "output": 49.71
+        },
+        {
+          "planet": "J110656 六",
+          "richness": "富裕",
+          "output": 37.44
+        },
+        {
+          "planet": "J143429 二",
+          "richness": "中等",
+          "output": 35.61
+        },
+        {
+          "planet": "J131204 一",
+          "richness": "中等",
+          "output": 35.5
+        },
+        {
+          "planet": "J110656 八",
+          "richness": "中等",
+          "output": 35.09
+        },
+        {
+          "planet": "J120310 七",
+          "richness": "中等",
+          "output": 27.84
+        },
+        {
+          "planet": "J213737 六",
+          "richness": "中等",
+          "output": 27.78
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 30.86,
+      "count": 11,
+      "records": [
+        {
+          "planet": "J110656 三",
+          "richness": "完美",
+          "output": 30.86
+        },
+        {
+          "planet": "J134951 六",
+          "richness": "富裕",
+          "output": 28.11
+        },
+        {
+          "planet": "J144838 二",
+          "richness": "中等",
+          "output": 23.08
+        },
+        {
+          "planet": "J155307 八",
+          "richness": "中等",
+          "output": 22.89
+        },
+        {
+          "planet": "J143429 三",
+          "richness": "中等",
+          "output": 22.6
+        },
+        {
+          "planet": "J155307 一",
+          "richness": "中等",
+          "output": 22.18
+        },
+        {
+          "planet": "J120310 二",
+          "richness": "中等",
+          "output": 21.36
+        },
+        {
+          "planet": "J134951 二",
+          "richness": "中等",
+          "output": 20.15
+        },
+        {
+          "planet": "J235117 二",
+          "richness": "中等",
+          "output": 18.37
+        },
+        {
+          "planet": "J155307 五",
+          "richness": "贫瘠",
+          "output": 16.63
+        },
+        {
+          "planet": "J112801 三",
+          "richness": "贫瘠",
+          "output": 14.19
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 39.3,
+      "count": 3,
+      "records": [
+        {
+          "planet": "J155307 七",
+          "richness": "富裕",
+          "output": 39.3
+        },
+        {
+          "planet": "J134654 八",
+          "richness": "中等",
+          "output": 35.64
+        },
+        {
+          "planet": "J155307 八",
+          "richness": "中等",
+          "output": 28.71
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 490.97,
+      "count": 10,
+      "records": [
+        {
+          "planet": "J120310 四",
+          "richness": "完美",
+          "output": 490.97
+        },
+        {
+          "planet": "J213737 九",
+          "richness": "完美",
+          "output": 472.7
+        },
+        {
+          "planet": "J164938 一",
+          "richness": "富裕",
+          "output": 444.28
+        },
+        {
+          "planet": "J134951 五",
+          "richness": "富裕",
+          "output": 410.06
+        },
+        {
+          "planet": "J235117 六",
+          "richness": "富裕",
+          "output": 388.02
+        },
+        {
+          "planet": "J120310 一",
+          "richness": "富裕",
+          "output": 376.71
+        },
+        {
+          "planet": "J110656 八",
+          "richness": "中等",
+          "output": 337.85
+        },
+        {
+          "planet": "J134654 五",
+          "richness": "中等",
+          "output": 316.68
+        },
+        {
+          "planet": "J134951 七",
+          "richness": "中等",
+          "output": 293.77
+        },
+        {
+          "planet": "J110656 六",
+          "richness": "中等",
+          "output": 288.55
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 38.05,
+      "count": 2,
+      "records": [
+        {
+          "planet": "J110656 四",
+          "richness": "富裕",
+          "output": 38.05
+        },
+        {
+          "planet": "J143429 二",
+          "richness": "中等",
+          "output": 28.91
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 46.46,
+      "count": 8,
+      "records": [
+        {
+          "planet": "J134654 八",
+          "richness": "完美",
+          "output": 46.46
+        },
+        {
+          "planet": "J213737 六",
+          "richness": "富裕",
+          "output": 45.97
+        },
+        {
+          "planet": "J155307 八",
+          "richness": "富裕",
+          "output": 44.52
+        },
+        {
+          "planet": "J155307 七",
+          "richness": "富裕",
+          "output": 41.91
+        },
+        {
+          "planet": "J134951 六",
+          "richness": "富裕",
+          "output": 40.69
+        },
+        {
+          "planet": "J120310 八",
+          "richness": "富裕",
+          "output": 37.9
+        },
+        {
+          "planet": "J131204 三",
+          "richness": "贫瘠",
+          "output": 25.14
+        },
+        {
+          "planet": "J112801 四",
+          "richness": "贫瘠",
+          "output": 23.75
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 35.58,
+      "count": 30,
+      "records": [
+        {
+          "planet": "J164938 二",
+          "richness": "中等",
+          "output": 35.58
+        },
+        {
+          "planet": "J120310 二",
+          "richness": "中等",
+          "output": 34.63
+        },
+        {
+          "planet": "J235117 二",
+          "richness": "中等",
+          "output": 34.51
+        },
+        {
+          "planet": "J134951 三",
+          "richness": "中等",
+          "output": 34.45
+        },
+        {
+          "planet": "J110656 七",
+          "richness": "中等",
+          "output": 33.76
+        },
+        {
+          "planet": "J143429 四",
+          "richness": "中等",
+          "output": 33.73
+        },
+        {
+          "planet": "J134654 三",
+          "richness": "中等",
+          "output": 32.8
+        },
+        {
+          "planet": "J112801 三",
+          "richness": "中等",
+          "output": 32.74
+        },
+        {
+          "planet": "J131204 四",
+          "richness": "中等",
+          "output": 32.74
+        },
+        {
+          "planet": "J235117 五",
+          "richness": "中等",
+          "output": 31.44
+        },
+        {
+          "planet": "J134654 六",
+          "richness": "中等",
+          "output": 31.41
+        },
+        {
+          "planet": "J134654 二",
+          "richness": "中等",
+          "output": 30.42
+        },
+        {
+          "planet": "J213737 四",
+          "richness": "中等",
+          "output": 30.25
+        },
+        {
+          "planet": "J235117 四",
+          "richness": "中等",
+          "output": 29.9
+        },
+        {
+          "planet": "J143429 三",
+          "richness": "中等",
+          "output": 28.88
+        },
+        {
+          "planet": "J155307 四",
+          "richness": "中等",
+          "output": 28.45
+        },
+        {
+          "planet": "J144838 二",
+          "richness": "中等",
+          "output": 28.01
+        },
+        {
+          "planet": "J120310 六",
+          "richness": "中等",
+          "output": 27.64
+        },
+        {
+          "planet": "J155307 三",
+          "richness": "贫瘠",
+          "output": 26.91
+        },
+        {
+          "planet": "J120310 三",
+          "richness": "贫瘠",
+          "output": 23.69
+        },
+        {
+          "planet": "J155307 二",
+          "richness": "贫瘠",
+          "output": 23.4
+        },
+        {
+          "planet": "J134654 四",
+          "richness": "贫瘠",
+          "output": 23.26
+        },
+        {
+          "planet": "J155307 十",
+          "richness": "贫瘠",
+          "output": 23.26
+        },
+        {
+          "planet": "J155307 一",
+          "richness": "贫瘠",
+          "output": 21.89
+        },
+        {
+          "planet": "J213737 一",
+          "richness": "贫瘠",
+          "output": 19.78
+        },
+        {
+          "planet": "J155307 六",
+          "richness": "贫瘠",
+          "output": 19.63
+        },
+        {
+          "planet": "J213737 三",
+          "richness": "贫瘠",
+          "output": 19.2
+        },
+        {
+          "planet": "J164938 三",
+          "richness": "贫瘠",
+          "output": 19.05
+        },
+        {
+          "planet": "J155307 五",
+          "richness": "贫瘠",
+          "output": 19.02
+        },
+        {
+          "planet": "J134951 二",
+          "richness": "贫瘠",
+          "output": 17.98
+        }
+      ]
+    }
+  }
+}

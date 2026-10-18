@@ -1,0 +1,1550 @@
+{
+  "region": "UUA-F4",
+  "constellation": "HN5-RL",
+  "materials": {
+    "光彩合金": {
+      "max_output": 32.52,
+      "count": 12,
+      "records": [
+        {
+          "planet": "9MX-1C 八",
+          "richness": "完美",
+          "output": 32.52
+        },
+        {
+          "planet": "FRW3-2 七",
+          "richness": "完美",
+          "output": 32.12
+        },
+        {
+          "planet": "1HH3-E 八",
+          "richness": "完美",
+          "output": 32.1
+        },
+        {
+          "planet": "N-9EOQ 八",
+          "richness": "富裕",
+          "output": 31.6
+        },
+        {
+          "planet": "LQH0-H 七",
+          "richness": "富裕",
+          "output": 30.98
+        },
+        {
+          "planet": "DUIU-Q 十",
+          "richness": "富裕",
+          "output": 26.42
+        },
+        {
+          "planet": "IED-4U 五",
+          "richness": "富裕",
+          "output": 26.16
+        },
+        {
+          "planet": "N-9EOQ 四",
+          "richness": "富裕",
+          "output": 25.72
+        },
+        {
+          "planet": "IED-4U 七",
+          "richness": "中等",
+          "output": 23.3
+        },
+        {
+          "planet": "FRW3-2 九",
+          "richness": "中等",
+          "output": 21.36
+        },
+        {
+          "planet": "1HH3-E 七",
+          "richness": "中等",
+          "output": 21.28
+        },
+        {
+          "planet": "1HH3-E 三",
+          "richness": "中等",
+          "output": 20.44
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 27.0,
+      "count": 16,
+      "records": [
+        {
+          "planet": "IED-4U 一",
+          "richness": "富裕",
+          "output": 27.0
+        },
+        {
+          "planet": "N-9EOQ 八",
+          "richness": "富裕",
+          "output": 26.92
+        },
+        {
+          "planet": "IED-4U 七",
+          "richness": "中等",
+          "output": 24.48
+        },
+        {
+          "planet": "DUIU-Q 二",
+          "richness": "中等",
+          "output": 23.98
+        },
+        {
+          "planet": "LQH0-H 六",
+          "richness": "中等",
+          "output": 22.92
+        },
+        {
+          "planet": "1HH3-E 七",
+          "richness": "中等",
+          "output": 21.72
+        },
+        {
+          "planet": "9MX-1C 三",
+          "richness": "中等",
+          "output": 21.58
+        },
+        {
+          "planet": "FRW3-2 十",
+          "richness": "中等",
+          "output": 21.36
+        },
+        {
+          "planet": "IED-4U 六",
+          "richness": "中等",
+          "output": 20.96
+        },
+        {
+          "planet": "FRW3-2 一",
+          "richness": "中等",
+          "output": 20.92
+        },
+        {
+          "planet": "DUIU-Q 十一",
+          "richness": "中等",
+          "output": 20.28
+        },
+        {
+          "planet": "N-9EOQ 九",
+          "richness": "贫瘠",
+          "output": 17.44
+        },
+        {
+          "planet": "LQH0-H 八",
+          "richness": "贫瘠",
+          "output": 17.4
+        },
+        {
+          "planet": "N-9EOQ 二",
+          "richness": "贫瘠",
+          "output": 17.16
+        },
+        {
+          "planet": "N-9EOQ 十",
+          "richness": "贫瘠",
+          "output": 15.6
+        },
+        {
+          "planet": "FRW3-2 四",
+          "richness": "贫瘠",
+          "output": 13.02
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 28.66,
+      "count": 9,
+      "records": [
+        {
+          "planet": "N-9EOQ 八",
+          "richness": "富裕",
+          "output": 28.66
+        },
+        {
+          "planet": "FRW3-2 七",
+          "richness": "富裕",
+          "output": 27.96
+        },
+        {
+          "planet": "LQH0-H 八",
+          "richness": "富裕",
+          "output": 25.96
+        },
+        {
+          "planet": "IED-4U 五",
+          "richness": "富裕",
+          "output": 25.94
+        },
+        {
+          "planet": "IED-4U 二",
+          "richness": "中等",
+          "output": 22.82
+        },
+        {
+          "planet": "N-9EOQ 七",
+          "richness": "中等",
+          "output": 22.56
+        },
+        {
+          "planet": "DUIU-Q 九",
+          "richness": "中等",
+          "output": 22.5
+        },
+        {
+          "planet": "FRW3-2 十",
+          "richness": "中等",
+          "output": 19.54
+        },
+        {
+          "planet": "FRW3-2 九",
+          "richness": "贫瘠",
+          "output": 18.28
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 20.77,
+      "count": 8,
+      "records": [
+        {
+          "planet": "IED-4U 五",
+          "richness": "富裕",
+          "output": 20.77
+        },
+        {
+          "planet": "FRW3-2 八",
+          "richness": "富裕",
+          "output": 20.23
+        },
+        {
+          "planet": "FRW3-2 一",
+          "richness": "富裕",
+          "output": 18.83
+        },
+        {
+          "planet": "1HH3-E 七",
+          "richness": "富裕",
+          "output": 18.24
+        },
+        {
+          "planet": "IED-4U 六",
+          "richness": "中等",
+          "output": 16.71
+        },
+        {
+          "planet": "N-9EOQ 一",
+          "richness": "中等",
+          "output": 16.27
+        },
+        {
+          "planet": "N-9EOQ 五",
+          "richness": "贫瘠",
+          "output": 12.23
+        },
+        {
+          "planet": "LQH0-H 七",
+          "richness": "贫瘠",
+          "output": 12.2
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 19.17,
+      "count": 9,
+      "records": [
+        {
+          "planet": "LQH0-H 一",
+          "richness": "富裕",
+          "output": 19.17
+        },
+        {
+          "planet": "LQH0-H 五",
+          "richness": "富裕",
+          "output": 18.09
+        },
+        {
+          "planet": "N-9EOQ 四",
+          "richness": "富裕",
+          "output": 17.75
+        },
+        {
+          "planet": "1HH3-E 三",
+          "richness": "中等",
+          "output": 14.4
+        },
+        {
+          "planet": "N-9EOQ 一",
+          "richness": "中等",
+          "output": 14.31
+        },
+        {
+          "planet": "IED-4U 四",
+          "richness": "中等",
+          "output": 14.19
+        },
+        {
+          "planet": "FRW3-2 一",
+          "richness": "中等",
+          "output": 13.11
+        },
+        {
+          "planet": "1HH3-E 一",
+          "richness": "贫瘠",
+          "output": 12.16
+        },
+        {
+          "planet": "9MX-1C 一",
+          "richness": "贫瘠",
+          "output": 9.95
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 8.7,
+      "count": 19,
+      "records": [
+        {
+          "planet": "N-9EOQ 八",
+          "richness": "完美",
+          "output": 8.7
+        },
+        {
+          "planet": "FRW3-2 九",
+          "richness": "完美",
+          "output": 8.67
+        },
+        {
+          "planet": "1HH3-E 八",
+          "richness": "完美",
+          "output": 8.57
+        },
+        {
+          "planet": "FRW3-2 十",
+          "richness": "富裕",
+          "output": 8.34
+        },
+        {
+          "planet": "FRW3-2 六",
+          "richness": "富裕",
+          "output": 8.11
+        },
+        {
+          "planet": "DUIU-Q 十",
+          "richness": "富裕",
+          "output": 7.79
+        },
+        {
+          "planet": "DUIU-Q 八",
+          "richness": "富裕",
+          "output": 7.21
+        },
+        {
+          "planet": "9MX-1C 四",
+          "richness": "富裕",
+          "output": 7.17
+        },
+        {
+          "planet": "DUIU-Q 九",
+          "richness": "富裕",
+          "output": 6.89
+        },
+        {
+          "planet": "1HH3-E 三",
+          "richness": "中等",
+          "output": 6.45
+        },
+        {
+          "planet": "N-9EOQ 七",
+          "richness": "中等",
+          "output": 6.15
+        },
+        {
+          "planet": "LQH0-H 六",
+          "richness": "中等",
+          "output": 6.09
+        },
+        {
+          "planet": "IED-4U 一",
+          "richness": "中等",
+          "output": 6.02
+        },
+        {
+          "planet": "9MX-1C 八",
+          "richness": "中等",
+          "output": 5.74
+        },
+        {
+          "planet": "FRW3-2 五",
+          "richness": "中等",
+          "output": 5.27
+        },
+        {
+          "planet": "N-9EOQ 四",
+          "richness": "贫瘠",
+          "output": 4.94
+        },
+        {
+          "planet": "DUIU-Q 七",
+          "richness": "贫瘠",
+          "output": 4.66
+        },
+        {
+          "planet": "IED-4U 三",
+          "richness": "贫瘠",
+          "output": 4.39
+        },
+        {
+          "planet": "FRW3-2 七",
+          "richness": "贫瘠",
+          "output": 4.38
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 4.38,
+      "count": 8,
+      "records": [
+        {
+          "planet": "DUIU-Q 八",
+          "richness": "富裕",
+          "output": 4.38
+        },
+        {
+          "planet": "9MX-1C 二",
+          "richness": "中等",
+          "output": 3.5
+        },
+        {
+          "planet": "FRW3-2 五",
+          "richness": "中等",
+          "output": 3.09
+        },
+        {
+          "planet": "9MX-1C 三",
+          "richness": "中等",
+          "output": 3.04
+        },
+        {
+          "planet": "IED-4U 三",
+          "richness": "中等",
+          "output": 3.02
+        },
+        {
+          "planet": "1HH3-E 四",
+          "richness": "贫瘠",
+          "output": 2.6
+        },
+        {
+          "planet": "FRW3-2 六",
+          "richness": "贫瘠",
+          "output": 2.46
+        },
+        {
+          "planet": "1HH3-E 二",
+          "richness": "贫瘠",
+          "output": 1.93
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 9.39,
+      "count": 13,
+      "records": [
+        {
+          "planet": "LQH0-H 五",
+          "richness": "完美",
+          "output": 9.39
+        },
+        {
+          "planet": "FRW3-2 九",
+          "richness": "富裕",
+          "output": 8.24
+        },
+        {
+          "planet": "DUIU-Q 一",
+          "richness": "富裕",
+          "output": 7.75
+        },
+        {
+          "planet": "FRW3-2 八",
+          "richness": "富裕",
+          "output": 7.73
+        },
+        {
+          "planet": "DUIU-Q 十",
+          "richness": "富裕",
+          "output": 7.13
+        },
+        {
+          "planet": "LQH0-H 四",
+          "richness": "中等",
+          "output": 6.63
+        },
+        {
+          "planet": "N-9EOQ 七",
+          "richness": "中等",
+          "output": 6.2
+        },
+        {
+          "planet": "IED-4U 七",
+          "richness": "中等",
+          "output": 6.07
+        },
+        {
+          "planet": "FRW3-2 三",
+          "richness": "中等",
+          "output": 5.68
+        },
+        {
+          "planet": "LQH0-H 一",
+          "richness": "中等",
+          "output": 5.52
+        },
+        {
+          "planet": "N-9EOQ 十",
+          "richness": "中等",
+          "output": 5.46
+        },
+        {
+          "planet": "9MX-1C 三",
+          "richness": "贫瘠",
+          "output": 4.66
+        },
+        {
+          "planet": "1HH3-E 二",
+          "richness": "贫瘠",
+          "output": 3.71
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 35.8,
+      "count": 5,
+      "records": [
+        {
+          "planet": "LQH0-H 四",
+          "richness": "完美",
+          "output": 35.8
+        },
+        {
+          "planet": "9MX-1C 六",
+          "richness": "富裕",
+          "output": 30.22
+        },
+        {
+          "planet": "9MX-1C 七",
+          "richness": "富裕",
+          "output": 28.5
+        },
+        {
+          "planet": "LQH0-H 五",
+          "richness": "中等",
+          "output": 19.56
+        },
+        {
+          "planet": "N-9EOQ 五",
+          "richness": "贫瘠",
+          "output": 18.38
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 6.35,
+      "count": 3,
+      "records": [
+        {
+          "planet": "DUIU-Q 二",
+          "richness": "中等",
+          "output": 6.35
+        },
+        {
+          "planet": "DUIU-Q 十一",
+          "richness": "中等",
+          "output": 5.89
+        },
+        {
+          "planet": "DUIU-Q 四",
+          "richness": "贫瘠",
+          "output": 3.91
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 22.84,
+      "count": 5,
+      "records": [
+        {
+          "planet": "DUIU-Q 八",
+          "richness": "中等",
+          "output": 22.84
+        },
+        {
+          "planet": "FRW3-2 六",
+          "richness": "中等",
+          "output": 22.22
+        },
+        {
+          "planet": "N-9EOQ 九",
+          "richness": "贫瘠",
+          "output": 15.2
+        },
+        {
+          "planet": "9MX-1C 二",
+          "richness": "贫瘠",
+          "output": 14.06
+        },
+        {
+          "planet": "N-9EOQ 二",
+          "richness": "贫瘠",
+          "output": 13.42
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 113.83,
+      "count": 4,
+      "records": [
+        {
+          "planet": "FRW3-2 五",
+          "richness": "富裕",
+          "output": 113.83
+        },
+        {
+          "planet": "N-9EOQ 一",
+          "richness": "中等",
+          "output": 80.71
+        },
+        {
+          "planet": "N-9EOQ 四",
+          "richness": "中等",
+          "output": 78.12
+        },
+        {
+          "planet": "LQH0-H 一",
+          "richness": "贫瘠",
+          "output": 60.84
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 27.52,
+      "count": 1,
+      "records": [
+        {
+          "planet": "9MX-1C 四",
+          "richness": "富裕",
+          "output": 27.52
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 5.95,
+      "count": 6,
+      "records": [
+        {
+          "planet": "N-9EOQ 三",
+          "richness": "中等",
+          "output": 5.95
+        },
+        {
+          "planet": "1HH3-E 六",
+          "richness": "中等",
+          "output": 5.83
+        },
+        {
+          "planet": "N-9EOQ 五",
+          "richness": "中等",
+          "output": 5.54
+        },
+        {
+          "planet": "DUIU-Q 四",
+          "richness": "贫瘠",
+          "output": 4.89
+        },
+        {
+          "planet": "N-9EOQ 六",
+          "richness": "贫瘠",
+          "output": 3.97
+        },
+        {
+          "planet": "9MX-1C 二",
+          "richness": "贫瘠",
+          "output": 3.49
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 33.36,
+      "count": 6,
+      "records": [
+        {
+          "planet": "LQH0-H 三",
+          "richness": "完美",
+          "output": 33.36
+        },
+        {
+          "planet": "DUIU-Q 六",
+          "richness": "完美",
+          "output": 33.06
+        },
+        {
+          "planet": "9MX-1C 五",
+          "richness": "富裕",
+          "output": 30.6
+        },
+        {
+          "planet": "1HH3-E 一",
+          "richness": "富裕",
+          "output": 28.3
+        },
+        {
+          "planet": "DUIU-Q 五",
+          "richness": "中等",
+          "output": 22.36
+        },
+        {
+          "planet": "9MX-1C 一",
+          "richness": "中等",
+          "output": 21.76
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 36.24,
+      "count": 24,
+      "records": [
+        {
+          "planet": "DUIU-Q 一",
+          "richness": "完美",
+          "output": 36.24
+        },
+        {
+          "planet": "FRW3-2 七",
+          "richness": "完美",
+          "output": 32.7
+        },
+        {
+          "planet": "9MX-1C 八",
+          "richness": "完美",
+          "output": 32.36
+        },
+        {
+          "planet": "1HH3-E 八",
+          "richness": "完美",
+          "output": 31.98
+        },
+        {
+          "planet": "LQH0-H 七",
+          "richness": "完美",
+          "output": 31.88
+        },
+        {
+          "planet": "FRW3-2 九",
+          "richness": "富裕",
+          "output": 31.72
+        },
+        {
+          "planet": "IED-4U 七",
+          "richness": "富裕",
+          "output": 30.7
+        },
+        {
+          "planet": "FRW3-2 八",
+          "richness": "富裕",
+          "output": 29.94
+        },
+        {
+          "planet": "LQH0-H 四",
+          "richness": "富裕",
+          "output": 29.24
+        },
+        {
+          "planet": "DUIU-Q 十",
+          "richness": "富裕",
+          "output": 27.98
+        },
+        {
+          "planet": "FRW3-2 六",
+          "richness": "富裕",
+          "output": 27.04
+        },
+        {
+          "planet": "LQH0-H 六",
+          "richness": "富裕",
+          "output": 26.96
+        },
+        {
+          "planet": "IED-4U 一",
+          "richness": "富裕",
+          "output": 26.64
+        },
+        {
+          "planet": "IED-4U 六",
+          "richness": "中等",
+          "output": 24.26
+        },
+        {
+          "planet": "IED-4U 五",
+          "richness": "中等",
+          "output": 23.06
+        },
+        {
+          "planet": "9MX-1C 七",
+          "richness": "中等",
+          "output": 20.76
+        },
+        {
+          "planet": "IED-4U 三",
+          "richness": "中等",
+          "output": 20.76
+        },
+        {
+          "planet": "N-9EOQ 八",
+          "richness": "中等",
+          "output": 19.04
+        },
+        {
+          "planet": "LQH0-H 八",
+          "richness": "贫瘠",
+          "output": 18.84
+        },
+        {
+          "planet": "FRW3-2 十",
+          "richness": "贫瘠",
+          "output": 18.34
+        },
+        {
+          "planet": "1HH3-E 七",
+          "richness": "贫瘠",
+          "output": 18.3
+        },
+        {
+          "planet": "DUIU-Q 七",
+          "richness": "贫瘠",
+          "output": 17.66
+        },
+        {
+          "planet": "DUIU-Q 九",
+          "richness": "贫瘠",
+          "output": 17.58
+        },
+        {
+          "planet": "N-9EOQ 七",
+          "richness": "贫瘠",
+          "output": 16.44
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 31.6,
+      "count": 5,
+      "records": [
+        {
+          "planet": "LQH0-H 五",
+          "richness": "富裕",
+          "output": 31.6
+        },
+        {
+          "planet": "1HH3-E 六",
+          "richness": "富裕",
+          "output": 31.38
+        },
+        {
+          "planet": "IED-4U 四",
+          "richness": "富裕",
+          "output": 27.96
+        },
+        {
+          "planet": "1HH3-E 五",
+          "richness": "中等",
+          "output": 22.6
+        },
+        {
+          "planet": "DUIU-Q 一",
+          "richness": "中等",
+          "output": 21.68
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 45.08,
+      "count": 12,
+      "records": [
+        {
+          "planet": "LQH0-H 五",
+          "richness": "完美",
+          "output": 45.08
+        },
+        {
+          "planet": "DUIU-Q 一",
+          "richness": "富裕",
+          "output": 39.25
+        },
+        {
+          "planet": "N-9EOQ 五",
+          "richness": "富裕",
+          "output": 38.52
+        },
+        {
+          "planet": "9MX-1C 七",
+          "richness": "富裕",
+          "output": 36.98
+        },
+        {
+          "planet": "9MX-1C 一",
+          "richness": "富裕",
+          "output": 36.92
+        },
+        {
+          "planet": "LQH0-H 四",
+          "richness": "富裕",
+          "output": 36.77
+        },
+        {
+          "planet": "IED-4U 四",
+          "richness": "富裕",
+          "output": 36.48
+        },
+        {
+          "planet": "N-9EOQ 一",
+          "richness": "富裕",
+          "output": 34.13
+        },
+        {
+          "planet": "1HH3-E 五",
+          "richness": "富裕",
+          "output": 33.4
+        },
+        {
+          "planet": "LQH0-H 一",
+          "richness": "中等",
+          "output": 29.55
+        },
+        {
+          "planet": "9MX-1C 六",
+          "richness": "中等",
+          "output": 28.7
+        },
+        {
+          "planet": "1HH3-E 六",
+          "richness": "中等",
+          "output": 24.5
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 22.8,
+      "count": 3,
+      "records": [
+        {
+          "planet": "DUIU-Q 一",
+          "richness": "完美",
+          "output": 22.8
+        },
+        {
+          "planet": "9MX-1C 七",
+          "richness": "完美",
+          "output": 22.05
+        },
+        {
+          "planet": "LQH0-H 二",
+          "richness": "中等",
+          "output": 13.53
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 16.14,
+      "count": 11,
+      "records": [
+        {
+          "planet": "N-9EOQ 五",
+          "richness": "完美",
+          "output": 16.14
+        },
+        {
+          "planet": "1HH3-E 五",
+          "richness": "中等",
+          "output": 12.58
+        },
+        {
+          "planet": "N-9EOQ 十",
+          "richness": "中等",
+          "output": 12.3
+        },
+        {
+          "planet": "1HH3-E 二",
+          "richness": "中等",
+          "output": 12.09
+        },
+        {
+          "planet": "1HH3-E 六",
+          "richness": "中等",
+          "output": 11.81
+        },
+        {
+          "planet": "DUIU-Q 二",
+          "richness": "中等",
+          "output": 10.36
+        },
+        {
+          "planet": "9MX-1C 六",
+          "richness": "中等",
+          "output": 10.29
+        },
+        {
+          "planet": "N-9EOQ 二",
+          "richness": "贫瘠",
+          "output": 9.41
+        },
+        {
+          "planet": "FRW3-2 三",
+          "richness": "贫瘠",
+          "output": 9.22
+        },
+        {
+          "planet": "N-9EOQ 三",
+          "richness": "贫瘠",
+          "output": 8.16
+        },
+        {
+          "planet": "N-9EOQ 六",
+          "richness": "贫瘠",
+          "output": 8.01
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 12.32,
+      "count": 7,
+      "records": [
+        {
+          "planet": "N-9EOQ 四",
+          "richness": "富裕",
+          "output": 12.32
+        },
+        {
+          "planet": "IED-4U 六",
+          "richness": "富裕",
+          "output": 11.89
+        },
+        {
+          "planet": "IED-4U 一",
+          "richness": "富裕",
+          "output": 11.26
+        },
+        {
+          "planet": "FRW3-2 八",
+          "richness": "富裕",
+          "output": 11.21
+        },
+        {
+          "planet": "DUIU-Q 九",
+          "richness": "富裕",
+          "output": 10.74
+        },
+        {
+          "planet": "1HH3-E 八",
+          "richness": "中等",
+          "output": 9.9
+        },
+        {
+          "planet": "9MX-1C 八",
+          "richness": "中等",
+          "output": 8.13
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 31.92,
+      "count": 6,
+      "records": [
+        {
+          "planet": "DUIU-Q 九",
+          "richness": "完美",
+          "output": 31.92
+        },
+        {
+          "planet": "IED-4U 七",
+          "richness": "富裕",
+          "output": 27.7
+        },
+        {
+          "planet": "IED-4U 一",
+          "richness": "富裕",
+          "output": 27.48
+        },
+        {
+          "planet": "LQH0-H 八",
+          "richness": "中等",
+          "output": 24.78
+        },
+        {
+          "planet": "N-9EOQ 七",
+          "richness": "中等",
+          "output": 20.72
+        },
+        {
+          "planet": "1HH3-E 七",
+          "richness": "贫瘠",
+          "output": 16.76
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 1.92,
+      "count": 5,
+      "records": [
+        {
+          "planet": "IED-4U 二",
+          "richness": "完美",
+          "output": 1.92
+        },
+        {
+          "planet": "1HH3-E 三",
+          "richness": "中等",
+          "output": 1.34
+        },
+        {
+          "planet": "FRW3-2 四",
+          "richness": "贫瘠",
+          "output": 0.93
+        },
+        {
+          "planet": "DUIU-Q 四",
+          "richness": "贫瘠",
+          "output": 0.78
+        },
+        {
+          "planet": "N-9EOQ 六",
+          "richness": "贫瘠",
+          "output": 0.78
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 25.86,
+      "count": 6,
+      "records": [
+        {
+          "planet": "1HH3-E 一",
+          "richness": "富裕",
+          "output": 25.86
+        },
+        {
+          "planet": "9MX-1C 一",
+          "richness": "富裕",
+          "output": 25.44
+        },
+        {
+          "planet": "FRW3-2 一",
+          "richness": "贫瘠",
+          "output": 16.88
+        },
+        {
+          "planet": "N-9EOQ 三",
+          "richness": "贫瘠",
+          "output": 16.78
+        },
+        {
+          "planet": "FRW3-2 三",
+          "richness": "贫瘠",
+          "output": 15.54
+        },
+        {
+          "planet": "FRW3-2 四",
+          "richness": "贫瘠",
+          "output": 13.48
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 34.3,
+      "count": 8,
+      "records": [
+        {
+          "planet": "LQH0-H 四",
+          "richness": "完美",
+          "output": 34.3
+        },
+        {
+          "planet": "FRW3-2 八",
+          "richness": "完美",
+          "output": 32.34
+        },
+        {
+          "planet": "LQH0-H 七",
+          "richness": "富裕",
+          "output": 29.7
+        },
+        {
+          "planet": "IED-4U 五",
+          "richness": "富裕",
+          "output": 28.02
+        },
+        {
+          "planet": "LQH0-H 六",
+          "richness": "中等",
+          "output": 23.6
+        },
+        {
+          "planet": "9MX-1C 八",
+          "richness": "中等",
+          "output": 19.66
+        },
+        {
+          "planet": "IED-4U 四",
+          "richness": "中等",
+          "output": 19.66
+        },
+        {
+          "planet": "DUIU-Q 十",
+          "richness": "贫瘠",
+          "output": 18.82
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 8.32,
+      "count": 4,
+      "records": [
+        {
+          "planet": "DUIU-Q 八",
+          "richness": "富裕",
+          "output": 8.32
+        },
+        {
+          "planet": "DUIU-Q 七",
+          "richness": "富裕",
+          "output": 8.04
+        },
+        {
+          "planet": "9MX-1C 四",
+          "richness": "中等",
+          "output": 5.95
+        },
+        {
+          "planet": "FRW3-2 五",
+          "richness": "贫瘠",
+          "output": 4.33
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 21.43,
+      "count": 12,
+      "records": [
+        {
+          "planet": "1HH3-E 五",
+          "richness": "完美",
+          "output": 21.43
+        },
+        {
+          "planet": "LQH0-H 八",
+          "richness": "富裕",
+          "output": 20.37
+        },
+        {
+          "planet": "LQH0-H 七",
+          "richness": "富裕",
+          "output": 20.19
+        },
+        {
+          "planet": "FRW3-2 七",
+          "richness": "富裕",
+          "output": 18.81
+        },
+        {
+          "planet": "FRW3-2 二",
+          "richness": "富裕",
+          "output": 18.77
+        },
+        {
+          "planet": "DUIU-Q 三",
+          "richness": "富裕",
+          "output": 18.39
+        },
+        {
+          "planet": "9MX-1C 五",
+          "richness": "富裕",
+          "output": 17.71
+        },
+        {
+          "planet": "1HH3-E 八",
+          "richness": "中等",
+          "output": 16.0
+        },
+        {
+          "planet": "DUIU-Q 六",
+          "richness": "中等",
+          "output": 15.63
+        },
+        {
+          "planet": "FRW3-2 十",
+          "richness": "中等",
+          "output": 12.59
+        },
+        {
+          "planet": "LQH0-H 六",
+          "richness": "贫瘠",
+          "output": 12.19
+        },
+        {
+          "planet": "IED-4U 六",
+          "richness": "贫瘠",
+          "output": 11.75
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 36.04,
+      "count": 6,
+      "records": [
+        {
+          "planet": "9MX-1C 七",
+          "richness": "完美",
+          "output": 36.04
+        },
+        {
+          "planet": "DUIU-Q 三",
+          "richness": "完美",
+          "output": 33.04
+        },
+        {
+          "planet": "1HH3-E 四",
+          "richness": "中等",
+          "output": 23.72
+        },
+        {
+          "planet": "9MX-1C 六",
+          "richness": "中等",
+          "output": 22.06
+        },
+        {
+          "planet": "DUIU-Q 五",
+          "richness": "中等",
+          "output": 20.9
+        },
+        {
+          "planet": "IED-4U 四",
+          "richness": "贫瘠",
+          "output": 18.6
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 19.59,
+      "count": 16,
+      "records": [
+        {
+          "planet": "1HH3-E 一",
+          "richness": "富裕",
+          "output": 19.59
+        },
+        {
+          "planet": "DUIU-Q 七",
+          "richness": "中等",
+          "output": 16.55
+        },
+        {
+          "planet": "FRW3-2 三",
+          "richness": "中等",
+          "output": 16.04
+        },
+        {
+          "planet": "9MX-1C 四",
+          "richness": "中等",
+          "output": 14.31
+        },
+        {
+          "planet": "DUIU-Q 二",
+          "richness": "中等",
+          "output": 13.84
+        },
+        {
+          "planet": "1HH3-E 二",
+          "richness": "中等",
+          "output": 12.65
+        },
+        {
+          "planet": "9MX-1C 二",
+          "richness": "贫瘠",
+          "output": 12.27
+        },
+        {
+          "planet": "FRW3-2 四",
+          "richness": "贫瘠",
+          "output": 11.64
+        },
+        {
+          "planet": "N-9EOQ 六",
+          "richness": "贫瘠",
+          "output": 11.08
+        },
+        {
+          "planet": "DUIU-Q 十一",
+          "richness": "贫瘠",
+          "output": 10.44
+        },
+        {
+          "planet": "N-9EOQ 三",
+          "richness": "贫瘠",
+          "output": 9.57
+        },
+        {
+          "planet": "N-9EOQ 二",
+          "richness": "贫瘠",
+          "output": 9.43
+        },
+        {
+          "planet": "DUIU-Q 四",
+          "richness": "贫瘠",
+          "output": 9.15
+        },
+        {
+          "planet": "9MX-1C 三",
+          "richness": "贫瘠",
+          "output": 8.92
+        },
+        {
+          "planet": "N-9EOQ 九",
+          "richness": "贫瘠",
+          "output": 8.63
+        },
+        {
+          "planet": "N-9EOQ 十",
+          "richness": "贫瘠",
+          "output": 8.49
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 30.16,
+      "count": 2,
+      "records": [
+        {
+          "planet": "1HH3-E 三",
+          "richness": "富裕",
+          "output": 30.16
+        },
+        {
+          "planet": "IED-4U 三",
+          "richness": "富裕",
+          "output": 28.74
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 353.2,
+      "count": 3,
+      "records": [
+        {
+          "planet": "9MX-1C 六",
+          "richness": "完美",
+          "output": 353.2
+        },
+        {
+          "planet": "1HH3-E 六",
+          "richness": "中等",
+          "output": 248.8
+        },
+        {
+          "planet": "1HH3-E 五",
+          "richness": "贫瘠",
+          "output": 176.6
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 30.92,
+      "count": 3,
+      "records": [
+        {
+          "planet": "FRW3-2 二",
+          "richness": "富裕",
+          "output": 30.92
+        },
+        {
+          "planet": "LQH0-H 二",
+          "richness": "中等",
+          "output": 23.82
+        },
+        {
+          "planet": "LQH0-H 三",
+          "richness": "中等",
+          "output": 22.1
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 30.5,
+      "count": 9,
+      "records": [
+        {
+          "planet": "IED-4U 二",
+          "richness": "富裕",
+          "output": 30.5
+        },
+        {
+          "planet": "1HH3-E 四",
+          "richness": "富裕",
+          "output": 28.06
+        },
+        {
+          "planet": "DUIU-Q 三",
+          "richness": "富裕",
+          "output": 27.08
+        },
+        {
+          "planet": "DUIU-Q 六",
+          "richness": "中等",
+          "output": 24.48
+        },
+        {
+          "planet": "DUIU-Q 五",
+          "richness": "中等",
+          "output": 23.88
+        },
+        {
+          "planet": "9MX-1C 五",
+          "richness": "中等",
+          "output": 22.04
+        },
+        {
+          "planet": "FRW3-2 二",
+          "richness": "中等",
+          "output": 20.14
+        },
+        {
+          "planet": "LQH0-H 二",
+          "richness": "中等",
+          "output": 19.18
+        },
+        {
+          "planet": "LQH0-H 三",
+          "richness": "贫瘠",
+          "output": 17.34
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 20.76,
+      "count": 2,
+      "records": [
+        {
+          "planet": "N-9EOQ 九",
+          "richness": "中等",
+          "output": 20.76
+        },
+        {
+          "planet": "DUIU-Q 十一",
+          "richness": "贫瘠",
+          "output": 13.7
+        }
+      ]
+    }
+  }
+}

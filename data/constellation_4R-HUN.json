@@ -1,0 +1,1335 @@
+{
+  "region": "糟粕之域",
+  "constellation": "4R-HUN",
+  "materials": {
+    "光彩合金": {
+      "max_output": 36.9,
+      "count": 7,
+      "records": [
+        {
+          "planet": "JA-G0T 七",
+          "richness": "富裕",
+          "output": 36.9
+        },
+        {
+          "planet": "JA-G0T 六",
+          "richness": "富裕",
+          "output": 35.08
+        },
+        {
+          "planet": "VW-PXL 十一",
+          "richness": "富裕",
+          "output": 28.08
+        },
+        {
+          "planet": "JA-G0T 一",
+          "richness": "富裕",
+          "output": 26.28
+        },
+        {
+          "planet": "VW-PXL 九",
+          "richness": "富裕",
+          "output": 25.82
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "中等",
+          "output": 24.75
+        },
+        {
+          "planet": "8AB-Q4 六",
+          "richness": "贫瘠",
+          "output": 20.16
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 38.88,
+      "count": 11,
+      "records": [
+        {
+          "planet": "8AB-Q4 七",
+          "richness": "完美",
+          "output": 38.88
+        },
+        {
+          "planet": "VW-PXL 一",
+          "richness": "富裕",
+          "output": 34.85
+        },
+        {
+          "planet": "IBOX-2 九",
+          "richness": "完美",
+          "output": 33.79
+        },
+        {
+          "planet": "JA-G0T 六",
+          "richness": "中等",
+          "output": 30.7
+        },
+        {
+          "planet": "JA-G0T 二",
+          "richness": "中等",
+          "output": 28.88
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "中等",
+          "output": 24.25
+        },
+        {
+          "planet": "IBOX-2 七",
+          "richness": "中等",
+          "output": 23.58
+        },
+        {
+          "planet": "IBOX-2 二",
+          "richness": "中等",
+          "output": 22.62
+        },
+        {
+          "planet": "8AB-Q4 一",
+          "richness": "中等",
+          "output": 20.18
+        },
+        {
+          "planet": "TD-4XL 五",
+          "richness": "贫瘠",
+          "output": 18.67
+        },
+        {
+          "planet": "VW-PXL 二",
+          "richness": "贫瘠",
+          "output": 15.32
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 39.07,
+      "count": 7,
+      "records": [
+        {
+          "planet": "8AB-Q4 七",
+          "richness": "完美",
+          "output": 39.07
+        },
+        {
+          "planet": "JA-G0T 一",
+          "richness": "完美",
+          "output": 32.5
+        },
+        {
+          "planet": "IBOX-2 八",
+          "richness": "富裕",
+          "output": 30.14
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "中等",
+          "output": 26.27
+        },
+        {
+          "planet": "IBOX-2 九",
+          "richness": "中等",
+          "output": 24.42
+        },
+        {
+          "planet": "IBOX-2 四",
+          "richness": "中等",
+          "output": 23.69
+        },
+        {
+          "planet": "JA-G0T 六",
+          "richness": "贫瘠",
+          "output": 22.6
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 23.13,
+      "count": 11,
+      "records": [
+        {
+          "planet": "JA-G0T 六",
+          "richness": "富裕",
+          "output": 23.13
+        },
+        {
+          "planet": "IBOX-2 八",
+          "richness": "完美",
+          "output": 22.95
+        },
+        {
+          "planet": "VW-PXL 十一",
+          "richness": "完美",
+          "output": 21.65
+        },
+        {
+          "planet": "IF-KD1 一",
+          "richness": "富裕",
+          "output": 21.33
+        },
+        {
+          "planet": "TD-4XL 四",
+          "richness": "富裕",
+          "output": 19.36
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "中等",
+          "output": 19.32
+        },
+        {
+          "planet": "8AB-Q4 六",
+          "richness": "中等",
+          "output": 15.14
+        },
+        {
+          "planet": "TD-4XL 五",
+          "richness": "中等",
+          "output": 15.02
+        },
+        {
+          "planet": "IBOX-2 五",
+          "richness": "中等",
+          "output": 13.43
+        },
+        {
+          "planet": "VW-PXL 八",
+          "richness": "贫瘠",
+          "output": 12.25
+        },
+        {
+          "planet": "VW-PXL 九",
+          "richness": "贫瘠",
+          "output": 10.95
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 27.73,
+      "count": 6,
+      "records": [
+        {
+          "planet": "8AB-Q4 五",
+          "richness": "完美",
+          "output": 27.73
+        },
+        {
+          "planet": "8AB-Q4 三",
+          "richness": "完美",
+          "output": 27.68
+        },
+        {
+          "planet": "IF-KD1 三",
+          "richness": "完美",
+          "output": 24.6
+        },
+        {
+          "planet": "TD-4XL 一",
+          "richness": "完美",
+          "output": 22.16
+        },
+        {
+          "planet": "TD-4XL 三",
+          "richness": "富裕",
+          "output": 19.03
+        },
+        {
+          "planet": "VW-PXL 一",
+          "richness": "中等",
+          "output": 15.65
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 8.94,
+      "count": 14,
+      "records": [
+        {
+          "planet": "JA-G0T 六",
+          "richness": "富裕",
+          "output": 8.94
+        },
+        {
+          "planet": "VW-PXL 十一",
+          "richness": "完美",
+          "output": 8.53
+        },
+        {
+          "planet": "VW-PXL 八",
+          "richness": "完美",
+          "output": 8.49
+        },
+        {
+          "planet": "IF-KD1 四",
+          "richness": "完美",
+          "output": 8.46
+        },
+        {
+          "planet": "VW-PXL 五",
+          "richness": "富裕",
+          "output": 8.12
+        },
+        {
+          "planet": "IBOX-2 六",
+          "richness": "富裕",
+          "output": 7.81
+        },
+        {
+          "planet": "TD-4XL 五",
+          "richness": "富裕",
+          "output": 7.71
+        },
+        {
+          "planet": "TD-4XL 六",
+          "richness": "中等",
+          "output": 6.89
+        },
+        {
+          "planet": "IF-KD1 七",
+          "richness": "富裕",
+          "output": 6.87
+        },
+        {
+          "planet": "VW-PXL 七",
+          "richness": "富裕",
+          "output": 6.84
+        },
+        {
+          "planet": "IF-KD1 六",
+          "richness": "中等",
+          "output": 5.85
+        },
+        {
+          "planet": "JA-G0T 七",
+          "richness": "贫瘠",
+          "output": 5.64
+        },
+        {
+          "planet": "IBOX-2 七",
+          "richness": "中等",
+          "output": 5.61
+        },
+        {
+          "planet": "IBOX-2 一",
+          "richness": "贫瘠",
+          "output": 5.0
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 4.44,
+      "count": 7,
+      "records": [
+        {
+          "planet": "JA-G0T 四",
+          "richness": "中等",
+          "output": 4.44
+        },
+        {
+          "planet": "JA-G0T 二",
+          "richness": "中等",
+          "output": 4.13
+        },
+        {
+          "planet": "IBOX-2 一",
+          "richness": "中等",
+          "output": 3.51
+        },
+        {
+          "planet": "IBOX-2 三",
+          "richness": "中等",
+          "output": 3.48
+        },
+        {
+          "planet": "VW-PXL 六",
+          "richness": "中等",
+          "output": 2.89
+        },
+        {
+          "planet": "IF-KD1 五",
+          "richness": "贫瘠",
+          "output": 2.71
+        },
+        {
+          "planet": "IF-KD1 六",
+          "richness": "贫瘠",
+          "output": 2.48
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 11.03,
+      "count": 16,
+      "records": [
+        {
+          "planet": "8AB-Q4 三",
+          "richness": "完美",
+          "output": 11.03
+        },
+        {
+          "planet": "VW-PXL 十",
+          "richness": "完美",
+          "output": 8.66
+        },
+        {
+          "planet": "JA-G0T 七",
+          "richness": "中等",
+          "output": 8.11
+        },
+        {
+          "planet": "8AB-Q4 二",
+          "richness": "中等",
+          "output": 7.58
+        },
+        {
+          "planet": "TD-4XL 八",
+          "richness": "富裕",
+          "output": 7.26
+        },
+        {
+          "planet": "8AB-Q4 四",
+          "richness": "中等",
+          "output": 7.2
+        },
+        {
+          "planet": "VW-PXL 九",
+          "richness": "富裕",
+          "output": 7.09
+        },
+        {
+          "planet": "IF-KD1 一",
+          "richness": "中等",
+          "output": 7.0
+        },
+        {
+          "planet": "JA-G0T 三",
+          "richness": "中等",
+          "output": 6.33
+        },
+        {
+          "planet": "IBOX-2 五",
+          "richness": "中等",
+          "output": 6.16
+        },
+        {
+          "planet": "IBOX-2 八",
+          "richness": "中等",
+          "output": 5.69
+        },
+        {
+          "planet": "IF-KD1 三",
+          "richness": "中等",
+          "output": 5.66
+        },
+        {
+          "planet": "TD-4XL 二",
+          "richness": "中等",
+          "output": 5.62
+        },
+        {
+          "planet": "IBOX-2 四",
+          "richness": "贫瘠",
+          "output": 5.04
+        },
+        {
+          "planet": "VW-PXL 二",
+          "richness": "贫瘠",
+          "output": 4.66
+        },
+        {
+          "planet": "TD-4XL 七",
+          "richness": "贫瘠",
+          "output": 3.65
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 29.74,
+      "count": 2,
+      "records": [
+        {
+          "planet": "8AB-Q4 五",
+          "richness": "中等",
+          "output": 29.74
+        },
+        {
+          "planet": "TD-4XL 四",
+          "richness": "中等",
+          "output": 24.95
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 7.96,
+      "count": 10,
+      "records": [
+        {
+          "planet": "VW-PXL 十",
+          "richness": "富裕",
+          "output": 7.96
+        },
+        {
+          "planet": "TD-4XL 一",
+          "richness": "富裕",
+          "output": 7.8
+        },
+        {
+          "planet": "JA-G0T 四",
+          "richness": "中等",
+          "output": 7.44
+        },
+        {
+          "planet": "JA-G0T 三",
+          "richness": "中等",
+          "output": 7.16
+        },
+        {
+          "planet": "8AB-Q4 四",
+          "richness": "中等",
+          "output": 6.3
+        },
+        {
+          "planet": "8AB-Q4 二",
+          "richness": "中等",
+          "output": 6.05
+        },
+        {
+          "planet": "JA-G0T 二",
+          "richness": "贫瘠",
+          "output": 5.47
+        },
+        {
+          "planet": "IF-KD1 五",
+          "richness": "贫瘠",
+          "output": 4.82
+        },
+        {
+          "planet": "VW-PXL 六",
+          "richness": "贫瘠",
+          "output": 4.43
+        },
+        {
+          "planet": "IBOX-2 二",
+          "richness": "贫瘠",
+          "output": 3.61
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 30.6,
+      "count": 10,
+      "records": [
+        {
+          "planet": "TD-4XL 六",
+          "richness": "富裕",
+          "output": 30.6
+        },
+        {
+          "planet": "VW-PXL 七",
+          "richness": "富裕",
+          "output": 30.48
+        },
+        {
+          "planet": "IF-KD1 四",
+          "richness": "富裕",
+          "output": 30.34
+        },
+        {
+          "planet": "VW-PXL 四",
+          "richness": "富裕",
+          "output": 28.84
+        },
+        {
+          "planet": "VW-PXL 三",
+          "richness": "中等",
+          "output": 21.2
+        },
+        {
+          "planet": "VW-PXL 五",
+          "richness": "中等",
+          "output": 21.2
+        },
+        {
+          "planet": "IF-KD1 六",
+          "richness": "中等",
+          "output": 20.3
+        },
+        {
+          "planet": "IBOX-2 二",
+          "richness": "中等",
+          "output": 19.87
+        },
+        {
+          "planet": "IBOX-2 三",
+          "richness": "贫瘠",
+          "output": 16.46
+        },
+        {
+          "planet": "TD-4XL 二",
+          "richness": "贫瘠",
+          "output": 16.23
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 105.77,
+      "count": 4,
+      "records": [
+        {
+          "planet": "IF-KD1 七",
+          "richness": "富裕",
+          "output": 105.77
+        },
+        {
+          "planet": "VW-PXL 一",
+          "richness": "中等",
+          "output": 86.4
+        },
+        {
+          "planet": "VW-PXL 七",
+          "richness": "中等",
+          "output": 69.48
+        },
+        {
+          "planet": "VW-PXL 五",
+          "richness": "贫瘠",
+          "output": 67.75
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 32.63,
+      "count": 3,
+      "records": [
+        {
+          "planet": "TD-4XL 六",
+          "richness": "富裕",
+          "output": 32.63
+        },
+        {
+          "planet": "IF-KD1 四",
+          "richness": "富裕",
+          "output": 29.88
+        },
+        {
+          "planet": "IF-KD1 七",
+          "richness": "贫瘠",
+          "output": 16.24
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 6.53,
+      "count": 7,
+      "records": [
+        {
+          "planet": "IBOX-2 一",
+          "richness": "中等",
+          "output": 6.53
+        },
+        {
+          "planet": "8AB-Q4 二",
+          "richness": "中等",
+          "output": 6.39
+        },
+        {
+          "planet": "8AB-Q4 一",
+          "richness": "中等",
+          "output": 6.01
+        },
+        {
+          "planet": "VW-PXL 七",
+          "richness": "中等",
+          "output": 5.15
+        },
+        {
+          "planet": "TD-4XL 七",
+          "richness": "贫瘠",
+          "output": 4.94
+        },
+        {
+          "planet": "IF-KD1 七",
+          "richness": "贫瘠",
+          "output": 4.3
+        },
+        {
+          "planet": "JA-G0T 三",
+          "richness": "贫瘠",
+          "output": 4.28
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 34.1,
+      "count": 2,
+      "records": [
+        {
+          "planet": "IF-KD1 一",
+          "richness": "富裕",
+          "output": 34.1
+        },
+        {
+          "planet": "VW-PXL 一",
+          "richness": "富裕",
+          "output": 31.37
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 39.19,
+      "count": 16,
+      "records": [
+        {
+          "planet": "8AB-Q4 七",
+          "richness": "完美",
+          "output": 39.19
+        },
+        {
+          "planet": "VW-PXL 十",
+          "richness": "完美",
+          "output": 38.22
+        },
+        {
+          "planet": "8AB-Q4 六",
+          "richness": "富裕",
+          "output": 34.87
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "富裕",
+          "output": 31.7
+        },
+        {
+          "planet": "IBOX-2 五",
+          "richness": "富裕",
+          "output": 31.56
+        },
+        {
+          "planet": "JA-G0T 一",
+          "richness": "富裕",
+          "output": 31.1
+        },
+        {
+          "planet": "IBOX-2 六",
+          "richness": "富裕",
+          "output": 29.95
+        },
+        {
+          "planet": "TD-4XL 五",
+          "richness": "富裕",
+          "output": 29.32
+        },
+        {
+          "planet": "VW-PXL 八",
+          "richness": "富裕",
+          "output": 29.02
+        },
+        {
+          "planet": "VW-PXL 十一",
+          "richness": "富裕",
+          "output": 28.9
+        },
+        {
+          "planet": "IBOX-2 七",
+          "richness": "中等",
+          "output": 25.18
+        },
+        {
+          "planet": "TD-4XL 八",
+          "richness": "中等",
+          "output": 23.14
+        },
+        {
+          "planet": "IBOX-2 八",
+          "richness": "中等",
+          "output": 20.89
+        },
+        {
+          "planet": "IBOX-2 九",
+          "richness": "贫瘠",
+          "output": 19.76
+        },
+        {
+          "planet": "IBOX-2 四",
+          "richness": "贫瘠",
+          "output": 19.24
+        },
+        {
+          "planet": "VW-PXL 九",
+          "richness": "贫瘠",
+          "output": 18.66
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 35.98,
+      "count": 2,
+      "records": [
+        {
+          "planet": "IF-KD1 三",
+          "richness": "完美",
+          "output": 35.98
+        },
+        {
+          "planet": "TD-4XL 四",
+          "richness": "中等",
+          "output": 25.52
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 53.07,
+      "count": 8,
+      "records": [
+        {
+          "planet": "8AB-Q4 五",
+          "richness": "完美",
+          "output": 53.07
+        },
+        {
+          "planet": "VW-PXL 十",
+          "richness": "完美",
+          "output": 47.2
+        },
+        {
+          "planet": "TD-4XL 八",
+          "richness": "完美",
+          "output": 43.23
+        },
+        {
+          "planet": "TD-4XL 四",
+          "richness": "富裕",
+          "output": 36.88
+        },
+        {
+          "planet": "IF-KD1 三",
+          "richness": "富裕",
+          "output": 35.77
+        },
+        {
+          "planet": "TD-4XL 一",
+          "richness": "中等",
+          "output": 30.88
+        },
+        {
+          "planet": "8AB-Q4 三",
+          "richness": "中等",
+          "output": 29.64
+        },
+        {
+          "planet": "TD-4XL 三",
+          "richness": "中等",
+          "output": 26.17
+        }
+      ]
+    },
+    "灵巧单元建筑模块": {
+      "max_output": 21.05,
+      "count": 2,
+      "records": [
+        {
+          "planet": "TD-4XL 一",
+          "richness": "富裕",
+          "output": 21.05
+        },
+        {
+          "planet": "TD-4XL 三",
+          "richness": "中等",
+          "output": 16.7
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 11.58,
+      "count": 2,
+      "records": [
+        {
+          "planet": "VW-PXL 三",
+          "richness": "中等",
+          "output": 11.58
+        },
+        {
+          "planet": "TD-4XL 二",
+          "richness": "中等",
+          "output": 11.01
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 13.73,
+      "count": 10,
+      "records": [
+        {
+          "planet": "IBOX-2 八",
+          "richness": "完美",
+          "output": 13.73
+        },
+        {
+          "planet": "IBOX-2 六",
+          "richness": "富裕",
+          "output": 12.55
+        },
+        {
+          "planet": "IBOX-2 九",
+          "richness": "富裕",
+          "output": 12.44
+        },
+        {
+          "planet": "IBOX-2 五",
+          "richness": "富裕",
+          "output": 11.88
+        },
+        {
+          "planet": "VW-PXL 十一",
+          "richness": "富裕",
+          "output": 11.21
+        },
+        {
+          "planet": "8AB-Q4 七",
+          "richness": "中等",
+          "output": 11.12
+        },
+        {
+          "planet": "JA-G0T 五",
+          "richness": "中等",
+          "output": 11.11
+        },
+        {
+          "planet": "IBOX-2 四",
+          "richness": "中等",
+          "output": 10.01
+        },
+        {
+          "planet": "8AB-Q4 六",
+          "richness": "中等",
+          "output": 9.48
+        },
+        {
+          "planet": "VW-PXL 八",
+          "richness": "中等",
+          "output": 7.93
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 36.75,
+      "count": 5,
+      "records": [
+        {
+          "planet": "JA-G0T 七",
+          "richness": "富裕",
+          "output": 36.75
+        },
+        {
+          "planet": "IBOX-2 六",
+          "richness": "富裕",
+          "output": 33.35
+        },
+        {
+          "planet": "8AB-Q4 七",
+          "richness": "中等",
+          "output": 29.42
+        },
+        {
+          "planet": "IBOX-2 五",
+          "richness": "富裕",
+          "output": 27.55
+        },
+        {
+          "planet": "VW-PXL 九",
+          "richness": "中等",
+          "output": 22.14
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 1.49,
+      "count": 4,
+      "records": [
+        {
+          "planet": "TD-4XL 七",
+          "richness": "中等",
+          "output": 1.49
+        },
+        {
+          "planet": "IF-KD1 五",
+          "richness": "中等",
+          "output": 1.33
+        },
+        {
+          "planet": "JA-G0T 四",
+          "richness": "贫瘠",
+          "output": 1.31
+        },
+        {
+          "planet": "JA-G0T 三",
+          "richness": "贫瘠",
+          "output": 1.12
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 28.2,
+      "count": 4,
+      "records": [
+        {
+          "planet": "IF-KD1 一",
+          "richness": "中等",
+          "output": 28.2
+        },
+        {
+          "planet": "8AB-Q4 四",
+          "richness": "中等",
+          "output": 26.11
+        },
+        {
+          "planet": "VW-PXL 三",
+          "richness": "中等",
+          "output": 23.76
+        },
+        {
+          "planet": "IBOX-2 三",
+          "richness": "贫瘠",
+          "output": 14.36
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 38.27,
+      "count": 12,
+      "records": [
+        {
+          "planet": "JA-G0T 七",
+          "richness": "富裕",
+          "output": 38.27
+        },
+        {
+          "planet": "8AB-Q4 五",
+          "richness": "富裕",
+          "output": 35.47
+        },
+        {
+          "planet": "8AB-Q4 三",
+          "richness": "富裕",
+          "output": 35.42
+        },
+        {
+          "planet": "IBOX-2 九",
+          "richness": "富裕",
+          "output": 32.97
+        },
+        {
+          "planet": "TD-4XL 八",
+          "richness": "富裕",
+          "output": 31.94
+        },
+        {
+          "planet": "8AB-Q4 六",
+          "richness": "富裕",
+          "output": 30.84
+        },
+        {
+          "planet": "TD-4XL 一",
+          "richness": "富裕",
+          "output": 27.9
+        },
+        {
+          "planet": "TD-4XL 三",
+          "richness": "富裕",
+          "output": 27.68
+        },
+        {
+          "planet": "JA-G0T 六",
+          "richness": "贫瘠",
+          "output": 23.55
+        },
+        {
+          "planet": "JA-G0T 一",
+          "richness": "中等",
+          "output": 23.08
+        },
+        {
+          "planet": "VW-PXL 八",
+          "richness": "中等",
+          "output": 22.22
+        },
+        {
+          "planet": "IBOX-2 七",
+          "richness": "中等",
+          "output": 19.89
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 7.41,
+      "count": 2,
+      "records": [
+        {
+          "planet": "VW-PXL 五",
+          "richness": "富裕",
+          "output": 7.41
+        },
+        {
+          "planet": "IF-KD1 六",
+          "richness": "中等",
+          "output": 5.88
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 24.85,
+      "count": 7,
+      "records": [
+        {
+          "planet": "JA-G0T 七",
+          "richness": "富裕",
+          "output": 24.85
+        },
+        {
+          "planet": "IBOX-2 四",
+          "richness": "富裕",
+          "output": 21.17
+        },
+        {
+          "planet": "IBOX-2 七",
+          "richness": "富裕",
+          "output": 20.58
+        },
+        {
+          "planet": "JA-G0T 一",
+          "richness": "富裕",
+          "output": 17.76
+        },
+        {
+          "planet": "IF-KD1 二",
+          "richness": "中等",
+          "output": 15.52
+        },
+        {
+          "planet": "IBOX-2 六",
+          "richness": "中等",
+          "output": 14.01
+        },
+        {
+          "planet": "TD-4XL 五",
+          "richness": "贫瘠",
+          "output": 11.61
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 35.06,
+      "count": 3,
+      "records": [
+        {
+          "planet": "8AB-Q4 五",
+          "richness": "富裕",
+          "output": 35.06
+        },
+        {
+          "planet": "IF-KD1 三",
+          "richness": "完美",
+          "output": 32.72
+        },
+        {
+          "planet": "TD-4XL 三",
+          "richness": "中等",
+          "output": 23.6
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 19.52,
+      "count": 14,
+      "records": [
+        {
+          "planet": "8AB-Q4 二",
+          "richness": "中等",
+          "output": 19.52
+        },
+        {
+          "planet": "JA-G0T 四",
+          "richness": "中等",
+          "output": 17.45
+        },
+        {
+          "planet": "IBOX-2 二",
+          "richness": "中等",
+          "output": 16.49
+        },
+        {
+          "planet": "IF-KD1 五",
+          "richness": "中等",
+          "output": 15.68
+        },
+        {
+          "planet": "IF-KD1 四",
+          "richness": "中等",
+          "output": 15.67
+        },
+        {
+          "planet": "8AB-Q4 四",
+          "richness": "中等",
+          "output": 15.42
+        },
+        {
+          "planet": "TD-4XL 二",
+          "richness": "中等",
+          "output": 15.34
+        },
+        {
+          "planet": "IBOX-2 三",
+          "richness": "中等",
+          "output": 13.87
+        },
+        {
+          "planet": "TD-4XL 七",
+          "richness": "中等",
+          "output": 13.76
+        },
+        {
+          "planet": "VW-PXL 六",
+          "richness": "中等",
+          "output": 12.6
+        },
+        {
+          "planet": "JA-G0T 二",
+          "richness": "贫瘠",
+          "output": 11.97
+        },
+        {
+          "planet": "VW-PXL 三",
+          "richness": "贫瘠",
+          "output": 11.89
+        },
+        {
+          "planet": "8AB-Q4 一",
+          "richness": "贫瘠",
+          "output": 11.16
+        },
+        {
+          "planet": "VW-PXL 二",
+          "richness": "贫瘠",
+          "output": 10.68
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 28.43,
+      "count": 1,
+      "records": [
+        {
+          "planet": "IBOX-2 一",
+          "richness": "富裕",
+          "output": 28.43
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 378.24,
+      "count": 4,
+      "records": [
+        {
+          "planet": "8AB-Q4 三",
+          "richness": "富裕",
+          "output": 378.24
+        },
+        {
+          "planet": "VW-PXL 十",
+          "richness": "富裕",
+          "output": 254.2
+        },
+        {
+          "planet": "TD-4XL 八",
+          "richness": "中等",
+          "output": 200.97
+        },
+        {
+          "planet": "TD-4XL 四",
+          "richness": "贫瘠",
+          "output": 192.78
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 29.34,
+      "count": 3,
+      "records": [
+        {
+          "planet": "IF-KD1 二",
+          "richness": "富裕",
+          "output": 29.34
+        },
+        {
+          "planet": "IF-KD1 一",
+          "richness": "贫瘠",
+          "output": 22.32
+        },
+        {
+          "planet": "VW-PXL 四",
+          "richness": "贫瘠",
+          "output": 17.72
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 32.78,
+      "count": 3,
+      "records": [
+        {
+          "planet": "VW-PXL 四",
+          "richness": "完美",
+          "output": 32.78
+        },
+        {
+          "planet": "TD-4XL 六",
+          "richness": "富裕",
+          "output": 29.59
+        },
+        {
+          "planet": "IF-KD1 二",
+          "richness": "中等",
+          "output": 19.56
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 28.65,
+      "count": 6,
+      "records": [
+        {
+          "planet": "JA-G0T 二",
+          "richness": "中等",
+          "output": 28.65
+        },
+        {
+          "planet": "JA-G0T 四",
+          "richness": "中等",
+          "output": 27.43
+        },
+        {
+          "planet": "VW-PXL 六",
+          "richness": "中等",
+          "output": 24.5
+        },
+        {
+          "planet": "VW-PXL 二",
+          "richness": "中等",
+          "output": 20.14
+        },
+        {
+          "planet": "8AB-Q4 一",
+          "richness": "贫瘠",
+          "output": 15.9
+        },
+        {
+          "planet": "JA-G0T 三",
+          "richness": "贫瘠",
+          "output": 15.88
+        }
+      ]
+    }
+  }
+}

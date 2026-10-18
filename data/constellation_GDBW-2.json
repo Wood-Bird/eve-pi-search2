@@ -1,0 +1,2264 @@
+{
+  "region": "糟粕之域",
+  "constellation": "GDBW-2",
+  "materials": {
+    "光彩合金": {
+      "max_output": 43.4,
+      "count": 9,
+      "records": [
+        {
+          "planet": "P3X-TN 九",
+          "richness": "富裕",
+          "output": 43.4
+        },
+        {
+          "planet": "UYG-YX 十三",
+          "richness": "完美",
+          "output": 39.1
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "富裕",
+          "output": 36.63
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "中等",
+          "output": 33.38
+        },
+        {
+          "planet": "UYG-YX 八",
+          "richness": "富裕",
+          "output": 30.62
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "中等",
+          "output": 30.35
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "中等",
+          "output": 30.1
+        },
+        {
+          "planet": "UYG-YX 九",
+          "richness": "中等",
+          "output": 28.27
+        },
+        {
+          "planet": "LO5-LN 一",
+          "richness": "中等",
+          "output": 27.05
+        }
+      ]
+    },
+    "光泽合金": {
+      "max_output": 39.96,
+      "count": 22,
+      "records": [
+        {
+          "planet": "C-NMG9 三",
+          "richness": "富裕",
+          "output": 39.96
+        },
+        {
+          "planet": "NBW-GD 一",
+          "richness": "富裕",
+          "output": 39.86
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "富裕",
+          "output": 38.97
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "富裕",
+          "output": 38.95
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "富裕",
+          "output": 38.53
+        },
+        {
+          "planet": "LO5-LN 九",
+          "richness": "富裕",
+          "output": 37.54
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "富裕",
+          "output": 35.93
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "富裕",
+          "output": 35.28
+        },
+        {
+          "planet": "GL6S-2 五",
+          "richness": "富裕",
+          "output": 33.86
+        },
+        {
+          "planet": "LO5-LN 七",
+          "richness": "富裕",
+          "output": 33.05
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "中等",
+          "output": 30.85
+        },
+        {
+          "planet": "NBW-GD 二",
+          "richness": "中等",
+          "output": 30.78
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "中等",
+          "output": 29.8
+        },
+        {
+          "planet": "LO5-LN 四",
+          "richness": "中等",
+          "output": 28.94
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "中等",
+          "output": 28.75
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "中等",
+          "output": 28.07
+        },
+        {
+          "planet": "P3X-TN 九",
+          "richness": "贫瘠",
+          "output": 26.15
+        },
+        {
+          "planet": "GL6S-2 六",
+          "richness": "中等",
+          "output": 25.58
+        },
+        {
+          "planet": "UYG-YX 十",
+          "richness": "贫瘠",
+          "output": 22.44
+        },
+        {
+          "planet": "UYG-YX 一",
+          "richness": "贫瘠",
+          "output": 21.7
+        },
+        {
+          "planet": "C-NMG9 二",
+          "richness": "贫瘠",
+          "output": 19.79
+        },
+        {
+          "planet": "UYG-YX 六",
+          "richness": "贫瘠",
+          "output": 18.6
+        }
+      ]
+    },
+    "光滑复合物": {
+      "max_output": 44.04,
+      "count": 18,
+      "records": [
+        {
+          "planet": "P3X-TN 二",
+          "richness": "富裕",
+          "output": 44.04
+        },
+        {
+          "planet": "YM-SRU 二",
+          "richness": "完美",
+          "output": 43.52
+        },
+        {
+          "planet": "UYG-YX 七",
+          "richness": "完美",
+          "output": 39.84
+        },
+        {
+          "planet": "LO5-LN 一",
+          "richness": "富裕",
+          "output": 38.83
+        },
+        {
+          "planet": "NBW-GD 三",
+          "richness": "富裕",
+          "output": 36.06
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "富裕",
+          "output": 35.78
+        },
+        {
+          "planet": "GL6S-2 二",
+          "richness": "富裕",
+          "output": 35.66
+        },
+        {
+          "planet": "C-NMG9 三",
+          "richness": "富裕",
+          "output": 35.62
+        },
+        {
+          "planet": "P3X-TN 九",
+          "richness": "中等",
+          "output": 32.82
+        },
+        {
+          "planet": "UYG-YX 十",
+          "richness": "富裕",
+          "output": 32.81
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "中等",
+          "output": 31.55
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "中等",
+          "output": 29.8
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "中等",
+          "output": 28.81
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "中等",
+          "output": 28.77
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "中等",
+          "output": 26.03
+        },
+        {
+          "planet": "P3X-TN 六",
+          "richness": "贫瘠",
+          "output": 23.44
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "贫瘠",
+          "output": 22.77
+        },
+        {
+          "planet": "RUF3-O 三",
+          "richness": "贫瘠",
+          "output": 21.57
+        }
+      ]
+    },
+    "冷却剂": {
+      "max_output": 28.02,
+      "count": 18,
+      "records": [
+        {
+          "planet": "P3X-TN 六",
+          "richness": "富裕",
+          "output": 28.02
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "富裕",
+          "output": 25.81
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "富裕",
+          "output": 25.06
+        },
+        {
+          "planet": "06-70G 十",
+          "richness": "富裕",
+          "output": 23.67
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "富裕",
+          "output": 22.78
+        },
+        {
+          "planet": "P3X-TN 三",
+          "richness": "中等",
+          "output": 22.38
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "富裕",
+          "output": 22.27
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "富裕",
+          "output": 22.13
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "富裕",
+          "output": 21.9
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "中等",
+          "output": 20.78
+        },
+        {
+          "planet": "06-70G 一",
+          "richness": "中等",
+          "output": 20.66
+        },
+        {
+          "planet": "LO5-LN 八",
+          "richness": "中等",
+          "output": 20.28
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "中等",
+          "output": 18.27
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "中等",
+          "output": 17.2
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "中等",
+          "output": 16.82
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "贫瘠",
+          "output": 16.03
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "贫瘠",
+          "output": 15.98
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "贫瘠",
+          "output": 15.96
+        }
+      ]
+    },
+    "凝缩液": {
+      "max_output": 25.17,
+      "count": 8,
+      "records": [
+        {
+          "planet": "RUF3-O 六",
+          "richness": "富裕",
+          "output": 25.17
+        },
+        {
+          "planet": "P3X-TN 五",
+          "richness": "富裕",
+          "output": 23.99
+        },
+        {
+          "planet": "06-70G 一",
+          "richness": "富裕",
+          "output": 23.54
+        },
+        {
+          "planet": "NBW-GD 四",
+          "richness": "富裕",
+          "output": 22.41
+        },
+        {
+          "planet": "YM-SRU 一",
+          "richness": "富裕",
+          "output": 21.98
+        },
+        {
+          "planet": "RUF3-O 一",
+          "richness": "中等",
+          "output": 19.92
+        },
+        {
+          "planet": "UYG-YX 十一",
+          "richness": "中等",
+          "output": 18.66
+        },
+        {
+          "planet": "GL6S-2 四",
+          "richness": "贫瘠",
+          "output": 14.78
+        }
+      ]
+    },
+    "反应金属": {
+      "max_output": 11.3,
+      "count": 23,
+      "records": [
+        {
+          "planet": "NBW-GD 一",
+          "richness": "完美",
+          "output": 11.3
+        },
+        {
+          "planet": "YM-SRU 七",
+          "richness": "富裕",
+          "output": 11.17
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "富裕",
+          "output": 10.69
+        },
+        {
+          "planet": "UYG-YX 十三",
+          "richness": "完美",
+          "output": 10.39
+        },
+        {
+          "planet": "GL6S-2 五",
+          "richness": "完美",
+          "output": 10.2
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "富裕",
+          "output": 10.12
+        },
+        {
+          "planet": "06-70G 五",
+          "richness": "富裕",
+          "output": 9.99
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "富裕",
+          "output": 9.8
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "富裕",
+          "output": 9.48
+        },
+        {
+          "planet": "LO5-LN 一",
+          "richness": "富裕",
+          "output": 9.44
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "富裕",
+          "output": 9.26
+        },
+        {
+          "planet": "06-70G 四",
+          "richness": "富裕",
+          "output": 9.05
+        },
+        {
+          "planet": "C-NMG9 三",
+          "richness": "富裕",
+          "output": 9.05
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "富裕",
+          "output": 8.89
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "富裕",
+          "output": 8.76
+        },
+        {
+          "planet": "P3X-TN 六",
+          "richness": "中等",
+          "output": 8.61
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "中等",
+          "output": 8.04
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "中等",
+          "output": 7.48
+        },
+        {
+          "planet": "UYG-YX 七",
+          "richness": "中等",
+          "output": 7.41
+        },
+        {
+          "planet": "RUF3-O 七",
+          "richness": "中等",
+          "output": 6.88
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "中等",
+          "output": 6.85
+        },
+        {
+          "planet": "GL6S-2 六",
+          "richness": "中等",
+          "output": 6.22
+        },
+        {
+          "planet": "UYG-YX 十四",
+          "richness": "贫瘠",
+          "output": 5.19
+        }
+      ]
+    },
+    "同位素燃料": {
+      "max_output": 5.65,
+      "count": 13,
+      "records": [
+        {
+          "planet": "NBW-GD 三",
+          "richness": "富裕",
+          "output": 5.65
+        },
+        {
+          "planet": "06-70G 四",
+          "richness": "中等",
+          "output": 3.89
+        },
+        {
+          "planet": "LO5-LN 三",
+          "richness": "中等",
+          "output": 3.86
+        },
+        {
+          "planet": "06-70G 二",
+          "richness": "中等",
+          "output": 3.8
+        },
+        {
+          "planet": "RUF3-O 三",
+          "richness": "中等",
+          "output": 3.65
+        },
+        {
+          "planet": "NBW-GD 二",
+          "richness": "贫瘠",
+          "output": 3.53
+        },
+        {
+          "planet": "RUF3-O 十",
+          "richness": "贫瘠",
+          "output": 3.46
+        },
+        {
+          "planet": "UYG-YX 十四",
+          "richness": "贫瘠",
+          "output": 3.0
+        },
+        {
+          "planet": "P3X-TN 七",
+          "richness": "贫瘠",
+          "output": 2.99
+        },
+        {
+          "planet": "UYG-YX 一",
+          "richness": "贫瘠",
+          "output": 2.97
+        },
+        {
+          "planet": "RUF3-O 五",
+          "richness": "贫瘠",
+          "output": 2.72
+        },
+        {
+          "planet": "UYG-YX 十二",
+          "richness": "贫瘠",
+          "output": 2.63
+        },
+        {
+          "planet": "YM-SRU 三",
+          "richness": "贫瘠",
+          "output": 2.57
+        }
+      ]
+    },
+    "基础金属": {
+      "max_output": 14.04,
+      "count": 33,
+      "records": [
+        {
+          "planet": "P3X-TN 五",
+          "richness": "完美",
+          "output": 14.04
+        },
+        {
+          "planet": "P3X-TN 四",
+          "richness": "完美",
+          "output": 13.48
+        },
+        {
+          "planet": "P3X-TN 九",
+          "richness": "富裕",
+          "output": 11.3
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "富裕",
+          "output": 10.79
+        },
+        {
+          "planet": "P3X-TN 六",
+          "richness": "富裕",
+          "output": 10.16
+        },
+        {
+          "planet": "LO5-LN 一",
+          "richness": "富裕",
+          "output": 9.93
+        },
+        {
+          "planet": "LO5-LN 八",
+          "richness": "富裕",
+          "output": 9.88
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "富裕",
+          "output": 9.59
+        },
+        {
+          "planet": "P3X-TN 一",
+          "richness": "富裕",
+          "output": 9.59
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "富裕",
+          "output": 9.53
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "富裕",
+          "output": 8.54
+        },
+        {
+          "planet": "GL6S-2 五",
+          "richness": "富裕",
+          "output": 8.19
+        },
+        {
+          "planet": "UYG-YX 三",
+          "richness": "中等",
+          "output": 7.53
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "中等",
+          "output": 7.46
+        },
+        {
+          "planet": "UYG-YX 十",
+          "richness": "中等",
+          "output": 7.06
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "中等",
+          "output": 6.61
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "中等",
+          "output": 6.37
+        },
+        {
+          "planet": "C-NMG9 三",
+          "richness": "贫瘠",
+          "output": 6.04
+        },
+        {
+          "planet": "UYG-YX 九",
+          "richness": "中等",
+          "output": 6.02
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "贫瘠",
+          "output": 5.88
+        },
+        {
+          "planet": "06-70G 二",
+          "richness": "贫瘠",
+          "output": 5.8
+        },
+        {
+          "planet": "NBW-GD 二",
+          "richness": "贫瘠",
+          "output": 5.7
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "贫瘠",
+          "output": 5.53
+        },
+        {
+          "planet": "RUF3-O 一",
+          "richness": "贫瘠",
+          "output": 5.46
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "贫瘠",
+          "output": 5.46
+        },
+        {
+          "planet": "YM-SRU 四",
+          "richness": "贫瘠",
+          "output": 5.28
+        },
+        {
+          "planet": "RUF3-O 十",
+          "richness": "贫瘠",
+          "output": 5.22
+        },
+        {
+          "planet": "YM-SRU 三",
+          "richness": "贫瘠",
+          "output": 5.09
+        },
+        {
+          "planet": "06-70G 一",
+          "richness": "贫瘠",
+          "output": 5.06
+        },
+        {
+          "planet": "YM-SRU 八",
+          "richness": "贫瘠",
+          "output": 4.95
+        },
+        {
+          "planet": "06-70G 九",
+          "richness": "贫瘠",
+          "output": 4.86
+        },
+        {
+          "planet": "RUF3-O 五",
+          "richness": "贫瘠",
+          "output": 4.6
+        },
+        {
+          "planet": "LO5-LN 三",
+          "richness": "贫瘠",
+          "output": 4.57
+        }
+      ]
+    },
+    "多样复合物": {
+      "max_output": 53.14,
+      "count": 5,
+      "records": [
+        {
+          "planet": "P3X-TN 五",
+          "richness": "完美",
+          "output": 53.14
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "完美",
+          "output": 42.7
+        },
+        {
+          "planet": "UYG-YX 十一",
+          "richness": "富裕",
+          "output": 32.9
+        },
+        {
+          "planet": "P3X-TN 三",
+          "richness": "中等",
+          "output": 28.39
+        },
+        {
+          "planet": "06-70G 十",
+          "richness": "贫瘠",
+          "output": 23.05
+        }
+      ]
+    },
+    "工业纤维": {
+      "max_output": 13.59,
+      "count": 16,
+      "records": [
+        {
+          "planet": "P3X-TN 四",
+          "richness": "完美",
+          "output": 13.59
+        },
+        {
+          "planet": "P3X-TN 五",
+          "richness": "富裕",
+          "output": 10.13
+        },
+        {
+          "planet": "UYG-YX 一",
+          "richness": "中等",
+          "output": 7.47
+        },
+        {
+          "planet": "YM-SRU 一",
+          "richness": "中等",
+          "output": 7.4
+        },
+        {
+          "planet": "LO5-LN 七",
+          "richness": "中等",
+          "output": 6.97
+        },
+        {
+          "planet": "LO5-LN 二",
+          "richness": "中等",
+          "output": 6.84
+        },
+        {
+          "planet": "YM-SRU 三",
+          "richness": "中等",
+          "output": 6.74
+        },
+        {
+          "planet": "06-70G 二",
+          "richness": "中等",
+          "output": 6.7
+        },
+        {
+          "planet": "P3X-TN 七",
+          "richness": "贫瘠",
+          "output": 6.68
+        },
+        {
+          "planet": "RUF3-O 十",
+          "richness": "中等",
+          "output": 6.28
+        },
+        {
+          "planet": "UYG-YX 五",
+          "richness": "中等",
+          "output": 6.21
+        },
+        {
+          "planet": "RUF3-O 六",
+          "richness": "贫瘠",
+          "output": 6.17
+        },
+        {
+          "planet": "UYG-YX 三",
+          "richness": "贫瘠",
+          "output": 5.42
+        },
+        {
+          "planet": "C-NMG9 二",
+          "richness": "贫瘠",
+          "output": 5.32
+        },
+        {
+          "planet": "LO5-LN 四",
+          "richness": "贫瘠",
+          "output": 5.19
+        },
+        {
+          "planet": "RUF3-O 二",
+          "richness": "贫瘠",
+          "output": 4.65
+        }
+      ]
+    },
+    "建筑模块": {
+      "max_output": 44.39,
+      "count": 9,
+      "records": [
+        {
+          "planet": "YM-SRU 二",
+          "richness": "完美",
+          "output": 44.39
+        },
+        {
+          "planet": "NBW-GD 三",
+          "richness": "富裕",
+          "output": 33.67
+        },
+        {
+          "planet": "YM-SRU 三",
+          "richness": "中等",
+          "output": 32.08
+        },
+        {
+          "planet": "C-NMG9 二",
+          "richness": "中等",
+          "output": 30.76
+        },
+        {
+          "planet": "P3X-TN 七",
+          "richness": "中等",
+          "output": 27.44
+        },
+        {
+          "planet": "LO5-LN 三",
+          "richness": "中等",
+          "output": 25.19
+        },
+        {
+          "planet": "YM-SRU 四",
+          "richness": "贫瘠",
+          "output": 21.87
+        },
+        {
+          "planet": "RUF3-O 七",
+          "richness": "贫瘠",
+          "output": 21.55
+        },
+        {
+          "planet": "RUF3-O 五",
+          "richness": "贫瘠",
+          "output": 20.13
+        }
+      ]
+    },
+    "悬浮等离子": {
+      "max_output": 114.47,
+      "count": 4,
+      "records": [
+        {
+          "planet": "YM-SRU 一",
+          "richness": "中等",
+          "output": 114.47
+        },
+        {
+          "planet": "06-70G 五",
+          "richness": "中等",
+          "output": 101.61
+        },
+        {
+          "planet": "YM-SRU 六",
+          "richness": "贫瘠",
+          "output": 78.73
+        },
+        {
+          "planet": "LO5-LN 九",
+          "richness": "贫瘠",
+          "output": 71.32
+        }
+      ]
+    },
+    "晶体复合物": {
+      "max_output": 41.85,
+      "count": 8,
+      "records": [
+        {
+          "planet": "YM-SRU 七",
+          "richness": "富裕",
+          "output": 41.85
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "富裕",
+          "output": 38.39
+        },
+        {
+          "planet": "YM-SRU 六",
+          "richness": "富裕",
+          "output": 37.53
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "富裕",
+          "output": 35.0
+        },
+        {
+          "planet": "06-70G 四",
+          "richness": "富裕",
+          "output": 32.95
+        },
+        {
+          "planet": "RUF3-O 七",
+          "richness": "中等",
+          "output": 28.57
+        },
+        {
+          "planet": "P3X-TN 三",
+          "richness": "中等",
+          "output": 27.92
+        },
+        {
+          "planet": "06-70G 五",
+          "richness": "中等",
+          "output": 24.98
+        }
+      ]
+    },
+    "有毒金属": {
+      "max_output": 11.18,
+      "count": 9,
+      "records": [
+        {
+          "planet": "YM-SRU 七",
+          "richness": "富裕",
+          "output": 11.18
+        },
+        {
+          "planet": "RUF3-O 四",
+          "richness": "完美",
+          "output": 10.89
+        },
+        {
+          "planet": "06-70G 九",
+          "richness": "中等",
+          "output": 7.76
+        },
+        {
+          "planet": "YM-SRU 八",
+          "richness": "中等",
+          "output": 7.38
+        },
+        {
+          "planet": "RUF3-O 二",
+          "richness": "中等",
+          "output": 6.61
+        },
+        {
+          "planet": "06-70G 十",
+          "richness": "贫瘠",
+          "output": 6.09
+        },
+        {
+          "planet": "UYG-YX 六",
+          "richness": "贫瘠",
+          "output": 5.24
+        },
+        {
+          "planet": "GL6S-2 三",
+          "richness": "贫瘠",
+          "output": 4.58
+        },
+        {
+          "planet": "GL6S-2 一",
+          "richness": "贫瘠",
+          "output": 3.99
+        }
+      ]
+    },
+    "杂色复合物": {
+      "max_output": 42.62,
+      "count": 6,
+      "records": [
+        {
+          "planet": "P3X-TN 二",
+          "richness": "富裕",
+          "output": 42.62
+        },
+        {
+          "planet": "P3X-TN 一",
+          "richness": "富裕",
+          "output": 35.88
+        },
+        {
+          "planet": "YM-SRU 二",
+          "richness": "中等",
+          "output": 28.67
+        },
+        {
+          "planet": "RUF3-O 一",
+          "richness": "中等",
+          "output": 27.41
+        },
+        {
+          "planet": "LO5-LN 七",
+          "richness": "中等",
+          "output": 24.62
+        },
+        {
+          "planet": "06-70G 一",
+          "richness": "贫瘠",
+          "output": 23.58
+        }
+      ]
+    },
+    "活性气体": {
+      "max_output": 41.24,
+      "count": 22,
+      "records": [
+        {
+          "planet": "P3X-TN 九",
+          "richness": "富裕",
+          "output": 41.24
+        },
+        {
+          "planet": "GL6S-2 四",
+          "richness": "完美",
+          "output": 39.94
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "富裕",
+          "output": 37.75
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "富裕",
+          "output": 37.13
+        },
+        {
+          "planet": "UYG-YX 七",
+          "richness": "富裕",
+          "output": 36.19
+        },
+        {
+          "planet": "RUF3-O 九",
+          "richness": "富裕",
+          "output": 36.13
+        },
+        {
+          "planet": "NBW-GD 四",
+          "richness": "富裕",
+          "output": 35.02
+        },
+        {
+          "planet": "06-70G 六",
+          "richness": "富裕",
+          "output": 34.67
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "富裕",
+          "output": 33.18
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "中等",
+          "output": 30.27
+        },
+        {
+          "planet": "YM-SRU 六",
+          "richness": "中等",
+          "output": 30.16
+        },
+        {
+          "planet": "GL6S-2 五",
+          "richness": "中等",
+          "output": 29.18
+        },
+        {
+          "planet": "UYG-YX 八",
+          "richness": "中等",
+          "output": 26.9
+        },
+        {
+          "planet": "UYG-YX 九",
+          "richness": "中等",
+          "output": 25.25
+        },
+        {
+          "planet": "P3X-TN 六",
+          "richness": "贫瘠",
+          "output": 24.53
+        },
+        {
+          "planet": "RUF3-O 六",
+          "richness": "中等",
+          "output": 24.0
+        },
+        {
+          "planet": "UYG-YX 十三",
+          "richness": "中等",
+          "output": 23.57
+        },
+        {
+          "planet": "YM-SRU 七",
+          "richness": "贫瘠",
+          "output": 23.25
+        },
+        {
+          "planet": "GL6S-2 六",
+          "richness": "中等",
+          "output": 22.85
+        },
+        {
+          "planet": "NBW-GD 一",
+          "richness": "贫瘠",
+          "output": 22.54
+        },
+        {
+          "planet": "UYG-YX 十",
+          "richness": "贫瘠",
+          "output": 21.58
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "贫瘠",
+          "output": 21.52
+        }
+      ]
+    },
+    "浓缩合金": {
+      "max_output": 48.7,
+      "count": 9,
+      "records": [
+        {
+          "planet": "NBW-GD 四",
+          "richness": "完美",
+          "output": 48.7
+        },
+        {
+          "planet": "RUF3-O 六",
+          "richness": "完美",
+          "output": 44.55
+        },
+        {
+          "planet": "P3X-TN 五",
+          "richness": "富裕",
+          "output": 43.74
+        },
+        {
+          "planet": "RUF3-O 四",
+          "richness": "完美",
+          "output": 40.48
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "富裕",
+          "output": 39.02
+        },
+        {
+          "planet": "P3X-TN 四",
+          "richness": "富裕",
+          "output": 37.52
+        },
+        {
+          "planet": "UYG-YX 十一",
+          "richness": "富裕",
+          "output": 32.26
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "中等",
+          "output": 30.97
+        },
+        {
+          "planet": "C-NMG9 一",
+          "richness": "中等",
+          "output": 26.63
+        }
+      ]
+    },
+    "液化臭氧": {
+      "max_output": 59.5,
+      "count": 9,
+      "records": [
+        {
+          "planet": "P3X-TN 三",
+          "richness": "完美",
+          "output": 59.5
+        },
+        {
+          "planet": "RUF3-O 四",
+          "richness": "完美",
+          "output": 55.22
+        },
+        {
+          "planet": "P3X-TN 一",
+          "richness": "富裕",
+          "output": 47.94
+        },
+        {
+          "planet": "C-NMG9 一",
+          "richness": "富裕",
+          "output": 42.47
+        },
+        {
+          "planet": "LO5-LN 八",
+          "richness": "中等",
+          "output": 37.31
+        },
+        {
+          "planet": "GL6S-2 四",
+          "richness": "中等",
+          "output": 37.02
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "中等",
+          "output": 35.16
+        },
+        {
+          "planet": "UYG-YX 十一",
+          "richness": "中等",
+          "output": 32.07
+        },
+        {
+          "planet": "LO5-LN 九",
+          "richness": "贫瘠",
+          "output": 28.86
+        }
+      ]
+    },
+    "硅结构铸材": {
+      "max_output": 21.74,
+      "count": 12,
+      "records": [
+        {
+          "planet": "06-70G 十",
+          "richness": "完美",
+          "output": 21.74
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "富裕",
+          "output": 19.45
+        },
+        {
+          "planet": "P3X-TN 七",
+          "richness": "中等",
+          "output": 15.15
+        },
+        {
+          "planet": "YM-SRU 八",
+          "richness": "中等",
+          "output": 13.85
+        },
+        {
+          "planet": "06-70G 九",
+          "richness": "中等",
+          "output": 13.74
+        },
+        {
+          "planet": "LO5-LN 四",
+          "richness": "中等",
+          "output": 13.62
+        },
+        {
+          "planet": "UYG-YX 五",
+          "richness": "贫瘠",
+          "output": 10.6
+        },
+        {
+          "planet": "UYG-YX 六",
+          "richness": "贫瘠",
+          "output": 10.45
+        },
+        {
+          "planet": "RUF3-O 二",
+          "richness": "贫瘠",
+          "output": 9.99
+        },
+        {
+          "planet": "GL6S-2 三",
+          "richness": "贫瘠",
+          "output": 9.59
+        },
+        {
+          "planet": "UYG-YX 一",
+          "richness": "贫瘠",
+          "output": 8.82
+        },
+        {
+          "planet": "LO5-LN 二",
+          "richness": "贫瘠",
+          "output": 8.62
+        }
+      ]
+    },
+    "离子溶液": {
+      "max_output": 17.9,
+      "count": 17,
+      "records": [
+        {
+          "planet": "LO5-LN 一",
+          "richness": "完美",
+          "output": 17.9
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "完美",
+          "output": 16.96
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "完美",
+          "output": 16.57
+        },
+        {
+          "planet": "C-NMG9 三",
+          "richness": "富裕",
+          "output": 15.81
+        },
+        {
+          "planet": "GL6S-2 五",
+          "richness": "完美",
+          "output": 15.77
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "富裕",
+          "output": 15.55
+        },
+        {
+          "planet": "UYG-YX 十三",
+          "richness": "富裕",
+          "output": 13.03
+        },
+        {
+          "planet": "UYG-YX 八",
+          "richness": "富裕",
+          "output": 12.38
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "中等",
+          "output": 12.24
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "中等",
+          "output": 11.73
+        },
+        {
+          "planet": "06-70G 十",
+          "richness": "中等",
+          "output": 11.06
+        },
+        {
+          "planet": "NBW-GD 一",
+          "richness": "中等",
+          "output": 11.0
+        },
+        {
+          "planet": "C-NMG9 一",
+          "richness": "中等",
+          "output": 10.77
+        },
+        {
+          "planet": "GL6S-2 六",
+          "richness": "中等",
+          "output": 10.39
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "贫瘠",
+          "output": 9.17
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "贫瘠",
+          "output": 8.38
+        },
+        {
+          "planet": "UYG-YX 九",
+          "richness": "贫瘠",
+          "output": 7.89
+        }
+      ]
+    },
+    "稀有气体": {
+      "max_output": 43.11,
+      "count": 15,
+      "records": [
+        {
+          "planet": "NBW-GD 一",
+          "richness": "完美",
+          "output": 43.11
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "完美",
+          "output": 42.8
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "完美",
+          "output": 41.5
+        },
+        {
+          "planet": "P3X-TN 六",
+          "richness": "富裕",
+          "output": 39.98
+        },
+        {
+          "planet": "UYG-YX 七",
+          "richness": "完美",
+          "output": 39.38
+        },
+        {
+          "planet": "UYG-YX 四",
+          "richness": "完美",
+          "output": 39.22
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "富裕",
+          "output": 36.99
+        },
+        {
+          "planet": "RUF3-O 八",
+          "richness": "富裕",
+          "output": 36.95
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "富裕",
+          "output": 34.94
+        },
+        {
+          "planet": "NBW-GD 三",
+          "richness": "富裕",
+          "output": 33.98
+        },
+        {
+          "planet": "UYG-YX 八",
+          "richness": "中等",
+          "output": 28.25
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "中等",
+          "output": 25.97
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "贫瘠",
+          "output": 22.44
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "贫瘠",
+          "output": 20.77
+        },
+        {
+          "planet": "UYG-YX 九",
+          "richness": "贫瘠",
+          "output": 20.62
+        }
+      ]
+    },
+    "等离子体团": {
+      "max_output": 2.05,
+      "count": 8,
+      "records": [
+        {
+          "planet": "UYG-YX 二",
+          "richness": "富裕",
+          "output": 2.05
+        },
+        {
+          "planet": "GL6S-2 三",
+          "richness": "中等",
+          "output": 1.61
+        },
+        {
+          "planet": "LO5-LN 二",
+          "richness": "贫瘠",
+          "output": 1.42
+        },
+        {
+          "planet": "YM-SRU 四",
+          "richness": "贫瘠",
+          "output": 1.39
+        },
+        {
+          "planet": "GL6S-2 一",
+          "richness": "贫瘠",
+          "output": 1.3
+        },
+        {
+          "planet": "YM-SRU 八",
+          "richness": "贫瘠",
+          "output": 1.25
+        },
+        {
+          "planet": "RUF3-O 十",
+          "richness": "贫瘠",
+          "output": 1.14
+        },
+        {
+          "planet": "UYG-YX 五",
+          "richness": "贫瘠",
+          "output": 1.05
+        }
+      ]
+    },
+    "精密合金": {
+      "max_output": 38.06,
+      "count": 14,
+      "records": [
+        {
+          "planet": "06-70G 一",
+          "richness": "富裕",
+          "output": 38.06
+        },
+        {
+          "planet": "YM-SRU 一",
+          "richness": "富裕",
+          "output": 34.48
+        },
+        {
+          "planet": "NBW-GD 二",
+          "richness": "中等",
+          "output": 31.49
+        },
+        {
+          "planet": "LO5-LN 四",
+          "richness": "中等",
+          "output": 31.1
+        },
+        {
+          "planet": "LO5-LN 九",
+          "richness": "中等",
+          "output": 30.97
+        },
+        {
+          "planet": "06-70G 九",
+          "richness": "中等",
+          "output": 29.15
+        },
+        {
+          "planet": "P3X-TN 一",
+          "richness": "中等",
+          "output": 26.7
+        },
+        {
+          "planet": "06-70G 二",
+          "richness": "中等",
+          "output": 26.0
+        },
+        {
+          "planet": "LO5-LN 二",
+          "richness": "中等",
+          "output": 24.6
+        },
+        {
+          "planet": "UYG-YX 三",
+          "richness": "中等",
+          "output": 24.02
+        },
+        {
+          "planet": "LO5-LN 八",
+          "richness": "贫瘠",
+          "output": 23.84
+        },
+        {
+          "planet": "LO5-LN 七",
+          "richness": "贫瘠",
+          "output": 20.59
+        },
+        {
+          "planet": "UYG-YX 十二",
+          "richness": "贫瘠",
+          "output": 20.33
+        },
+        {
+          "planet": "C-NMG9 二",
+          "richness": "贫瘠",
+          "output": 17.6
+        }
+      ]
+    },
+    "纤维复合物": {
+      "max_output": 42.14,
+      "count": 20,
+      "records": [
+        {
+          "planet": "GL6S-2 四",
+          "richness": "完美",
+          "output": 42.14
+        },
+        {
+          "planet": "NBW-GD 四",
+          "richness": "富裕",
+          "output": 40.9
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "富裕",
+          "output": 39.23
+        },
+        {
+          "planet": "P3X-TN 四",
+          "richness": "富裕",
+          "output": 38.95
+        },
+        {
+          "planet": "C-NMG9 五",
+          "richness": "富裕",
+          "output": 36.95
+        },
+        {
+          "planet": "GL6S-2 六",
+          "richness": "富裕",
+          "output": 36.6
+        },
+        {
+          "planet": "LO5-LN 五",
+          "richness": "富裕",
+          "output": 34.4
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "富裕",
+          "output": 33.9
+        },
+        {
+          "planet": "NBW-GD 一",
+          "richness": "富裕",
+          "output": 33.15
+        },
+        {
+          "planet": "P3X-TN 九",
+          "richness": "中等",
+          "output": 32.93
+        },
+        {
+          "planet": "RUF3-O 六",
+          "richness": "富裕",
+          "output": 32.0
+        },
+        {
+          "planet": "UYG-YX 七",
+          "richness": "富裕",
+          "output": 31.75
+        },
+        {
+          "planet": "NBW-GD 五",
+          "richness": "中等",
+          "output": 31.36
+        },
+        {
+          "planet": "P3X-TN 五",
+          "richness": "中等",
+          "output": 30.1
+        },
+        {
+          "planet": "UYG-YX 十三",
+          "richness": "中等",
+          "output": 29.45
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "中等",
+          "output": 28.57
+        },
+        {
+          "planet": "UYG-YX 十一",
+          "richness": "中等",
+          "output": 25.75
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "贫瘠",
+          "output": 21.74
+        },
+        {
+          "planet": "UYG-YX 十",
+          "richness": "贫瘠",
+          "output": 21.43
+        },
+        {
+          "planet": "UYG-YX 八",
+          "richness": "贫瘠",
+          "output": 20.28
+        }
+      ]
+    },
+    "纳米体": {
+      "max_output": 11.55,
+      "count": 3,
+      "records": [
+        {
+          "planet": "YM-SRU 七",
+          "richness": "完美",
+          "output": 11.55
+        },
+        {
+          "planet": "06-70G 四",
+          "richness": "完美",
+          "output": 10.62
+        },
+        {
+          "planet": "06-70G 五",
+          "richness": "贫瘠",
+          "output": 5.95
+        }
+      ]
+    },
+    "聚芳酰胺": {
+      "max_output": 29.45,
+      "count": 20,
+      "records": [
+        {
+          "planet": "RUF3-O 四",
+          "richness": "完美",
+          "output": 29.45
+        },
+        {
+          "planet": "C-NMG9 一",
+          "richness": "完美",
+          "output": 29.32
+        },
+        {
+          "planet": "C-NMG9 三",
+          "richness": "完美",
+          "output": 27.54
+        },
+        {
+          "planet": "06-70G 十一",
+          "richness": "完美",
+          "output": 27.28
+        },
+        {
+          "planet": "P3X-TN 三",
+          "richness": "富裕",
+          "output": 23.86
+        },
+        {
+          "planet": "P3X-TN 八",
+          "richness": "中等",
+          "output": 22.55
+        },
+        {
+          "planet": "06-70G 七",
+          "richness": "富裕",
+          "output": 21.58
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "中等",
+          "output": 20.97
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "中等",
+          "output": 19.58
+        },
+        {
+          "planet": "RUF3-O 三",
+          "richness": "中等",
+          "output": 18.98
+        },
+        {
+          "planet": "06-70G 十二",
+          "richness": "中等",
+          "output": 18.32
+        },
+        {
+          "planet": "RUF3-O 十一",
+          "richness": "中等",
+          "output": 18.12
+        },
+        {
+          "planet": "UYG-YX 四",
+          "richness": "中等",
+          "output": 17.5
+        },
+        {
+          "planet": "C-NMG9 四",
+          "richness": "中等",
+          "output": 17.39
+        },
+        {
+          "planet": "UYG-YX 二",
+          "richness": "中等",
+          "output": 17.06
+        },
+        {
+          "planet": "NBW-GD 六",
+          "richness": "中等",
+          "output": 17.0
+        },
+        {
+          "planet": "LO5-LN 一",
+          "richness": "贫瘠",
+          "output": 16.47
+        },
+        {
+          "planet": "06-70G 八",
+          "richness": "贫瘠",
+          "output": 15.67
+        },
+        {
+          "planet": "06-70G 十",
+          "richness": "贫瘠",
+          "output": 15.52
+        },
+        {
+          "planet": "LO5-LN 六",
+          "richness": "贫瘠",
+          "output": 15.39
+        }
+      ]
+    },
+    "贵金属": {
+      "max_output": 49.22,
+      "count": 7,
+      "records": [
+        {
+          "planet": "P3X-TN 四",
+          "richness": "完美",
+          "output": 49.22
+        },
+        {
+          "planet": "GL6S-2 四",
+          "richness": "完美",
+          "output": 43.97
+        },
+        {
+          "planet": "C-NMG9 一",
+          "richness": "完美",
+          "output": 43.5
+        },
+        {
+          "planet": "NBW-GD 四",
+          "richness": "富裕",
+          "output": 40.48
+        },
+        {
+          "planet": "GL6S-2 二",
+          "richness": "富裕",
+          "output": 36.34
+        },
+        {
+          "planet": "RUF3-O 四",
+          "richness": "中等",
+          "output": 26.48
+        },
+        {
+          "planet": "06-70G 三",
+          "richness": "贫瘠",
+          "output": 23.1
+        }
+      ]
+    },
+    "超张力塑料": {
+      "max_output": 24.18,
+      "count": 14,
+      "records": [
+        {
+          "planet": "UYG-YX 十四",
+          "richness": "富裕",
+          "output": 24.18
+        },
+        {
+          "planet": "YM-SRU 四",
+          "richness": "中等",
+          "output": 20.2
+        },
+        {
+          "planet": "GL6S-2 一",
+          "richness": "中等",
+          "output": 18.58
+        },
+        {
+          "planet": "UYG-YX 十二",
+          "richness": "中等",
+          "output": 18.48
+        },
+        {
+          "planet": "UYG-YX 六",
+          "richness": "中等",
+          "output": 18.45
+        },
+        {
+          "planet": "06-70G 四",
+          "richness": "中等",
+          "output": 17.58
+        },
+        {
+          "planet": "LO5-LN 三",
+          "richness": "贫瘠",
+          "output": 15.77
+        },
+        {
+          "planet": "06-70G 五",
+          "richness": "贫瘠",
+          "output": 15.52
+        },
+        {
+          "planet": "LO5-LN 七",
+          "richness": "贫瘠",
+          "output": 14.89
+        },
+        {
+          "planet": "RUF3-O 五",
+          "richness": "贫瘠",
+          "output": 14.55
+        },
+        {
+          "planet": "UYG-YX 五",
+          "richness": "贫瘠",
+          "output": 14.4
+        },
+        {
+          "planet": "RUF3-O 二",
+          "richness": "贫瘠",
+          "output": 14.03
+        },
+        {
+          "planet": "UYG-YX 三",
+          "richness": "贫瘠",
+          "output": 11.3
+        },
+        {
+          "planet": "GL6S-2 三",
+          "richness": "贫瘠",
+          "output": 10.08
+        }
+      ]
+    },
+    "透光复合物": {
+      "max_output": 28.97,
+      "count": 2,
+      "records": [
+        {
+          "planet": "YM-SRU 六",
+          "richness": "中等",
+          "output": 28.97
+        },
+        {
+          "planet": "RUF3-O 七",
+          "richness": "贫瘠",
+          "output": 22.73
+        }
+      ]
+    },
+    "重水": {
+      "max_output": 432.25,
+      "count": 7,
+      "records": [
+        {
+          "planet": "C-NMG9 一",
+          "richness": "完美",
+          "output": 432.25
+        },
+        {
+          "planet": "P3X-TN 四",
+          "richness": "富裕",
+          "output": 395.92
+        },
+        {
+          "planet": "RUF3-O 四",
+          "richness": "富裕",
+          "output": 367.5
+        },
+        {
+          "planet": "P3X-TN 三",
+          "richness": "富裕",
+          "output": 355.88
+        },
+        {
+          "planet": "RUF3-O 六",
+          "richness": "富裕",
+          "output": 338.25
+        },
+        {
+          "planet": "YM-SRU 五",
+          "richness": "中等",
+          "output": 282.42
+        },
+        {
+          "planet": "NBW-GD 四",
+          "richness": "中等",
+          "output": 259.74
+        }
+      ]
+    },
+    "重金属": {
+      "max_output": 46.17,
+      "count": 7,
+      "records": [
+        {
+          "planet": "P3X-TN 二",
+          "richness": "完美",
+          "output": 46.17
+        },
+        {
+          "planet": "RUF3-O 三",
+          "richness": "富裕",
+          "output": 35.67
+        },
+        {
+          "planet": "LO5-LN 八",
+          "richness": "富裕",
+          "output": 34.24
+        },
+        {
+          "planet": "RUF3-O 一",
+          "richness": "富裕",
+          "output": 31.15
+        },
+        {
+          "planet": "P3X-TN 一",
+          "richness": "贫瘠",
+          "output": 23.74
+        },
+        {
+          "planet": "LO5-LN 九",
+          "richness": "贫瘠",
+          "output": 21.66
+        },
+        {
+          "planet": "YM-SRU 一",
+          "richness": "贫瘠",
+          "output": 19.19
+        }
+      ]
+    },
+    "闪光合金": {
+      "max_output": 38.08,
+      "count": 8,
+      "records": [
+        {
+          "planet": "P3X-TN 二",
+          "richness": "富裕",
+          "output": 38.08
+        },
+        {
+          "planet": "YM-SRU 六",
+          "richness": "富裕",
+          "output": 36.34
+        },
+        {
+          "planet": "UYG-YX 二",
+          "richness": "富裕",
+          "output": 35.98
+        },
+        {
+          "planet": "YM-SRU 二",
+          "richness": "富裕",
+          "output": 34.86
+        },
+        {
+          "planet": "UYG-YX 十四",
+          "richness": "富裕",
+          "output": 34.1
+        },
+        {
+          "planet": "UYG-YX 四",
+          "richness": "中等",
+          "output": 28.22
+        },
+        {
+          "planet": "GL6S-2 二",
+          "richness": "贫瘠",
+          "output": 21.5
+        },
+        {
+          "planet": "RUF3-O 七",
+          "richness": "贫瘠",
+          "output": 21.3
+        }
+      ]
+    },
+    "黑暗复合物": {
+      "max_output": 31.41,
+      "count": 17,
+      "records": [
+        {
+          "planet": "LO5-LN 四",
+          "richness": "中等",
+          "output": 31.41
+        },
+        {
+          "planet": "P3X-TN 七",
+          "richness": "中等",
+          "output": 29.26
+        },
+        {
+          "planet": "C-NMG9 二",
+          "richness": "中等",
+          "output": 28.78
+        },
+        {
+          "planet": "RUF3-O 二",
+          "richness": "中等",
+          "output": 26.7
+        },
+        {
+          "planet": "RUF3-O 五",
+          "richness": "中等",
+          "output": 24.93
+        },
+        {
+          "planet": "LO5-LN 二",
+          "richness": "中等",
+          "output": 24.78
+        },
+        {
+          "planet": "YM-SRU 四",
+          "richness": "贫瘠",
+          "output": 24.25
+        },
+        {
+          "planet": "YM-SRU 八",
+          "richness": "贫瘠",
+          "output": 24.08
+        },
+        {
+          "planet": "LO5-LN 三",
+          "richness": "贫瘠",
+          "output": 23.79
+        },
+        {
+          "planet": "06-70G 二",
+          "richness": "中等",
+          "output": 23.6
+        },
+        {
+          "planet": "GL6S-2 一",
+          "richness": "中等",
+          "output": 22.75
+        },
+        {
+          "planet": "YM-SRU 三",
+          "richness": "贫瘠",
+          "output": 20.98
+        },
+        {
+          "planet": "NBW-GD 二",
+          "richness": "贫瘠",
+          "output": 20.02
+        },
+        {
+          "planet": "06-70G 九",
+          "richness": "贫瘠",
+          "output": 19.2
+        },
+        {
+          "planet": "RUF3-O 十",
+          "richness": "贫瘠",
+          "output": 18.7
+        },
+        {
+          "planet": "UYG-YX 一",
+          "richness": "贫瘠",
+          "output": 16.75
+        },
+        {
+          "planet": "UYG-YX 十二",
+          "richness": "贫瘠",
+          "output": 15.48
+        }
+      ]
+    }
+  }
+}
