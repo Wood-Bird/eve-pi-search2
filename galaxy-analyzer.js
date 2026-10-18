@@ -1,4 +1,4 @@
-class GalaxyConnectionAnalyzer {
+﻿class GalaxyConnectionAnalyzer {
     constructor() {
         this.systemIdToName = new Map();
         this.systemIdToNameZh = new Map();
@@ -33,7 +33,7 @@ class GalaxyConnectionAnalyzer {
 
     async loadSolarSystems() {
         try {
-            const response = await fetch('资源文件/eve-online-sde-2026-10-07/mapSolarSystems.jsonl');
+            const response = await fetch('资源文件/eve-online-sde-2026-10-07/echoes-map/mapSolarSystems.jsonl');
             if (!response.ok) throw new Error('无法加载星系数据');
             const text = await response.text();
             const lines = text.split('\n').filter(l => l.trim());
@@ -134,7 +134,7 @@ class GalaxyConnectionAnalyzer {
 
     async loadConnections() {
         try {
-            const response = await fetch('资源文件/eve-online-sde-2026-10-07/mapStargates.jsonl');
+            const response = await fetch('资源文件/eve-online-sde-2026-10-07/echoes-map/mapStargates.jsonl');
             if (!response.ok) throw new Error('无法加载星门连接数据');
             const text = await response.text();
             const lines = text.split('\n').filter(l => l.trim());
@@ -204,7 +204,7 @@ class GalaxyConnectionAnalyzer {
 
     async loadConstellations() {
         try {
-            const response = await fetch('资源文件/eve-online-sde-2026-10-07/mapConstellations.jsonl');
+            const response = await fetch('资源文件/eve-online-sde-2026-10-07/echoes-map/mapConstellations.jsonl');
             if (!response.ok) return;
             const text = await response.text();
             const lines = text.split('\n').filter(l => l.trim());
@@ -227,7 +227,7 @@ class GalaxyConnectionAnalyzer {
 
     async loadRegions() {
         try {
-            const response = await fetch('资源文件/eve-online-sde-2026-10-07/mapRegions.jsonl');
+            const response = await fetch('资源文件/eve-online-sde-2026-10-07/echoes-map/mapRegions.jsonl');
             if (!response.ok) return;
             const text = await response.text();
             const lines = text.split('\n').filter(l => l.trim());
@@ -250,7 +250,7 @@ class GalaxyConnectionAnalyzer {
 
     async loadNpcStations() {
         try {
-            const response = await fetch('资源文件/eve-online-sde-2026-10-07/npc_stations.csv');
+            const response = await fetch('资源文件/eve-online-sde-2026-10-07/echoes-map/npc_stations.csv');
             if (!response.ok) return;
             const text = await response.text();
             const lines = text.split('\n').filter(l => l.trim());
