@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVE 诱导路线规划器 · 交互式星图</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; color: #ccc; }
+
+    #canvas {
+        position: absolute; top: 0; left: 0;
+        width: 100%; height: 100%;
+        cursor: crosshair;
+        display: block;
+    }
+
+    #toolbar {
+        position: absolute; top: 16px; left: 16px;
+        width: 340px; max-height: calc(100vh - 32px);
+        background: rgba(15, 18, 30, 0.94);
+        border: 1px solid rgba(100, 120, 180, 0.3);
+        border-radius: 10px;
+        padding: 18px;
+        overflow-y: auto;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    }
+    #toolbar h2 {
+        color: #7ec3ff; font-size: 16px; margin-bottom: 12px;
+        padding-bottom: 8px; border-bottom: 1px solid rgba(126,195,255,0.2);
+    }
+    #toolbar h3 {
+        color: #a0a8c0; font-size: 13px; margin: 12px 0 6px;
+        text-transform: uppercase; letter-spacing: 1px;
+    }
+    #toolbar label {
+        display: block; font-size: 12px; color: #889; margin-bottom: 4px;
+    }
+    #toolbar input[type="text"], #toolbar input[type="number"] {
+        width: 100%; padding: 8px 10px;
+        background: rgba(30,35,55,0.8);
+        border: 1px solid rgba(100,120,180,0.25);
+        border-radius: 6px; color: #ccd; font-size: 13px;
+        margin-bottom: 8px;
+    }
+    #toolbar input:focus { outline: none; border-color: #4a7aff; }
+
+    #toolbar .sys-field { position: relative; }
+    #toolbar .suggestions {
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: rgba(20,24,40,0.98);
+        border: 1px solid rgba(100,120,180,0.3);
+        border-radius: 6px; max-height: 180px; overflow-y: auto;
+        z-index: 100; font-size: 12px;
+    }
+    #toolbar .suggestions div {
+        padding: 6px 10px; cursor: pointer;
+    }
+    #toolbar .suggestions div:hover { background: rgba(74,122,255,0.25); }
+
+    .range-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .range-wrap input[type="range"] { flex: 1; accent-color: #4a7aff; }
+    .range-wrap input[type="number"] {
+        width: 80px; padding: 4px 6px; font-size: 14px;
+        background: rgba(15,18,30,0.9); border: 1px solid rgba(100,120,180,0.3);
+        border-radius: 4px; color: #7ec3ff; font-weight: bold; text-align: center;
+    }
+    .range-wrap input[type="number"]:focus { outline: none; border-color: #4a7aff; }
+    .range-val { font-size: 14px; color: #7ec3ff; font-weight: bold; }
+
+    .btn {
+        display: inline-block; padding: 8px 14px;
+        background: linear-gradient(135deg, #2a4a8f, #1a2f5f);
+        border: 1px solid #4a7aff; color: #fff;
+        border-radius: 6px; cursor: pointer; font-size: 13px;
+        transition: all 0.15s;
+    }
+    .btn:hover { background: linear-gradient(135deg, #3a5aaf, #2a3f7f); }
+    .btn.secondary { background: transparent; border-color: #445; color: #aab; }
+    .btn.secondary:hover { background: rgba(255,255,255,0.05); }
+
+    #controls { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+
+    .result-box {
+        margin-top: 14px; padding: 12px;
+        background: rgba(20,24,40,0.7);
+        border-radius: 8px; border: 1px solid rgba(100,120,180,0.2);
+    }
+    .result-box .summary {
+        font-size: 12px; color: #99a; margin-bottom: 8px;
+    }
+    .result-box .summary b { color: #7ec3ff; }
+    .jump-list { max-height: 280px; overflow-y: auto; }
+    .jump-item {
+        display: flex; align-items: center; gap: 8px;
+        padding: 6px 8px; border-radius: 4px;
+        font-size: 12px;
+    }
+    .jump-item:hover { background: rgba(255,255,255,0.04); }
+    .jump-item .idx {
+        width: 20px; text-align: center;
+        font-weight: bold;
+    }
+    .jump-item .name { flex: 1; color: #ccd; }
+    .jump-item .ly { color: #889; font-size: 11px; min-width: 50px; text-align: right; }
+    .jump-item .sec-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    .legend {
+        position: absolute; bottom: 16px; left: 16px;
+        background: rgba(15,18,30,0.9);
+        border: 1px solid rgba(100,120,180,0.25);
+        border-radius: 8px; padding: 10px 14px;
+        font-size: 11px; color: #99a; z-index: 10;
+        backdrop-filter: blur(6px);
+    }
+    .legend .row { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+    .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    .hint {
+        position: absolute; top: 16px; right: 16px;
+        background: rgba(15,18,30,0.9);
+        border: 1px solid rgba(100,120,180,0.25);
+        border-radius: 8px; padding: 12px 16px;
+        font-size: 12px; color: #aab; z-index: 10;
+        line-height: 1.8;
+        backdrop-filter: blur(6px);
+    }
+    .hint b { color: #7ec3ff; }
+
+    .loading {
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        color: #7ec3ff; font-size: 16px; z-index: 20;
+    }
+    .loading .spinner {
+        width: 40px; height: 40px; border: 3px solid rgba(126,195,255,0.2);
+        border-top-color: #7ec3ff; border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .back-link {
+        position: absolute; bottom: 16px; right: 16px; z-index: 10;
+        color: #6b7280; text-decoration: none; font-size: 12px;
+        background: rgba(15,18,30,0.9); padding: 8px 14px;
+        border-radius: 6px; border: 1px solid rgba(100,120,180,0.25);
+        backdrop-filter: blur(6px);
+    }
+    .back-link:hover { color: #aac; }
+
+    .avoid-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .avoid-tag {
+        background: rgba(255,80,80,0.2); border: 1px solid rgba(255,80,80,0.4);
+        color: #ff9999; padding: 3px 8px; border-radius: 4px;
+        font-size: 11px; cursor: pointer;
+    }
+    .avoid-tag:hover { background: rgba(255,80,80,0.35); }
+
+    .mode-toggle {
+        display: flex; gap: 4px; background: rgba(20,24,40,0.6);
+        border: 1px solid rgba(100,120,180,0.25); border-radius: 6px;
+        padding: 3px; margin-top: 8px;
+    }
+    .mode-toggle button {
+        flex: 1; padding: 6px 8px; font-size: 12px;
+        background: transparent; border: none; border-radius: 4px;
+        color: #889; cursor: pointer; transition: all 0.15s;
+    }
+    .mode-toggle button.active {
+        background: linear-gradient(135deg, #2a4a8f, #1a2f5f);
+        color: #fff; box-shadow: 0 0 6px rgba(74,122,255,0.4);
+    }
+</style>
+</head>
+<body>
+
+<div id="loading" class="loading">
+    <div class="spinner"></div>
+    <div>加载星图数据中...</div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div id="toolbar" style="display:none;">
+    <h2>🛰️ 诱导路线规划器</h2>
+
+    <h3>投影视角</h3>
+    <div class="mode-toggle" id="viewToggle">
+        <button data-view="pca" onclick="setViewMode('pca')">🌀 3D投影</button>
+        <button data-view="p2d" onclick="setViewMode('p2d')">📐 官方2D</button>
+    </div>
+    <div style="margin-top:8px;font-size:13px;">
+        <label style="cursor:pointer;display:flex;align-items:center;gap:6px;">
+            <input type="checkbox" id="showLabelsToggle" onchange="showLabels=this.checked;draw();">
+            <span>显示星域/星座/星系名</span>
+        </label>
+        <button onclick="resetView()" style="margin-top:6px;padding:4px 10px;font-size:12px;border:1px solid #4a7aff;background:transparent;color:#4a7aff;border-radius:4px;cursor:pointer;">🔄 重置视角</button>
+    </div>
+
+    <h3>诱导范围</h3>
+    <div class="range-wrap">
+        <input type="range" id="maxLySlider" min="0.01" max="50" step="0.01" value="7.50">
+        <input type="number" id="maxLyInput" min="0.01" max="50" step="0.01" value="7.50">
+        <span class="range-val">ly</span>
+    </div>
+
+    <h3>起点星系</h3>
+    <div class="sys-field">
+        <input type="text" id="startInput" placeholder="搜索起点... (点击星图选中)">
+        <div id="startSug" class="suggestions" style="display:none;"></div>
+    </div>
+
+    <h3>终点星系</h3>
+    <div class="sys-field">
+        <input type="text" id="endInput" placeholder="搜索终点... (点击星图选中)">
+        <div id="endSug" class="suggestions" style="display:none;"></div>
+    </div>
+
+    <h3>规避星系 <span id="avoidCount" style="color:#ff9999;font-size:11px;"></span></h3>
+    <div class="avoid-list" id="avoidList"></div>
+    <div style="font-size:11px;color:#778;margin-top:4px;">💡 右键点击星图上的星系可快速规避/取消</div>
+
+    <div id="controls">
+        <button class="btn" onclick="planRoute()">🚀 规划路线</button>
+        <button class="btn secondary" onclick="clearSelection()">清空</button>
+    </div>
+
+    <div id="result" class="result-box" style="display:none;"></div>
+</div>
+
+<div class="hint" style="display:none;">
+    <div><b>🖱️ 操作指南</b></div>
+    <div>🖲️ 滚轮 = 缩放</div>
+    <div>✋ 拖拽 = 平移</div>
+    <div>👆 左键 = 选中起点/终点</div>
+    <div>🤚 右键 = 规避/取消规避</div>
+    <div>🔄 双击 = 重置视图</div>
+</div>
+
+<div class="legend" style="display:none;">
+    <div class="row"><div class="dot" style="background:#4488ff;"></div>1.0 (蓝色)</div>
+    <div class="row"><div class="dot" style="background:#4ade80;"></div>0.5 (高安 绿色)</div>
+    <div class="row"><div class="dot" style="background:#fbbf24;"></div>0.1 (低安 橙色)</div>
+    <div class="row"><div class="dot" style="background:#f078aa;"></div>0.0 (粉色)</div>
+    <div class="row"><div class="dot" style="background:#a00a28;"></div>-1.0 (负安 深红)</div>
+    <div class="row"><div class="dot" style="border:1px solid currentColor;background:transparent;"></div>无空间站 (空心)</div>
+    <div class="row"><div class="dot" style="background:#ffffff;"></div>有空间站 (实心)</div>
+    <div class="row"><div class="dot" style="background:#7ec3ff;"></div>选定起点</div>
+    <div class="row"><div class="dot" style="background:#ff7ec3;"></div>选定终点</div>
+</div>
+
+<a href="index.html" class="back-link">← 返回材料查询</a>
+
+<script src="galaxy-analyzer.js"></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    let galaxyAnalyzer = new GalaxyConnectionAnalyzer();
+    let initialized = false;
+
+    let view = {
+        cx: 0, cy: 0, zoom: 1,
+        panX: 0, panY: 0,
+        minZoom: 20, maxZoom: 8000,
+        rotX: -Math.PI / 2, rotY: 0
+    };
+
+    let mouseDown = false;
+    let lastMouse = { x: 0, y: 0 };
+    let isPanning = false;
+    let isRotating = false;
+    let rightDownPos = { x: 0, y: 0 };
+    let pendingClickAction = 'start';
+
+    let selectedStart = null;
+    let selectedEnd = null;
+    let avoidSet = new Set();
+    let currentPath = null;
+
+    let starsData = [];
+    let constellationLabels = [];
+    let regionLabels = [];
+
+    const LY_TO_M = 9.4607e15;
+
+    let viewMode = localStorage.getItem('viewMode') || 'pca';
+    let animState = null;
+    let showLabels = false;
+
+    let _bboxCenter = { x: 0, y: 0, z: 0 };
+    let _bboxHalfSpan = 1;
+    let _normScaleP2d = 1, _normOffUP2d = 0, _normOffVP2d = 0;
+
+    function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function defaultZoom() {
+        return Math.min(window.innerWidth, window.innerHeight) / 2.6;
+    }
+
+    function setViewMode(target) {
+        if (animState) return;
+        if (target === viewMode) return;
+
+        if (target === 'p2d') {
+            animState = {
+                phase: 'resetView',
+                start: performance.now(),
+                duration: 400,
+                from: {
+                    rotX: view.rotX, rotY: view.rotY,
+                    panX: view.panX, panY: view.panY,
+                    zoom: view.zoom
+                },
+                to: {
+                    rotX: -Math.PI / 2, rotY: 0,
+                    panX: 0, panY: 0,
+                    zoom: defaultZoom()
+                },
+                targetViewMode: 'p2d'
+            };
+        } else {
+            view.rotX = -Math.PI / 2;
+            view.rotY = 0;
+            animState = {
+                phase: 'blendCoords',
+                start: performance.now(),
+                duration: 500,
+                blendT: 1,
+                fromBlend: 1, toBlend: 0,
+                targetViewMode: 'pca'
+            };
+        }
+        requestAnimationFrame(tickAnim);
+    }
+
+    function tickAnim(now) {
+        if (!animState) return;
+        const elapsed = now - animState.start;
+        const t = Math.min(1, elapsed / animState.duration);
+        const e = easeInOutCubic(t);
+
+        if (animState.phase === 'resetView') {
+            view.rotX = animState.from.rotX + (animState.to.rotX - animState.from.rotX) * e;
+            view.rotY = animState.from.rotY + (animState.to.rotY - animState.from.rotY) * e;
+            view.panX = animState.from.panX + (animState.to.panX - animState.from.panX) * e;
+            view.panY = animState.from.panY + (animState.to.panY - animState.from.panY) * e;
+            view.zoom = animState.from.zoom + (animState.to.zoom - animState.from.zoom) * e;
+            draw();
+            if (t < 1) {
+                requestAnimationFrame(tickAnim);
+            } else {
+                animState = {
+                    phase: 'blendCoords',
+                    start: performance.now(),
+                    duration: 500,
+                    blendT: 0,
+                    fromBlend: 0, toBlend: 1,
+                    targetViewMode: 'p2d'
+                };
+                requestAnimationFrame(tickAnim);
+            }
+        } else if (animState.phase === 'blendCoords') {
+            animState.blendT = animState.fromBlend + (animState.toBlend - animState.fromBlend) * e;
+            draw();
+            if (t < 1) {
+                requestAnimationFrame(tickAnim);
+            } else {
+                viewMode = animState.targetViewMode;
+                localStorage.setItem('viewMode', viewMode);
+                document.querySelectorAll('#viewToggle button').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.view === viewMode);
+                });
+                animState = null;
+                draw();
+            }
+        }
+    }
+
+    function resetView() {
+        view.rotX = -Math.PI / 2;
+        view.rotY = 0;
+        view.panX = 0;
+        view.panY = 0;
+        view.zoom = defaultZoom();
+        view.minZoom = view.zoom * 0.05;
+        view.maxZoom = view.zoom * 40;
+        draw();
+    }
+
+    function resizeCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = window.innerWidth * dpr;
+        canvas.height = window.innerHeight * dpr;
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        if (initialized) draw();
+    }
+
+    function computePcaVectors(points) {
+        const n = points.length;
+        let mx = 0, my = 0, mz = 0;
+        for (const p of points) { mx += p.x; my += p.y; mz += p.z; }
+        mx /= n; my /= n; mz /= n;
+
+        let sx = 0, sy = 0, sz = 0;
+        for (const p of points) {
+            const dx = p.x - mx, dy = p.y - my, dz = p.z - mz;
+            sx += dx * dx; sy += dy * dy; sz += dz * dz;
+        }
+        sx = Math.sqrt(sx / n) || 1;
+        sy = Math.sqrt(sy / n) || 1;
+        sz = Math.sqrt(sz / n) || 1;
+
+        let cxx = 0, cxy = 0, cxz = 0, cyy = 0, cyz = 0, czz = 0;
+        for (const p of points) {
+            const dx = (p.x - mx) / sx;
+            const dy = (p.y - my) / sy;
+            const dz = (p.z - mz) / sz;
+            cxx += dx * dx; cxy += dx * dy; cxz += dx * dz;
+            cyy += dy * dy; cyz += dy * dz; czz += dz * dz;
+        }
+        cxx /= n; cxy /= n; cxz /= n; cyy /= n; cyz /= n; czz /= n;
+        const C = [cxx, cxy, cxz, cxy, cyy, cyz, cxz, cyz, czz];
+
+        function matVec(A, v) {
+            return [
+                A[0] * v[0] + A[1] * v[1] + A[2] * v[2],
+                A[3] * v[0] + A[4] * v[1] + A[5] * v[2],
+                A[6] * v[0] + A[7] * v[1] + A[8] * v[2]
+            ];
+        }
+        function norm(v) { return Math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]); }
+        function scale(v, s) { return v.map(x => x * s); }
+        function outer(v) {
+            return [
+                v[0] * v[0], v[0] * v[1], v[0] * v[2],
+                v[1] * v[0], v[1] * v[1], v[1] * v[2],
+                v[2] * v[0], v[2] * v[1], v[2] * v[2]
+            ];
+        }
+        function matSub(A, B) {
+            return A.map((a, i) => a - B[i]);
+        }
+
+        function powerIter(M, maxIter = 300) {
+            let v = [Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5];
+            let nv = norm(v);
+            if (nv < 1e-30) v = [1, 0, 0], nv = 1;
+            v = scale(v, 1 / nv);
+            let lambda = 0;
+            for (let i = 0; i < maxIter; i++) {
+                const w = matVec(M, v);
+                lambda = v[0] * w[0] + v[1] * w[1] + v[2] * w[2];
+                nv = norm(w);
+                if (nv < 1e-30) break;
+                v = scale(w, 1 / nv);
+            }
+            if (!isFinite(lambda)) lambda = 0;
+            return { v, lambda };
+        }
+
+        const r1 = powerIter(C);
+        const C2 = matSub(C, scale(outer(r1.v), r1.lambda));
+        const r2 = powerIter(C2);
+
+        return { pc1: r1.v, pc2: r2.v, lambda1: Math.max(r1.lambda, 1e-6), lambda2: Math.max(r2.lambda, 1e-6), mean: [mx, my, mz], stds: [sx, sy, sz] };
+    }
+
+    function project3D(nx, ny, nz, rotX, rotY) {
+        const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
+        const cosX = Math.cos(rotX), sinX = Math.sin(rotX);
+        const x1 = nx * cosY - nz * sinY;
+        const z1 = nx * sinY + nz * cosY;
+        const y2 = ny * cosX - z1 * sinX;
+        const x2 = x1;
+        return { u: x2, v: -y2 };
+    }
+
+    function worldToGalaxyPlane(id) {
+        const s = _sysIdStar.get(id);
+        if (!s) return { u: 0, v: 0 };
+        if (animState && animState.phase === 'blendCoords') {
+            const p3 = project3D(s.nx, s.ny, s.nz, view.rotX, view.rotY);
+            const t = animState.blendT;
+            return {
+                u: p3.u * (1 - t) + s.p2dU * t,
+                v: p3.v * (1 - t) + s.p2dV * t
+            };
+        }
+        if (viewMode === 'pca') {
+            return project3D(s.nx, s.ny, s.nz, view.rotX, view.rotY);
+        }
+        return { u: s.p2dU, v: s.p2dV };
+    }
+
+    function initProjection() {
+        starsData = [];
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity, minZ = Infinity, maxZ = -Infinity;
+        let p2dUmin = Infinity, p2dUmax = -Infinity, p2dVmin = Infinity, p2dVmax = -Infinity;
+
+        for (const [id, info] of galaxyAnalyzer.systemInfo) {
+            if (!info.x || !info.y || !info.z) continue;
+            if ((info.security ?? -1) <= -0.9) continue;
+            if (info.x < minX) minX = info.x;
+            if (info.x > maxX) maxX = info.x;
+            if (info.y < minY) minY = info.y;
+            if (info.y > maxY) maxY = info.y;
+            if (info.z < minZ) minZ = info.z;
+            if (info.z > maxZ) maxZ = info.z;
+        }
+
+        _bboxCenter = { x: (minX + maxX) / 2, y: (minY + maxY) / 2, z: (minZ + maxZ) / 2 };
+        const sx = maxX - minX, sy = maxY - minY, sz = maxZ - minZ;
+        _bboxHalfSpan = Math.max(sx, sy, sz) / 2;
+
+        for (const [id, info] of galaxyAnalyzer.systemInfo) {
+            if (!info.x || !info.y || !info.z) continue;
+            const nx = (info.x - _bboxCenter.x) / _bboxHalfSpan;
+            const ny = (info.y - _bboxCenter.y) / _bboxHalfSpan;
+            const nz = (info.z - _bboxCenter.z) / _bboxHalfSpan;
+
+            let p2dU = 0, p2dV = 0;
+            if (info.p2dx != null && info.p2dy != null) {
+                p2dU = info.p2dx;
+                p2dV = -info.p2dy;
+                if (p2dU < p2dUmin) p2dUmin = p2dU;
+                if (p2dU > p2dUmax) p2dUmax = p2dU;
+                if (p2dV < p2dVmin) p2dVmin = p2dV;
+                if (p2dV > p2dVmax) p2dVmax = p2dV;
+            }
+
+            starsData.push({
+                id,
+                nx, ny, nz,
+                p2dU, p2dV,
+                hasP2d: info.p2dx != null,
+                security: info.security ?? 0,
+                name: galaxyAnalyzer.systemIdToName.get(id) || '',
+                constellationId: info.constellationId,
+                regionId: info.regionId,
+                hasStation: galaxyAnalyzer.stationSystems.has(id)
+            });
+        }
+
+        const p2dURange = p2dUmax - p2dUmin;
+        const p2dVRange = p2dVmax - p2dVmin;
+        const p2dMax = Math.max(p2dURange, p2dVRange) || 1;
+        _normScaleP2d = 2 / p2dMax;
+        _normOffUP2d = (p2dUmin + p2dUmax) / 2;
+        _normOffVP2d = (p2dVmin + p2dVmax) / 2;
+
+        for (const s of starsData) {
+            if (s.hasP2d) {
+                s.p2dU = (s.p2dU - _normOffUP2d) * _normScaleP2d;
+                s.p2dV = (s.p2dV - _normOffVP2d) * _normScaleP2d;
+            }
+        }
+
+        _sysIdStar.clear();
+        for (const s of starsData) _sysIdStar.set(s.id, s);
+
+        const consMap = new Map();
+        const regMap = new Map();
+        for (const s of starsData) {
+            const cid = s.constellationId;
+            if (cid) {
+                if (!consMap.has(cid)) consMap.set(cid, { nx: 0, ny: 0, nz: 0, p2dU: 0, p2dV: 0, n: 0 });
+                const c = consMap.get(cid);
+                c.nx += s.nx; c.ny += s.ny; c.nz += s.nz;
+                if (s.hasP2d) { c.p2dU += s.p2dU; c.p2dV += s.p2dV; } else { c.p2dU += 0; c.p2dV += 0; }
+                c.n++;
+            }
+            const rid = s.regionId;
+            if (rid) {
+                if (!regMap.has(rid)) regMap.set(rid, { nx: 0, ny: 0, nz: 0, p2dU: 0, p2dV: 0, n: 0 });
+                const r = regMap.get(rid);
+                r.nx += s.nx; r.ny += s.ny; r.nz += s.nz;
+                if (s.hasP2d) { r.p2dU += s.p2dU; r.p2dV += s.p2dV; } else { r.p2dU += 0; r.p2dV += 0; }
+                r.n++;
+            }
+        }
+
+        constellationLabels = [];
+        for (const [cid, c] of consMap) {
+            if (c.n < 3) continue;
+            const name = galaxyAnalyzer.constellationIdToName.get(cid) || '';
+            if (!name) continue;
+            constellationLabels.push({
+                constellationId: cid,
+                nx: c.nx / c.n, ny: c.ny / c.n, nz: c.nz / c.n,
+                p2dU: c.p2dU / c.n, p2dV: c.p2dV / c.n,
+                hasP2d: c.p2dU !== 0 || c.p2dV !== 0,
+                name, count: c.n
+            });
+        }
+
+        regionLabels = [];
+        for (const [rid, r] of regMap) {
+            if (r.n < 5) continue;
+            const name = galaxyAnalyzer.regionIdToName.get(rid) || '';
+            if (!name) continue;
+            regionLabels.push({
+                regionId: rid,
+                nx: r.nx / r.n, ny: r.ny / r.n, nz: r.nz / r.n,
+                p2dU: r.p2dU / r.n, p2dV: r.p2dV / r.n,
+                hasP2d: r.p2dU !== 0 || r.p2dV !== 0,
+                name, count: r.n
+            });
+        }
+
+        view.cx = 0;
+        view.cy = 0;
+        view.zoom = Math.min(window.innerWidth, window.innerHeight) / 2.6;
+        view.panX = 0;
+        view.panY = 0;
+        view.minZoom = view.zoom * 0.05;
+        view.maxZoom = view.zoom * 40;
+        view.rotX = -Math.PI / 2;
+        view.rotY = 0;
+
+        console.log('[initProjection] stars:', starsData.length,
+            'bboxCenter=['+_bboxCenter.x.toExponential(3)+','+_bboxCenter.y.toExponential(3)+','+_bboxCenter.z.toExponential(3)+']',
+            'halfSpan='+_bboxHalfSpan.toExponential(3),
+            'viewMode='+viewMode);
+        draw();
+    }
+
+    const _sysIdStar = new Map();
+
+    function worldToScreen(id) {
+        const { u, v } = worldToGalaxyPlane(id);
+        const sx = u * view.zoom + window.innerWidth / 2 + view.panX;
+        const sy = v * view.zoom + window.innerHeight / 2 + view.panY;
+        return { x: sx, y: sy };
+    }
+
+    function screenToGalaxyPlane(sx, sy) {
+        const u = (sx - window.innerWidth / 2 - view.panX) / view.zoom;
+        const v = (sy - window.innerHeight / 2 - view.panY) / view.zoom;
+        return { u, v };
+    }
+
+    function secColor(sec, alpha = 1) {
+        if (sec === null || sec === undefined) return `rgba(150,150,150,${alpha})`;
+        const stops = [
+            { s: 1.0,  r: 68,  g: 136, b: 255 },
+            { s: 0.5,  r: 74,  g: 222, b: 128 },
+            { s: 0.1,  r: 251, g: 191, b: 36  },
+            { s: 0.0,  r: 240, g: 120, b: 170 },
+            { s: -1.0, r: 160, g: 10,  b: 40  }
+        ];
+        let a = stops[0], b = stops[stops.length - 1];
+        if (sec >= stops[0].s) { a = stops[0]; b = stops[1]; }
+        else if (sec <= stops[stops.length - 1].s) { a = stops[stops.length - 2]; b = stops[stops.length - 1]; }
+        else {
+            for (let i = 0; i < stops.length - 1; i++) {
+                if (sec <= stops[i].s && sec >= stops[i + 1].s) { a = stops[i]; b = stops[i + 1]; break; }
+            }
+        }
+        const t = (sec - a.s) / (b.s - a.s);
+        const r = Math.round(a.r + (b.r - a.r) * t);
+        const g = Math.round(a.g + (b.g - a.g) * t);
+        const bl = Math.round(a.b + (b.b - a.b) * t);
+        return `rgba(${r},${g},${bl},${alpha})`;
+    }
+
+    function secHex(sec) {
+        if (sec === null || sec === undefined) return '#999';
+        const stops = [
+            { s: 1.0,  r: 68,  g: 136, b: 255 },
+            { s: 0.5,  r: 74,  g: 222, b: 128 },
+            { s: 0.1,  r: 251, g: 191, b: 36  },
+            { s: 0.0,  r: 240, g: 120, b: 170 },
+            { s: -1.0, r: 160, g: 10,  b: 40  }
+        ];
+        let a = stops[0], b = stops[stops.length - 1];
+        if (sec >= stops[0].s) { a = stops[0]; b = stops[1]; }
+        else if (sec <= stops[stops.length - 1].s) { a = stops[stops.length - 2]; b = stops[stops.length - 1]; }
+        else {
+            for (let i = 0; i < stops.length - 1; i++) {
+                if (sec <= stops[i].s && sec >= stops[i + 1].s) { a = stops[i]; b = stops[i + 1]; break; }
+            }
+        }
+        const t = (sec - a.s) / (b.s - a.s);
+        const r = Math.round(a.r + (b.r - a.r) * t);
+        const g = Math.round(a.g + (b.g - a.g) * t);
+        const bl = Math.round(a.b + (b.b - a.b) * t);
+        return '#' + [r, g, bl].map(v => v.toString(16).padStart(2, '0')).join('');
+    }
+
+    function draw() {
+        if (!initialized) return;
+
+        ctx.fillStyle = '#030408';
+        ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+        const margin = 80;
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const minX = -margin, maxX = w + margin;
+        const minY = -margin, maxY = h + margin;
+
+        drawConnections(minX, maxX, minY, maxY);
+
+        if (showLabels) {
+            if (view.zoom > 2500) {
+                drawSystemLabels(minX, maxX, minY, maxY);
+            }
+            if (view.zoom > 400) {
+                drawConstellationLabels(minX, maxX, minY, maxY);
+            }
+            if (view.zoom < 600) {
+                drawRegionLabels(minX, maxX, minY, maxY);
+            }
+        }
+
+        const baseSize = Math.max(1, Math.min(3, view.zoom * 0.004));
+        const minAlpha = 0.45;
+
+        for (const s of starsData) {
+            const p = worldToScreen(s.id);
+            if (p.x < minX || p.x > maxX || p.y < minY || p.y > maxY) continue;
+
+            const size = baseSize;
+            const alpha = Math.min(1, minAlpha + size * 0.25);
+            const color = secColor(s.security, alpha);
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+
+            if (s.hasStation) {
+                ctx.fillStyle = color;
+                ctx.fill();
+            } else {
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+        }
+
+        drawAvoidHighlight();
+        drawPath();
+        drawSelectionCircles();
+        drawLabels();
+
+        const is2D = viewMode === 'p2d' && !animState;
+        ctx.save();
+        ctx.font = '13px "Cascadia Code", Consolas, monospace';
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'top';
+        let lines, lw = 110, lh;
+        if (is2D) {
+            lines = ['📐 2D 模式'];
+            lh = 26;
+        } else {
+            const rx = (view.rotX * 180 / Math.PI).toFixed(1);
+            const ry = (view.rotY * 180 / Math.PI).toFixed(1);
+            lines = [
+                'Yaw  ' + ry.padStart(6) + '°',
+                'Pitch ' + rx.padStart(5) + '°'
+            ];
+            lh = 44;
+        }
+        const lx = window.innerWidth - lw - 12;
+        const ly = window.innerHeight - 16 - 32 - 12 - lh;
+        ctx.fillStyle = 'rgba(10,12,22,0.85)';
+        ctx.strokeStyle = 'rgba(74,122,255,0.5)';
+        ctx.lineWidth = 1;
+        roundRect(ctx, lx, ly, lw, lh, 5);
+        ctx.fill();
+        ctx.stroke();
+        ctx.fillStyle = '#8ab4ff';
+        if (is2D) {
+            ctx.textAlign = 'center';
+            ctx.fillText(lines[0], lx + lw / 2, ly + 7);
+        } else {
+            ctx.fillText(lines[0], lx + lw - 8, ly + 6);
+            ctx.fillText(lines[1], lx + lw - 8, ly + 24);
+        }
+        ctx.restore();
+    }
+
+    function drawConnections(minX, maxX, minY, maxY) {
+        if (galaxyAnalyzer.connections.size === 0) return;
+        if (view.zoom < 50) return;
+
+        ctx.save();
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(80,130,200,0.18)';
+        const drawn = new Set();
+        for (const [fromId, targets] of galaxyAnalyzer.connections) {
+            const fromStar = _sysIdStar.get(fromId);
+            if (!fromStar) continue;
+            const pf = worldToScreen(fromStar.id);
+            if (pf.x < minX || pf.x > maxX || pf.y < minY || pf.y > maxY) continue;
+            for (const toId of targets) {
+                const key = fromId < toId ? `${fromId}-${toId}` : `${toId}-${fromId}`;
+                if (drawn.has(key)) continue;
+                drawn.add(key);
+                const toStar = _sysIdStar.get(toId);
+                if (!toStar) continue;
+                const pt = worldToScreen(toStar.id);
+                if (pt.x < minX || pt.x > maxX || pt.y < minY || pt.y > maxY) continue;
+                ctx.beginPath();
+                ctx.moveTo(pf.x, pf.y);
+                ctx.lineTo(pt.x, pt.y);
+                ctx.stroke();
+            }
+        }
+        ctx.restore();
+    }
+
+    function _labelWorld(label) {
+        if (animState && animState.phase === 'blendCoords') {
+            const p3 = project3D(label.nx, label.ny, label.nz, view.rotX, view.rotY);
+            const t = animState.blendT;
+            return {
+                u: p3.u * (1 - t) + label.p2dU * t,
+                v: p3.v * (1 - t) + label.p2dV * t
+            };
+        }
+        if (viewMode === 'pca') {
+            return project3D(label.nx, label.ny, label.nz, view.rotX, view.rotY);
+        }
+        return { u: label.p2dU, v: label.p2dV };
+    }
+
+    function _labelToScreen(label) {
+        const w = _labelWorld(label);
+        return {
+            x: w.u * view.zoom + window.innerWidth / 2 + view.panX,
+            y: w.v * view.zoom + window.innerHeight / 2 + view.panY
+        };
+    }
+
+    function drawRegionLabels(minX, maxX, minY, maxY) {
+        if (regionLabels.length === 0) return;
+
+        const fontSize = Math.max(11, Math.min(20, view.zoom * 0.02));
+        const alpha = Math.max(0.3, Math.min(0.7, 1.2 - view.zoom / 500));
+
+        ctx.save();
+        ctx.font = `bold ${fontSize}px "PingFang SC", "Microsoft YaHei", sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        for (const r of regionLabels) {
+            const p = _labelToScreen(r);
+            if (p.x < minX || p.x > maxX || p.y < minY || p.y > maxY) continue;
+            ctx.fillStyle = `rgba(140, 170, 220, ${alpha})`;
+            ctx.fillText(r.name, p.x, p.y);
+        }
+        ctx.restore();
+    }
+
+    function drawConstellationLabels(minX, maxX, minY, maxY) {
+        if (constellationLabels.length === 0) return;
+
+        const fontSize = Math.max(9, Math.min(15, view.zoom * 0.012));
+        const alpha = Math.max(0.25, Math.min(0.55, 1.0 - view.zoom / 2500));
+
+        ctx.save();
+        ctx.font = `bold ${fontSize}px "PingFang SC", "Microsoft YaHei", sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        for (const c of constellationLabels) {
+            const p = _labelToScreen(c);
+            if (p.x < minX || p.x > maxX || p.y < minY || p.y > maxY) continue;
+            ctx.fillStyle = `rgba(180, 200, 230, ${alpha})`;
+            ctx.fillText(c.name, p.x, p.y);
+        }
+        ctx.restore();
+    }
+
+    function drawSystemLabels(minX, maxX, minY, maxY) {
+        if (starsData.length === 0) return;
+
+        const fontSize = Math.max(9, Math.min(14, view.zoom * 0.008));
+        const alpha = Math.max(0.4, Math.min(0.8, (view.zoom - 2500) / 2500));
+
+        ctx.save();
+        ctx.font = `${fontSize}px "PingFang SC", "Microsoft YaHei", sans-serif`;
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+
+        const gap = fontSize * 4;
+        let lastSx = -Infinity, lastSy = -Infinity;
+
+        for (const s of starsData) {
+            const p = worldToScreen(s.id);
+            if (p.x < minX || p.x > maxX || p.y < minY || p.y > maxY) continue;
+            if (Math.abs(p.x - lastSx) < gap && Math.abs(p.y - lastSy) < fontSize) continue;
+
+            ctx.fillStyle = `rgba(200, 215, 240, ${alpha})`;
+            ctx.fillText(s.name, p.x + 6, p.y);
+            lastSx = p.x; lastSy = p.y;
+        }
+        ctx.restore();
+    }
+
+    function drawAvoidHighlight() {
+        if (avoidSet.size === 0) return;
+        ctx.save();
+        for (const id of avoidSet) {
+            const info = galaxyAnalyzer.systemInfo.get(id);
+            if (!info) continue;
+            const p = worldToScreen(info.id);
+            ctx.fillStyle = 'rgba(239,68,68,0.25)';
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 7, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = 'rgba(239,68,68,0.6)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+        ctx.restore();
+    }
+
+    function drawSelectionCircles() {
+        if (selectedStart) {
+            const info = galaxyAnalyzer.systemInfo.get(selectedStart);
+            if (info) {
+                const p = worldToScreen(info.id);
+                ctx.save();
+                ctx.fillStyle = '#7ec3ff';
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 6, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = '#fff';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+                ctx.restore();
+            }
+        }
+        if (selectedEnd) {
+            const info = galaxyAnalyzer.systemInfo.get(selectedEnd);
+            if (info) {
+                const p = worldToScreen(info.id);
+                ctx.save();
+                ctx.fillStyle = '#ff7ec3';
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 6, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = '#fff';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+                ctx.restore();
+            }
+        }
+    }
+
+    function drawPath() {
+        if (!currentPath || !currentPath.success) return;
+        const path = currentPath.path;
+        ctx.save();
+        for (let i = 0; i < path.length - 1; i++) {
+            const a = galaxyAnalyzer.systemInfo.get(path[i].id);
+            const b = galaxyAnalyzer.systemInfo.get(path[i + 1].id);
+            if (!a || !b) continue;
+            const pa = worldToScreen(a.id);
+            const pb = worldToScreen(b.id);
+
+            ctx.strokeStyle = 'rgba(126,195,255,0.9)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(pa.x, pa.y);
+            ctx.lineTo(pb.x, pb.y);
+            ctx.stroke();
+
+            const midX = (pa.x + pb.x) / 2;
+            const midY = (pa.y + pb.y) / 2;
+            const dx = pb.x - pa.x;
+            const dy = pb.y - pa.y;
+            const len = Math.sqrt(dx * dx + dy * dy);
+            if (len > 0) {
+                const nx = dx / len, ny = dy / len;
+                const arrowR = Math.min(4, len / 4);
+                ctx.fillStyle = 'rgba(126,195,255,0.9)';
+                ctx.beginPath();
+                ctx.moveTo(midX, midY);
+                ctx.lineTo(midX - arrowR * nx + arrowR * 0.7 * (-ny), midY - arrowR * ny + arrowR * 0.7 * nx);
+                ctx.lineTo(midX - arrowR * nx - arrowR * 0.7 * (-ny), midY - arrowR * ny - arrowR * 0.7 * nx);
+                ctx.closePath();
+                ctx.fill();
+            }
+        }
+
+        for (const node of path) {
+            const info = galaxyAnalyzer.systemInfo.get(node.id);
+            if (!info) continue;
+            const p = worldToScreen(info.id);
+            ctx.fillStyle = '#7ec3ff';
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        ctx.restore();
+    }
+
+    let hoverSystem = null;
+    function findNearestSystem(sx, sy, maxScreenDist = 20) {
+        let best = null, bestDist = Infinity;
+        for (const s of starsData) {
+            if (avoidSet.has(s.id)) continue;
+            const p = worldToScreen(s.id);
+            const dx = p.x - sx, dy = p.y - sy;
+            const d = Math.hypot(dx, dy);
+            if (d < bestDist && d < maxScreenDist) { bestDist = d; best = s; }
+        }
+        return best;
+    }
+
+    function findNearestSystemStrict(sx, sy, maxScreenDist = 15) {
+        let best = null, bestDist = Infinity;
+        for (const s of starsData) {
+            const p = worldToScreen(s.id);
+            const dx = p.x - sx, dy = p.y - sy;
+            const d = Math.sqrt(dx * dx + dy * dy);
+            if (d < maxScreenDist && d < bestDist) { bestDist = d; best = s; }
+        }
+        return best;
+    }
+
+    function drawLabels() {
+        if (hoverSystem) {
+            const p = worldToScreen(hoverSystem.id);
+            ctx.save();
+            const sec = hoverSystem.security ?? 0;
+            const sysName = hoverSystem.name || '';
+            const constName = galaxyAnalyzer.getConstellationName(hoverSystem.id) || '';
+            const secStr = sec.toFixed(1);
+
+            ctx.font = 'bold 13px -apple-system, sans-serif';
+            const m1 = ctx.measureText(sysName);
+            ctx.font = '11px -apple-system, sans-serif';
+            const m2 = ctx.measureText(constName);
+            const m3 = ctx.measureText(secStr);
+
+            const tw = Math.max(m1.width, m2.width, m3.width) + 20;
+            const th = constName ? 52 : 40;
+            let tx = p.x + 12, ty = p.y - th - 6;
+            if (tx + tw > window.innerWidth) tx = p.x - tw - 12;
+            if (ty < 0) ty = p.y + 12;
+            ctx.fillStyle = 'rgba(15,18,30,0.92)';
+            ctx.strokeStyle = secColor(sec, 0.8);
+            ctx.lineWidth = 1;
+            roundRect(ctx, tx, ty, tw, th, 4);
+            ctx.fill(); ctx.stroke();
+
+            ctx.font = 'bold 13px -apple-system, sans-serif';
+            ctx.fillStyle = secHex(sec);
+            ctx.fillText(sysName, tx + 10, ty + 17);
+
+            if (constName) {
+                ctx.font = '11px -apple-system, sans-serif';
+                ctx.fillStyle = '#9aa0b0';
+                ctx.fillText(constName, tx + 10, ty + 32);
+            }
+
+            ctx.font = 'bold 11px -apple-system, sans-serif';
+            ctx.fillStyle = secHex(sec);
+            ctx.fillText(secStr, tx + 10, ty + th - 8);
+            ctx.restore();
+        }
+
+        if (currentPath && currentPath.success) {
+            const path = currentPath.path;
+            const first = path[0], last = path[path.length - 1];
+            const fi = galaxyAnalyzer.systemInfo.get(first.id);
+            const li = galaxyAnalyzer.systemInfo.get(last.id);
+            if (fi && li) {
+                drawLabel(worldToScreen(fi.id), first.name + ' (起)', '#7ec3ff');
+                drawLabel(worldToScreen(li.id), last.name + ' (终)', '#ff7ec3');
+            }
+        }
+    }
+
+    function drawLabel(p, text, color) {
+        ctx.save();
+        ctx.font = 'bold 13px -apple-system, sans-serif';
+        const m = ctx.measureText(text);
+        const tw = m.width + 14, th = 22;
+        ctx.fillStyle = 'rgba(15,18,30,0.95)';
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.5;
+        roundRect(ctx, p.x + 10, p.y - 30, tw, th, 4);
+        ctx.fill(); ctx.stroke();
+        ctx.fillStyle = color;
+        ctx.fillText(text, p.x + 17, p.y - 15);
+        ctx.restore();
+    }
+
+    function roundRect(ctx, x, y, w, h, r) {
+        ctx.beginPath();
+        ctx.moveTo(x + r, y);
+        ctx.lineTo(x + w - r, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+        ctx.lineTo(x + w, y + h - r);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+        ctx.lineTo(x + r, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+        ctx.lineTo(x, y + r);
+        ctx.quadraticCurveTo(x, y, x + r, y);
+        ctx.closePath();
+    }
+
+    canvas.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+        const mx = e.offsetX, my = e.offsetY;
+        const { u, v } = screenToGalaxyPlane(mx, my);
+        view.zoom = Math.max(view.minZoom, Math.min(view.maxZoom, view.zoom * factor));
+        view.panX = mx - window.innerWidth / 2 - u * view.zoom;
+        view.panY = my - window.innerHeight / 2 - v * view.zoom;
+        draw();
+    }, { passive: false });
+
+    canvas.addEventListener('mousedown', (e) => {
+        mouseDown = true;
+        lastMouse = { x: e.offsetX, y: e.offsetY };
+        if (e.button === 0) {
+            isPanning = true;
+        } else if (e.button === 2) {
+            rightDownPos = { x: e.offsetX, y: e.offsetY };
+            if (viewMode !== 'p2d' && !animState) {
+                isRotating = true;
+            }
+            e.preventDefault();
+        }
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+        const sx = e.offsetX, sy = e.offsetY;
+        hoverSystem = findNearestSystemStrict(sx, sy, 15);
+
+        if (mouseDown && isPanning) {
+            const dx = sx - lastMouse.x;
+            const dy = sy - lastMouse.y;
+            view.panX += dx;
+            view.panY += dy;
+            lastMouse = { x: sx, y: sy };
+        }
+        if (mouseDown && isRotating) {
+            const dx = sx - lastMouse.x;
+            const dy = sy - lastMouse.y;
+            view.rotY += dx * 0.008;
+            view.rotX -= dy * 0.008;
+            view.rotX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, view.rotX));
+            lastMouse = { x: sx, y: sy };
+        }
+        draw();
+    });
+
+    canvas.addEventListener('mouseup', (e) => {
+        const dx = e.offsetX - lastMouse.x;
+        const dy = e.offsetY - lastMouse.y;
+        mouseDown = false;
+        if (Math.sqrt(dx * dx + dy * dy) < 5 && e.button === 0) {
+            handleClick(e);
+        }
+        if (e.button === 2 && rightDownPos) {
+            const rdx = e.offsetX - rightDownPos.x;
+            const rdy = e.offsetY - rightDownPos.y;
+            if (Math.sqrt(rdx * rdx + rdy * rdy) < 5) {
+                const sys = findNearestSystemStrict(e.offsetX, e.offsetY, 15);
+                if (sys) {
+                    if (avoidSet.has(sys.id)) avoidSet.delete(sys.id);
+                    else avoidSet.add(sys.id);
+                    renderAvoidList();
+                    draw();
+                }
+            }
+        }
+        isPanning = false;
+        isRotating = false;
+    });
+
+    canvas.addEventListener('dblclick', () => {
+        initProjection();
+        draw();
+    });
+
+    canvas.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
+    function handleClick(e) {
+        const sys = findNearestSystemStrict(e.offsetX, e.offsetY, 15);
+        if (!sys) return;
+
+        const sysId = sys.id;
+        const name = sys.name;
+
+        if (pendingClickAction === 'start') {
+            selectedStart = sysId;
+            document.getElementById('startInput').value = name;
+            pendingClickAction = 'end';
+        } else {
+            selectedEnd = sysId;
+            document.getElementById('endInput').value = name;
+            pendingClickAction = 'start';
+        }
+
+        draw();
+    }
+
+    function renderAvoidList() {
+        const container = document.getElementById('avoidList');
+        container.innerHTML = '';
+        const names = [];
+        for (const id of avoidSet) {
+            const name = galaxyAnalyzer.systemIdToName.get(id) || String(id);
+            names.push({ id, name });
+        }
+        document.getElementById('avoidCount').textContent = names.length ? `(${names.length})` : '';
+        for (const a of names) {
+            const tag = document.createElement('span');
+            tag.className = 'avoid-tag';
+            tag.textContent = a.name;
+            tag.onclick = () => {
+                avoidSet.delete(a.id);
+                renderAvoidList();
+                draw();
+            };
+            container.appendChild(tag);
+        }
+    }
+
+    function getMaxLy() {
+        const s = document.getElementById('maxLySlider').value;
+        const n = document.getElementById('maxLyInput').value;
+        const v = n && !isNaN(n) ? parseFloat(n) : parseFloat(s);
+        return Math.max(0.01, Math.min(50, v));
+    }
+
+    function syncLySource(from) {
+        const slider = document.getElementById('maxLySlider');
+        const input = document.getElementById('maxLyInput');
+        if (from === 'slider') {
+            const v = parseFloat(slider.value);
+            input.value = v.toFixed(2);
+        } else {
+            let v = parseFloat(input.value);
+            if (isNaN(v) || v <= 0) v = 0.01;
+            if (v > 50) v = 50;
+            slider.value = v;
+            input.value = v.toFixed(2);
+        }
+    }
+
+    function planRoute() {
+        const box = document.getElementById('result');
+        if (!selectedStart || !selectedEnd) {
+            box.style.display = 'block';
+            box.innerHTML = `<div style="color:#ffc969;font-size:13px;">⚠️ 请先选择 <b>起点</b> 和 <b>终点</b> 星系（在星图上点击或搜索）</div>`;
+            return;
+        }
+        const maxLy = getMaxLy();
+        if (maxLy <= 0) {
+            box.style.display = 'block';
+            box.innerHTML = `<div style="color:#ffc969;font-size:13px;">⚠️ 请先设置诱导范围（光年）</div>`;
+            return;
+        }
+        const startName = galaxyAnalyzer.systemIdToName.get(selectedStart);
+        const endName = galaxyAnalyzer.systemIdToName.get(selectedEnd);
+        const avoidIds = avoidSet;
+
+        const t0 = performance.now();
+        const result = galaxyAnalyzer.findIndirectJumpPath(startName, endName, maxLy, [], avoidIds);
+        const t1 = performance.now();
+
+        currentPath = result;
+        draw();
+        showResult(result, t1 - t0);
+    }
+
+    function showResult(result, ms) {
+        const box = document.getElementById('result');
+        box.style.display = 'block';
+
+        if (!result.success) {
+            box.innerHTML = `<div style="color:#ff9999;font-size:13px;">❌ 无法在当前诱导范围内找到可行路径。<br>尝试增大诱导光年数或减少规避星系。</div>`;
+            return;
+        }
+
+        const p = result.path;
+        let html = `<div class="summary">✅ 找到路径: <b>${p.length - 1}</b> 次诱导 · 累计 <b>${result.totalLy.toFixed(2)}</b> ly · 耗时 <b>${ms.toFixed(0)}</b> ms</div>`;
+        html += `<div class="jump-list">`;
+        for (let i = 0; i < p.length; i++) {
+            const sec = p[i].security ?? 0;
+            const color = secHex(sec);
+            const ly = i === 0 ? 0 : p[i].ly;
+            const label = i === 0 ? '(起点)' : i === p.length - 1 ? '(终点)' : '';
+            html += `<div class="jump-item">
+                <span class="idx" style="color:${i===0?'#7ec3ff':i===p.length-1?'#ff7ec3':'#889'}">${i}</span>
+                <span class="sec-dot" style="background:${color}"></span>
+                <span class="name">${p[i].name} ${label}</span>
+                <span class="ly">${ly ? ly.toFixed(2)+' ly' : ''}</span>
+            </div>`;
+        }
+        html += `</div>`;
+        box.innerHTML = html;
+    }
+
+    function clearSelection() {
+        selectedStart = null;
+        selectedEnd = null;
+        currentPath = null;
+        pendingClickAction = 'start';
+        document.getElementById('startInput').value = '';
+        document.getElementById('endInput').value = '';
+        document.getElementById('result').style.display = 'none';
+        draw();
+    }
+
+    document.getElementById('maxLySlider').addEventListener('input', () => {
+        syncLySource('slider');
+    });
+    document.getElementById('maxLyInput').addEventListener('input', () => {
+        syncLySource('input');
+    });
+    document.getElementById('maxLyInput').addEventListener('blur', () => {
+        syncLySource('input');
+    });
+
+    function setupAutocomplete(inputId, sugId, onSelect) {
+        const input = document.getElementById(inputId);
+        const sug = document.getElementById(sugId);
+        let hideTimer;
+
+        input.addEventListener('input', () => {
+            const q = input.value.trim();
+            if (!q) { sug.style.display = 'none'; return; }
+            const results = galaxyAnalyzer.searchSystems(q, 10);
+            if (results.length === 0) { sug.style.display = 'none'; return; }
+            sug.innerHTML = '';
+            for (const r of results) {
+                const div = document.createElement('div');
+                const cn = r.chineseName && r.chineseName !== r.name
+                    ? ` <span style="color:#7ec3ff;">${r.chineseName}</span>` : '';
+                const sc = secHex(r.security);
+                div.innerHTML = `<span style="color:${sc};">●</span> ${r.name}${cn} <span style="color:#88a;font-size:10px;">${r.security.toFixed(1)}</span>`;
+                div.onclick = () => {
+                    input.value = r.name;
+                    sug.style.display = 'none';
+                    onSelect(r.id, r.name);
+                };
+                sug.appendChild(div);
+            }
+            sug.style.display = 'block';
+        });
+
+        input.addEventListener('focus', () => {
+            clearTimeout(hideTimer);
+            if (input.value.trim()) input.dispatchEvent(new Event('input'));
+        });
+        input.addEventListener('blur', () => {
+            hideTimer = setTimeout(() => sug.style.display = 'none', 200);
+        });
+    }
+
+    function getSystemId(name) {
+        for (const [id, info] of galaxyAnalyzer.systemInfo) {
+            if (galaxyAnalyzer.systemIdToName.get(id) === name) return id;
+        }
+        return null;
+    }
+
+    setupAutocomplete('startInput', 'startSug', (id, name) => {
+        selectedStart = id;
+        draw();
+    });
+    setupAutocomplete('endInput', 'endSug', (id, name) => {
+        selectedEnd = id;
+        draw();
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+        if (e.shiftKey) {
+            void e.shiftKey;
+        }
+    });
+
+    window.addEventListener('resize', resizeCanvas);
+
+    async function init() {
+        try {
+            await galaxyAnalyzer.init();
+            initProjection();
+            resizeCanvas();
+            document.querySelectorAll('#viewToggle button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.view === viewMode);
+            });
+            initialized = true;
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('toolbar').style.display = 'block';
+            document.querySelector('.hint').style.display = 'block';
+            document.querySelector('.legend').style.display = 'block';
+            draw();
+        } catch (err) {
+            console.error(err);
+            document.getElementById('loading').innerHTML = '<div style="color:#ff9999;">加载失败: ' + err.message + '</div>';
+        }
+    }
+    init();
+</script>
+</body>
+</html>
